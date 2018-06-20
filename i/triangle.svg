@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="59px" viewBox="0 0 55 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6926481%" id="linearGradient-1">
+            <stop stop-color="#FBB800" offset="0%"></stop>
+            <stop stop-color="#FF8700" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="11 272.228516 23 290.691406 -1 290.691406"></polygon>
+        <filter x="-145.8%" y="-135.4%" width="391.7%" height="479.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.596078431   0 0 0 0 0  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4" transform="translate(-342.000000, -514.000000)">
+            <g id="Первый-экран">
+                <g id="Group-2" transform="translate(370.000000, 32.000000)">
+                    <g id="Group-5" transform="translate(0.000000, 230.000000)">
+                        <g id="Rectangle-13" transform="translate(11.000000, 281.459961) rotate(90.000000) translate(-11.000000, -281.459961) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

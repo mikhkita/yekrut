@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="87px" viewBox="0 0 87 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>correct-symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-29.9%" y="-14.9%" width="159.7%" height="159.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.596078431   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6926481%" id="linearGradient-2">
+            <stop stop-color="#FBB800" offset="0%"></stop>
+            <stop stop-color="#FF8700" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4-Copy-3" transform="translate(-1141.000000, -2664.000000)" fill="url(#linearGradient-2)">
+            <g id="Преимущества" transform="translate(-107.000000, 2059.000000)">
+                <g id="Group-3" transform="translate(107.000000, 445.000000)">
+                    <g id="Бесплатная-помощь" transform="translate(1030.000000, 98.000000)">
+                        <g id="correct-symbol" filter="url(#filter-1)" transform="translate(121.000000, 62.000000)">
+                            <path d="M33.5,0 C52.0015391,-3.3986776e-15 67,14.9984609 67,33.5 C67,52.0015391 52.0015391,67 33.5,67 C14.9984609,67 2.26578507e-15,52.0015391 0,33.5 C-2.26578507e-15,14.9984609 14.9984609,3.3986776e-15 33.5,0 Z M34,19 C26.2680135,19 20,25.2680135 20,33 L20,34 C20,41.7319865 26.2680135,48 34,48 C41.7319865,48 48,41.7319865 48,34 L48,33 C48,25.2680135 41.7319865,19 34,19 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

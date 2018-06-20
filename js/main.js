@@ -40,7 +40,24 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
-    
+    $( " .b-advantages " ).slick({
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    touchThreshold: 100,
+                    arrows: true,
+                    dots: true
+    });
+    $( " .b-reviews " ).slick({
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    touchThreshold: 100,
+                    arrows: true,
+                    dots: true
+    });
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,
