@@ -40,14 +40,16 @@ $(document).ready(function(){
         }
     }
     $.fn.placeholder();
-    $( " .b-advantages " ).slick({
+    $( " .b-reasons " ).slick({
                     infinite: true,
                     speed: 500,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     touchThreshold: 100,
                     arrows: true,
-                    dots: true
+                    dots: true,
+                    prevArrow: '<button type="button" class="slick-prev icon-arrow-left">Previous</button>',
+                    nextArrow: '<button type="button" class="slick-next icon-arrow-right">Previous</button>'
     });
     $( " .b-reviews " ).slick({
                     infinite: true,
@@ -56,8 +58,12 @@ $(document).ready(function(){
                     slidesToScroll: 1,
                     touchThreshold: 100,
                     arrows: true,
-                    dots: true
+                    dots: true,
+                    prevArrow: '<button type="button" class="slick-prev icon-arrow-left">Previous</button>',
+                    nextArrow: '<button type="button" class="slick-next icon-arrow-right">Previous</button>'
     });
+    $('#b-title-logo').enllax();
+    $('#b-julia').enllax();
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,

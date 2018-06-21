@@ -98,12 +98,56 @@
 	unicode-range: U+0020-0491;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?nvpods');
+  src:  url('../fonts/icomoon.eot?nvpods#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?nvpods') format('truetype'),
+    url('../fonts/icomoon.woff?nvpods') format('woff'),
+    url('../fonts/icomoon.svg?nvpods#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-check:before {
+  content: "\e902";
+}
+.icon-cross:before {
+  content: "\e903";
+}
+
+
 .b-1{
 	background-image: url(../i/bg.jpg);
 	background-size: cover;
-	height: 100vh;
 	padding-top: 32px;
-	min-height: 900px;
+	height: 100vh;
+	min-height: 850px;
+}
+.b-1 .b-block{
+	height: 100%
+
 }
 	.b-header-wrap{
 		display: inline-block;
@@ -135,9 +179,23 @@
 				font-family: Gilroy-Regular;
 				font-size: 20px;
 				line-height: 30px;
+				position: relative;
+				
 			}
+				.recall:after{
+					border-bottom: 1px dashed #ffffff;
+					width: 100%;
+					position: absolute;
+					content: ' ';
+					display: block;
+					bottom: 0px;
+					right: 0px;
+				}	
+				.recall:hover:after{
+					border-bottom: none;
+				}
 	.b-bottom{
-		height: calc(100vh - 160px);
+		height: calc(100% - 160px);
 		display: flex;
 		align-items: center;
 	}
@@ -176,6 +234,37 @@
 				background-image: linear-gradient(-180deg, #FBB800 0%, #FF8700 99%);
 				box-shadow: 0 10px 20px 0 rgba(255,152,0,0.50);
 				border-radius: 100px;
+				position: relative;
+				-webkit-transition: box-shadow 0.2s;
+			    -moz-transition: box-shadow 0.2s;
+			    -o-transition: box-shadow 0.2s;
+		    	transition: box-shadow 0.2s;
+				}
+				.orange:after{
+					content: ' ';
+					width: 100%;
+					height: 100%;
+					background-image: linear-gradient(-180deg, #B2E48D 0%, #7BC554 100%);
+    				box-shadow: 0 10px 20px 0 rgba(123,197,84,0.40);
+    				opacity: 0;
+    				position: absolute;
+    				top: 0px;
+    				right: 0px;
+    				border-radius: 100px;
+    				-webkit-transition: opacity 0.2s;
+			    	-moz-transition: opacity 0.2s;
+			    	-o-transition: opacity 0.2s;
+		    		transition: opacity 0.2s;
+				}
+				.orange:hover{
+					box-shadow: 0 10px 20px 0 rgba(0,0,0,0);
+				}
+				.orange:hover:after{
+					opacity: 1;
+				}
+				.b-button p{
+					z-index: 10;
+					position: relative;
 				}
 				.consult{
 					width: 383px;
@@ -230,7 +319,7 @@
 		.b-header-h2 b{
 			font-family: Gilroy-Bold;
 		}
-	.b-advantage{
+	.b-reason{
 		width: 100%;
 		display: flex !important;
 	}
@@ -244,7 +333,7 @@
 			display: inline-block;
 			background-repeat: no-repeat;
 		}
-		.b-advantage-text{
+		.b-reason-text{
 			float: left;
 			display: inline-block;
 			text-align: left;
@@ -308,28 +397,42 @@
 	}
 		.b-money{
 			position: relative;
+			width: 238px;
+			height: 156px;
+			background-image: url(../i/money@2x.jpg);
+			background-position: 50% 50%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-bottom: 27px;
 		}
-			.b-money:after{
+			/*.b-money:after{
 			    content: url(../i/ok.svg);
 			    position: absolute;
 			    top: 44px;
 			    left: 103px;
-			}
+			}*/
 		.b-docs{
 			position: relative;
+			width: 198px;
+			height: 149px;
+			background-image: url(../i/docs@2x.jpg);
+			background-position: 50% 50%;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			margin-bottom :34px;
 		}
-			.b-docs:after{
+			/*.b-docs:after{
 				content: url(../i/o.svg);
 			    position: absolute;
 			    top: 61px;
     			left: 111px;
-			}
+			}*/
 		.b-dif-title{
 			font-family: Gilroy-Bold;
 			font-size: 30px;
 			color: #282828;
 			line-height: 40px;
-			margin-top: 27px;
+			
 		}
 		.b-dif-text{
 			font-family: OpenSans-Regular;
@@ -343,12 +446,14 @@
 				color: #282828;
 			}
 	.b-julia{
-		width: 265px;
-		height: 527px;
-		background-image: url(../i/julia.jpg);
+		width: 291px;
+		height: 549px;
+		background-image: url(../i/julia@2x.jpg);
+		background-size: cover;
 		margin-top: 88px;
 		float: left;
 		position: relative;
+		top:20px;
 	}
 		.b-name{
 			font-family: Gilroy-Medium;
@@ -394,17 +499,19 @@
 		.b-text{
 			font-size: 24px;
 			line-height: 34px;
-		}
-		.b-text b{
 			color: #434343;
 		}
+		.b-text b{
+			color: #282828;
+		}
 .b-4{
-	 background-image: linear-gradient(-135deg, #535353 0%, #282828 100%);
+	 background-image: linear-gradient(135deg, #535353 0%, #282828 100%);
 	 padding-top: 80px;
 	 padding-bottom: 114px;
 }
 	.b-4 .b-header-h2{
 		color: #ffffff;
+		padding: 0px 100px;
 	}
 	.b-reviews{
 		width: 100%;
@@ -427,7 +534,11 @@
 						width: 90px;
 						height: 90px;
 						border-radius: 90px;
-						background-image: url(../i/marta.jpg);
+						border: 1px solid #ffffff;
+						background-image: url(../i/marta@2x.jpg);
+						background-repeat: no-repeat;
+						background-position: 50% 50%;
+						background-size: cover;
 						overflow: hidden;
 						display: inline-block;
 						float: left;
@@ -447,13 +558,17 @@
 						line-height: 30px;
 						text-decoration: underline;
 					}
+						.b-r-link:hover{
+							text-decoration: none;
+						}
 				.b-r-header{
-					font-family: OpenSans-Regular;
+					font-family: Gilroy-Regular;
 					font-size: 30px;
 					text-align: center;
 					line-height: 40px;
 					display: inline-block;
 					margin-top: 20px;
+					padding: 0px 35px;
 				}
 				.b-r-text{
 					font-family: OpenSans-Regular;
@@ -470,7 +585,6 @@
 					background: rgba(255,255,255,0.10);
 					box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
 					border-radius: 100px;
-					background-image: url(../i/previous.svg);
 					background-repeat: no-repeat;
     				background-position: 50% 50%;
     				left: 100px;
@@ -480,7 +594,6 @@
 					background: rgba(255,255,255,0.10);
 					box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
 					border-radius: 100px;
-					background-image: url(../i/next.svg);
 					background-repeat: no-repeat;
    					background-position: 50% 50%;
    					right: 100px;
