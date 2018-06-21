@@ -748,7 +748,8 @@
 .b-6{
 	background-image: url(../i/car.jpg);
 	background-repeat: no-repeat;
-	background-position: 253% 467%;
+	background-position: 253% 60%;
+	padding-bottom: 54px;
 }
 	.b-left{
 		width: 50%;
@@ -820,18 +821,99 @@
 		}
 		.b-condition{
 			opacity: 0.7;
-			font-family: Gilroy;
-			font-size: 14px;
-			color: #FFFFFF;
-			line-height: 24px;
-			position: relative;
+		    font-family: Gilroy;
+		    font-size: 14px;
+		    color: #FFFFFF;
+		    line-height: 24px;
+		    position: relative;
+		    padding-top: 3px;
+		    padding-left: 6px;
 		}
+			.b-condition:before{
+				background: rgba(255,255,255,0.20);
+			    border: 1px solid #FFFFFF;
+			    border-radius: 3px;
+			    width: 23px;
+			    height: 23px;
+			    font-size: 0px;
+			    line-height: 0px;
+			    content: ' ';
+			    position: absolute;
+			    left: 0px;
+			    top: 2px;
+			}
+			.b-condition span:after{
+				position: relative;
+			}
+			.b-condition span:after{
+				border-bottom: 1px solid rgba(255,255,255,0.5);
+				width: 208px;
+				position: absolute;
+				content: ' ';
+				display: block;
+				bottom: 3px;
+    			right: 31px;
+			}
 		.b-6 .small{
 			padding-bottom: 30px;
 		}
 	.b-footer{
+		width: 100%;
+		display: inline-block;
 		padding-top: 331px;
 	}
+		.b-6 .b-logo-cont{
+			display: inline-block;
+			vertical-align: top;
+			float: left;
+			margin-top: 0px;
+		}
+		.b-f-contacts{
+			display: inline-block;
+			font-family: OpenSans-Regular;
+			font-size: 16px;
+			color: #434343;
+			line-height: 24px;
+			text-align: left;
+			float: left;
+		}
+			.b-f-contacts ul li{
+				margin-bottom: 16px;
+			}
+				.b-f-contacts ul li a{
+					color: #777777;
+					margin-bottom: 0px;
+				}
+					.b-f-contacts ul li:last-child{
+						cursor: pointer;
+					}
+					.b-f-contacts ul li a:after{
+						border-bottom: 1px dashed #777777;
+						width: 100%;
+						position: relative;
+						content: ' ';
+						display: block;
+						bottom: 3px;
+						right: 0px;	
+						font-size: 0px;
+						line-height: 0px;
+					}
+					.b-f-contacts ul li a:hover:after{
+						opacity: 0;
+					}
+
+		.b-redder{
+			display: inline-block;
+			float: right;
+			font-family: OpenSans-Regular;
+			font-size: 16px;
+			color: #434343;
+			text-align: right;
+			line-height: 24px;
+		}
+			.b-redder b{
+				font-family: OpenSans-Bold;
+			}
 
 
 
