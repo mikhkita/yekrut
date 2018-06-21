@@ -88,7 +88,7 @@
     border-radius: 70px;
     z-index: 10;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
-    top: 210px;
+    top: 250px;
 }
 
 .slick-next
@@ -99,7 +99,7 @@
     border-radius: 70px;
     right: 0px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
-    top: 210px;
+    top: 250px;
     -webkit-transition: box-shadow 0.2s;
     -moz-transition: box-shadow 0.2s;
     -o-transition: box-shadow 0.2s;
@@ -150,6 +150,8 @@
     margin: 0;
     list-style: none;
     text-align: center;
+    position: relative;
+    top: -33px;
 }
 .slick-dots li
 {

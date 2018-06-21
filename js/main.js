@@ -63,7 +63,7 @@ $(document).ready(function(){
                     nextArrow: '<button type="button" class="slick-next icon-arrow-right">Previous</button>'
     });
     $('#b-title-logo').enllax();
-    $('#b-julia').enllax();
+    $('#expert').enllax();
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,
