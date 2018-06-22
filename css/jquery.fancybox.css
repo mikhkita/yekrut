@@ -361,8 +361,8 @@ body.fancybox-iosfix {
 /* Close button on the top right corner of html content */
 .fancybox-close-small {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 30px;
+  right: 30px;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -374,24 +374,20 @@ body.fancybox-iosfix {
   cursor: pointer; }
 
 .fancybox-close-small:after {
-  content: '×';
+  content: ' ';
   position: absolute;
+  background-image: url(../i/cross.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
   top: 5px;
   right: 5px;
-  width: 30px;
-  height: 30px;
-  font: 22px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
-  color: #888;
-  font-weight: 300;
-  text-align: center;
-  border-radius: 50%;
-  border-width: 0;
-  background-color: transparent;
+  width: 28px;
+  height: 28px;
   transition: background-color .25s;
   box-sizing: border-box;
-  z-index: 2; }
+  z-index: 100; }
 
-.fancybox-close-small:focus {
+/*.fancybox-close-small:focus {
   outline: none; }
 
 .fancybox-close-small:focus:after {
@@ -399,7 +395,7 @@ body.fancybox-iosfix {
 
 .fancybox-close-small:hover:after {
   color: #555;
-  background: #eee; }
+  background: #eee; }*/
 
 .fancybox-slide--image .fancybox-close-small,
 .fancybox-slide--iframe .fancybox-close-small {
