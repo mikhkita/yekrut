@@ -41,7 +41,7 @@
 					<h1>Незабываемое <br> <b>путешествие в Турцию</b><br>  по системе «все включено»</h1>
 					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию<br></b>  прямо сейчас. Ведь все что вам нужно – это 20 минут <br>свободного времени и желание отлично отдохнуть!</p>
 					<div class="consult">
-						<a href="#" class="b-button orange left">
+						<a href="#b-popup-1" class="b-button orange left fancy">
 							<p class="button-bold">Получить консультацию</p>
 							<p class="button-thin">бесплатно</p>
 						</a>
@@ -96,7 +96,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="#" class="b-button orange more">
+			<a href="#b-popup-1" class="b-button orange more fancy">
 				<p class="button-bold">Узнать подробнее</p>
 				<p class="button-thin">о путешествии по Турции</p>
 			</a>
@@ -192,7 +192,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="#" class="b-button orange relax">
+			<a href="#b-popup-2" class="b-button orange relax fancy">
 					<p class="button-bold">Хочу так же отдохнуть</p>
 					<p class="button-thin">подберите мне тур</p>
 				</a>
@@ -246,16 +246,19 @@
 			<div class="b-right">
 				<p class="b-form-header">Заполните простую форму</p>
 				<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение  <br>2 минут и предложит удобное время</p>
-				<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
-				<input class="b-form-input" type="text" id="tel" name="phone" placeholder="Ваш телефон*"></p>
-				<div class="b-office">	
-					<a href="#" class="b-button orange meeting">
-								<p class="button-bold">Записаться на встречу</p>
-								<p class="button-thin">Бесплатно в нашем офисе</p>
-					</a>
-					<p class="small">Это просто и ни к чему не обязывает</p>
-				</div>
-				<p class="b-condition">Я принимаю <span>условия передачи информации</span></p>
+				<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-1">	
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<div class="b-office">	
+						<a href="#" class="b-button orange meeting ajax">
+									<p class="button-bold">Записаться на встречу</p>
+									<p class="button-thin">Бесплатно в нашем офисе</p>
+						</a>
+						<p class="small">Это просто и ни к чему не обязывает</p>
+					</div>
+					<input required checked id="agree" class="agree" type="checkbox" name="agreement">
+					<label for="agree"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+				</form>	
 			</div>
 				<div class="b-footer clearfix">
 					<a href="#" class="b-logo-cont">
@@ -293,20 +296,51 @@
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-1">
-			<h3>Оставьте заявку</h3>
-			<h4>и наши специалисты<br>свяжутся с Вами в ближайшее время</h4>
 			<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-1">
-				<div class="b-popup-form">
-					<label for="name">Введите Ваше имя</label>
-					<input type="text" id="name" name="name" required/>
-					<label for="tel">Введите Ваш номер телефона</label>
-					<input type="text" id="tel" name="phone" required/>
-					<label for="tel">Введите Ваш E-mail</label>
-					<input type="text" id="tel" name="email" required/>
-					<input type="hidden" name="subject" value="Заказ"/>
-					<input type="submit" style="display:none;">
-					<a href="#" class="b-btn b-blue-btn ajax">Заказать</a>
-					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+				<div class="b-left">
+					<h2 class="b-header-h2"><b>Узнайте подробнее<br></b> о путешествии  по Турции</h2>
+					<h3 class="b-subtitle">Наши эксперты готовы <br>проконсультировать вас<br> <b>абсолютно бесплатно.</b></h3>
+				</div>
+				
+				<div class="b-right">
+					<p class="b-form-header">Заполните простую форму</p>
+					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение  <br>2 минут и предложит удобное время</p>
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<div class="b-office">	
+						<a href="#" class="b-button orange meeting ajax">
+									<p class="button-bold">Записаться на встречу</p>
+									<p class="button-thin">Бесплатно в нашем офисе</p>
+						</a>
+						<p class="small">Это просто и ни к чему не обязывает</p>
+					</div>
+					<input required checked id="agree" class="agree" type="checkbox" name="agreement">
+					<label for="agree"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+				</div>
+			</form>
+		</div>
+
+		<div class="b-popup" id="b-popup-2">
+			<form action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-2">
+				<div class="b-left">
+					<h2 class="b-header-h2">Подберем для вас<br>тур под<b> все ваши запросы</b></h2>
+					<h3 class="b-subtitle">За нашими плечами <b>5 лет опыта </b>работы на рынке туризма и сотни довольных клиентов.</b></h3>
+				</div>
+				
+				<div class="b-right">
+					<p class="b-form-header">Заполните простую форму</p>
+					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение  <br>2 минут и предложит удобное время</p>
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<div class="b-office">	
+						<a href="#" class="b-button orange find ajax">
+									<p class="button-bold">Подберите мне тур</p>
+									<p class="button-thin">я уже хочу на отдых</p>
+						</a>
+						<p class="small">Это просто и ни к чему не обязывает</p>
+					</div>
+					<input required checked id="agree" class="agree" type="checkbox" name="agreement">
+					<label for="agree"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
 			</form>
 		</div>

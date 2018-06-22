@@ -100,10 +100,10 @@
     right: 0px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
     top: 250px;
-    -webkit-transition: box-shadow 0.2s;
-    -moz-transition: box-shadow 0.2s;
-    -o-transition: box-shadow 0.2s;
-    transition: box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.2s box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s box-shadow 0.2s;
+    -o-transition: box-shadow 0.2s box-shadow 0.2s;
+    transition: box-shadow 0.2s box-shadow 0.2s;
 }
 .slick-prev:after,
 .slick-next:after{
@@ -112,8 +112,7 @@
     height: 100%;
     border-radius: 70px;
     top: 210px;
-    background-image: linear-gradient(-180deg, #B2E48D 0%, #7BC554 100%);
-    box-shadow: 0 10px 20px 0 rgba(123,197,84,0.40);
+    background-image: linear-gradient(-180deg, #ffa400 0%, #e86100 99%);
     opacity: 0;
     top:0px;
     left: 0px;
@@ -126,6 +125,7 @@
 .slick-prev:hover:after,
 .slick-next:hover:after{
     opacity: 1;
+    box-shadow: 0 10px 25px 0 rgba(255, 118, 0, 0.5);
 }
 .slick-prev:hover:before,
 .slick-next:hover:before{
@@ -133,7 +133,7 @@
 }
 .slick-prev:hover,
 .slick-next:hover{
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0);
+    box-shadow: 0 10px 25px 0 rgba(255, 118, 0, 0.5);
 }
 
 /* Dots */
@@ -210,7 +210,7 @@
     height: 12px;
     content: ' ';
     border-radius: 12px;
-    background-image: linear-gradient(180deg, #B2E48D 0%, #7BC554 100%);
+    background-image: linear-gradient(180deg, #FBB800 0%, #FF8700 99%);
 
 }
 /*.slick-dots li button:focus{
@@ -249,7 +249,7 @@
     height: 12px;
     content: ' ';
     border-radius: 12px;
-    background-image: linear-gradient(180deg, #FBB800 0%, #FF8700 99%);
+    background-image: linear-gradient(180deg, #B2E48D 0%, #7BC554 100%);
 }
 
 
