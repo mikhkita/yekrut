@@ -376,9 +376,6 @@ body.fancybox-iosfix {
 .fancybox-close-small:after {
   content: ' ';
   position: absolute;
-  background-image: url(../i/cross.svg);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   top: 5px;
   right: 5px;
   width: 28px;
@@ -386,6 +383,45 @@ body.fancybox-iosfix {
   transition: background-color .25s;
   box-sizing: border-box;
   z-index: 100; }
+
+  /*.fancybox-close-small:hover:after {
+  content: ' ';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  z-index: 100;
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg); 
+          transform: rotate(90deg);
+ -webkit-transition: transform 0.15s;
+    -moz-transition: transform 0.15s;
+      -o-transition: transform 0.15s;
+         transition: transform 0.15s; }*/
+.icon-cross:before{
+  color: #ffffff;
+  font-size: 28px;
+  width:30px;
+  height:30px;
+  display:inline-block;
+   -webkit-transition: transform 0.15s;
+    -moz-transition: transform 0.15s;
+      -o-transition: transform 0.15s;
+         transition: transform 0.15s;
+}       
+.icon-cross:hover:before{
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg); 
+          transform: rotate(90deg);
+
+  color: #EC8100;
+}
 
 /*.fancybox-close-small:focus {
   outline: none; }

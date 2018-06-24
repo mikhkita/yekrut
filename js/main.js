@@ -62,8 +62,39 @@ $(document).ready(function(){
                     prevArrow: '<button type="button" class="slick-prev icon-arrow-left">Previous</button>',
                     nextArrow: '<button type="button" class="slick-next icon-arrow-right">Previous</button>'
     });
+
     $('#b-title-logo').enllax();
     $('#expert').enllax();
+    particlesJS.load('particles-js', 'js/particles.json', function() {
+    });
+custom["footer-animate"] = function(){
+    var typed = new Typed("#typed-show", {
+        strings:["<b>Запишитесь на встречу</b> в нашем офисе"],
+        typeSpeed: 7,
+        showCursor: false
+    });
+
+    setTimeout(string2, 1600);
+}
+
+    function string2(){
+        var typed2 = new Typed("#typed-show-2", {
+            strings:["и мы <b>бесплатно</b> пришлем за вами автомобиль с личным водителем"],
+            typeSpeed: 5,
+            showCursor: false
+        });
+    }
+
+        jQuery.preloadImages = function()
+     {
+      for(var i = 0; i < arguments.length; i++)
+      {
+       jQuery("<img>").attr("src", arguments[ i ]);
+      }
+     };
+
+     $.preloadImages("/i/bg-popup.jpg", "/i/julia-pop.png");
+
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,

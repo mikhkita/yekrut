@@ -75,13 +75,9 @@ $(document).ready(function(){
 		var $popup = $($(this).attr("data-block")),
 			$this = $(this);
 		$this.fancybox({
-			padding : 0,
-			content : $popup,
-			helpers: {
-	         	overlay: {
-	            	locked: true 
-	         	}
-	      	},
+	      	btnTpl : {
+		      smallBtn   : '<button data-fancybox-close class="fancybox-close-small icon-cross" title="{{CLOSE}}"></button>'
+		    },
 			beforeShow: function(){
 				$(".fancybox-wrap").addClass("beforeShow");
 				$popup.find(".custom-field").remove();

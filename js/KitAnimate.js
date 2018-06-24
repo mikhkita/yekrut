@@ -19,12 +19,10 @@ $(document).ready(function(){
 					offset = ( tmp.attr("data-offset") )?tmp.attr("data-offset"):tmp.height()/2;
 				if( tmp.offset().top < scroll-offset ){
 					var $this = $(this);
-					setTimeout(function(){
-						if( $this.attr("data-func") ){
-							custom[$this.attr("data-func")]($this);
-						}
-						$this.addClass($this.attr("data-anim")+"-show");
-					},$(this).attr("data-delay")*1);
+					if( $this.attr("data-func") ){
+						custom[$this.attr("data-func")]($this);
+					}
+					$this.addClass("show");
 					$(this).removeClass("anim");
 				}
 			});

@@ -252,9 +252,9 @@
     				top: 0px;
     				right: 0px;
     				border-radius: 100px;
-    				-webkit-transition: opacity 0.2s;
-			    	-moz-transition: opacity 0.2s;
-			    	-o-transition: opacity 0.2s;
+    				-webkit-transition: opacity 0.2s box-shadow 0.2s;
+			    	-moz-transition: opacity 0.2s box-shadow 0.2s;
+			    	-o-transition: opacity 0.2s box-shadow 0.2s;
 		    		transition: opacity 0.2s box-shadow 0.2s;
 				}
 				.orange:hover{
@@ -262,6 +262,19 @@
 				}
 				.orange:hover:after{
 					opacity: 1;
+				}
+				.orange:active{
+					-webkit-transform: translateY(5px);
+					   -moz-transform: translateY(5px);
+				    	-ms-transform: translateY(5px);
+				    	 -o-transform: translateY(5px); 
+				    		transform: translateY(5px);
+				   -webkit-transition: transform 0.15s;
+				      -moz-transition: transform 0.15s;
+				        -o-transition: transform 0.15s;
+			    	       transition: transform 0.15s;
+
+
 				}
 				.b-button p{
 					z-index: 10;
@@ -305,6 +318,7 @@
 				    position: absolute;
 				    left: 0px;
 				    background-position: 178% 50%;
+				    top: -5px;
 				}
 .b-2{
 	padding-top: 78px;
@@ -518,9 +532,13 @@
 			font-family: Gilroy-Bold;
 		}
 .b-4{
-	 background-image: linear-gradient(135deg, #535353 0%, #282828 100%);
+	 background-image: linear-gradient(135deg, #3E3E3E 0%, #202020 100%); 
 	 padding-top: 80px;
 	 padding-bottom: 114px;
+}
+.b-4 .b-block{
+	position: relative;
+	z-index: 2;
 }
 	.b-4 .b-header-h2{
 		color: #ffffff;
@@ -544,8 +562,8 @@
 					display: inline-block;
 				}
 					.b-r-photo{
-						width: 90px;
-						height: 90px;
+						width: 91px;
+						height: 91px;
 						border-radius: 90px;
 						border: 1px solid #ffffff;
 						background-image: url(../i/marta@2x.jpg);
@@ -662,7 +680,7 @@
 					    background-position: 100% 50%;
 					    background-color: rgba(0,0,0,0);
 					    margin: 0 auto;
-					    top: 120px;
+					    top: 140px;
 					    left: 50px;
 					}
 			.b-expert-quote-wrap{
@@ -724,16 +742,16 @@
 				}
 					.b-expert-quote:before{
 						position: absolute;
-					    width: 83px;
-					    height: 65px;
+					    width: 30px;
+					    height: 26px;
 					    background-image: url(../i/commas.svg);
 					    background-repeat: no-repeat;
 					    background-size: contain;
 					    content: ' ';
 					    font-size: 0px;
 					    line-height: 0px;
-					    top: 25px;
-					    left: -22px;
+					    top: 36px;
+					    left: 0px;
 					}
 				.question{
 					margin-top: 50px;
@@ -749,11 +767,20 @@
     				padding-left: 48px;
 				}
 .b-6{
-	background-image: url(../i/car.jpg);
-	background-repeat: no-repeat;
-	background-position: 50% 60%;
-	padding-bottom: 54px;
+		padding-bottom: 54px;
 }
+	.b-car{
+		background-image: url(../i/car.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		padding-bottom: 54px;
+		position: absolute;
+		width: 1646px;
+		height: 511px;
+	    top: 380px;
+    	left: -390px;
+		z-index:-1;
+	}
 	.b-left{
 		width: 50%;
 		float: left;
@@ -799,6 +826,9 @@
 			text-align: left;
 			padding-bottom: 29px;
 		}
+			.b-form-subtitle b{
+				font-family: Gilroy-Bold;
+			}
 		.b-form-input{
 			background: rgba(255,255,255,0.20);
 			border: 1px solid #FFFFFF;
@@ -811,12 +841,12 @@
 			color: #FFFFFF;
 			line-height: 28px;
 		}
-		.b-6 .orange{
+		.meeting{
 			background-color: #ffffff;
 			background-image: none;
 			color: #EC8100;
 		}
-		.b-6 .orange:hover{
+		.meeting:hover{
 			color: #ffffff;
 		}
 		.b-office{
@@ -945,14 +975,20 @@
 				font-family: OpenSans-Bold;
 			}
 
-.b-popup{
+#b-popup-1,
+#b-popup-2{
 	background-image: url(../i/bg-popup.jpg);
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	padding: 90px 36px 80px 50px; 
 	width: 960px;
+	border-radius: 10px;
 }
+.b-popup{
+		box-shadow: 0 15px 30px 0 rgba(0,0,0,0.30);
+}
+
 	.b-popup .b-left{
 	    width: 49%;
 		float: left;
@@ -990,11 +1026,98 @@
 			margin: 0 auto;
 			width: 100%;
 		}
+#b-popup-3,
+#b-popup-4{
+
+	background-image: linear-gradient(-180deg, #FBB800 0%, #FF8700 99%);
+	box-shadow: 0 15px 30px 0 rgba(0,0,0,0.30);
+	border-radius: 10px;
+	position: relative;
+	width: 697px;
+	height: 731px;
+	border-radius: 10px;
+	padding: 0px;
+	overflow: visible;
+}
+	#b-popup-3 .b-right,
+	#b-popup-4 .b-right{
+		width: 403px;
+		height: 100%;
+		background-image: none;
+		padding: 30px 0px 36px 40px;
+		display: inline-block;
+		float: left;
+		overflow: visible;
+		box-shadow: none;
+	}
+	#b-popup-3 .b-form-header,
+	#b-popup-4 .b-form-header{
+		padding-bottom: 19px;
+		min-width: 500px;
+	}
+	#b-popup-3 .b-form-subtitle
+	#b-popup-4 .b-form-subtitle{
+		padding-bottom: 22px;
+	}
+		 textarea {
+		    min-width: 363px;
+		    min-height: 126px;
+		    resize: none;
+		    
+   		} 
+   		textarea::placeholder{
+   			color: #fff;
+   		}
+   	#b-popup-3 .b-button,
+   	#b-popup-4 .b-button{
+   		padding: 19px 5px 18px 5px;
+   	}
+ 	
+   	.b-julia-pop{
+   		background-image: url(../i/julia-pop.png);
+   		background-size: contain;
+   		background-repeat: no-repeat;
+   		height: 642px;
+   		width: 1326px;
+   		position: absolute;
+   		top: 89px;
+    	left: 429px;
+   	}
+   	#b-popup-3 .icon-cross:hover:before,
+	#b-popup-4 .icon-cross:hover:before,
+	#b-popup-5 .icon-cross:hover:before{
+		color: #000;
+	}
+	#b-popup-5 {
+		padding: 0px;
+		border-radius: 10px;
+	}
 
 
 
 
-
+#typed-show{
+	font-family: Gilroy-Regular;
+	font-size: 50px;
+	color: #282828;
+	line-height: 60px;
+	text-align: left;
+}
+#typed-show b{
+	font-family: Gilroy-Bold;
+}
+#typed-show-2{
+	font-family: Gilroy-Regular;
+	font-size: 30px;
+	color: #434343;
+	line-height: 40px;
+	text-align: left;
+	margin-top: 26px;
+}
+#typed-show-2 b{
+	font-family: Gilroy-Bold;
+	color:#282828;
+}
 html,
 body {
 	position: relative;
@@ -1065,7 +1188,7 @@ input.error,textarea.error{
 }
 .b-block{
 	position: relative;
-	width: 1178px;
+	width: 1176px;
 	margin: 0px auto;
 }
 .b-absolute{
@@ -1099,20 +1222,17 @@ input:-moz-placeholder {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.b-btn{
 
+
+#particles-js{
+	background:transparent;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	z-index: 1;
 }
-.b-orange-btn{
-
-}
-	.b-orange-btn:hover{
-		
-	}
-.b-1{
-	
-}
-
-
+body{min-width: 1216px};
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
 }	
