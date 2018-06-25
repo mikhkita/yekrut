@@ -1168,7 +1168,7 @@
 	    left: -9px;
    	}
    	.pop-cont-2{
-	    right: -77px;
+	    right: -71px;
 	    width: 370px;
 	    height: 664px;
 	    overflow: hidden;
@@ -1345,7 +1345,9 @@ input:-moz-placeholder {
 	top: 0px;
 	z-index: 1;
 }
-
+strong, b{
+	font-weight: normal!important;
+}
 .fancybox-close-small:after{
 	display: none;
 }
