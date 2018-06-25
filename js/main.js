@@ -48,9 +48,19 @@ $(document).ready(function(){
                     touchThreshold: 100,
                     arrows: true,
                     dots: true,
+                    easing: 'easeOutQuart',
+                    useTransform: false,
                     prevArrow: '<button type="button" class="slick-prev icon-arrow-left">Previous</button>',
                     nextArrow: '<button type="button" class="slick-next icon-arrow-right">Previous</button>'
     });
+
+    $(".b-reason[data-slick-index='0'] .slider-anim").addClass("show");
+
+    $(".b-reasons").on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $(".b-reason .slider-anim").removeClass("show");
+        $(".b-reason[data-slick-index='"+currentSlide+"'] .slider-anim").addClass("show");
+    });
+
     $( " .b-reviews " ).slick({
                     infinite: true,
                     speed: 500,
@@ -59,31 +69,41 @@ $(document).ready(function(){
                     touchThreshold: 100,
                     arrows: true,
                     dots: true,
+                    easing: 'easeOutQuart',
+                    useTransform: false,
                     prevArrow: '<button type="button" class="slick-prev icon-arrow-left">Previous</button>',
                     nextArrow: '<button type="button" class="slick-next icon-arrow-right">Previous</button>'
+    });
+
+    $(".b-review[data-slick-index='0'] .slider-anim").addClass("show");
+
+    $(".b-reviews").on('afterChange', function(event, slick, currentSlide, nextSlide){
+        $(".b-review .slider-anim").removeClass("show");
+        $(".b-review[data-slick-index='"+currentSlide+"'] .slider-anim").addClass("show");
     });
 
     $('#b-title-logo').enllax();
     $('#expert').enllax();
     particlesJS.load('particles-js', 'js/particles.json', function() {
     });
-custom["footer-animate"] = function(){
-    var typed = new Typed("#typed-show", {
-        strings:["<b>Запишитесь на встречу</b> в нашем офисе"],
-        typeSpeed: 7,
-        showCursor: false
-    });
+// custom["footer-animate"] = function(){
+//     var typed = new Typed("#typed-show", {
+//         // strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
+//         strings:["<b>Запишитесь на встречу</b> в нашем офисе"],
+//         typeSpeed: 10,
+//         showCursor: false,
+//         onComplete: string2
+//     });
 
-    setTimeout(string2, 1600);
-}
+// }
 
-    function string2(){
-        var typed2 = new Typed("#typed-show-2", {
-            strings:["и мы <b>бесплатно</b> пришлем за вами автомобиль с личным водителем"],
-            typeSpeed: 5,
-            showCursor: false
-        });
-    }
+//     function string2(){
+//         var typed2 = new Typed("#typed-show-2", {
+//             strings:["и мы <b>бесплатно</b> пришлем за вами автомобиль с личным водителем"],
+//             typeSpeed: 5,
+//             showCursor: false
+//         });
+    
 
         jQuery.preloadImages = function()
      {
@@ -93,8 +113,74 @@ custom["footer-animate"] = function(){
       }
      };
 
-     $.preloadImages("/i/bg-popup.jpg", "/i/julia-pop.png");
+     $.preloadImages("/i/bg-popup.jpg");
 
+
+     var elem =  document.getElementsByClassName('b-header-h2-b-6')[0];
+    var str = elem.innerText;
+    var symbols = str.split("");
+    var body = document.getElementsByClassName('b-header-h2-b-6-2')[0];
+    var delay = 0;
+
+    // symbols.forEach(function(item, i, arr) {
+    //     delays.push();
+    // }
+    symbols.forEach(function(item, i, arr) {
+        
+          var span = document.createElement('span');
+          span.innerHTML = item;
+          span.className = 'lol anim fadeIn';
+          span.setAttribute('data-cont', '.b-6');
+          span.style.transitionDelay = delay+'ms';
+          if (i < 21) {
+            span.style.fontFamily = 'Gilroy-Bold'
+          };
+          body.appendChild(span);
+          console.log(item);
+          delay += 20;
+    });
+    
+    var elem =  document.getElementsByClassName('b-subtitle-b-6')[0];
+    var str = elem.innerText;
+    var symbols = str.split("");
+    var body = document.getElementsByClassName('b-subtitle-b-6-2')[0];
+    var delay = 680;
+    symbols.forEach(function(item, i, arr) {
+        
+          var span = document.createElement('span');
+          span.innerHTML = item;
+          span.className = 'lol anim fadeIn';
+          span.setAttribute('data-cont', '.b-6');
+          span.style.transitionDelay = delay+'ms';
+          if (i > 4 && i < 14) {
+            span.style.fontFamily = 'Gilroy-Bold'
+          };
+          body.appendChild(span);
+          console.log(item);
+          delay += 20;
+    });
+
+     var isWindows = false,
+        timerLeave = 0,
+        showLeave = true;
+
+    if (navigator.userAgent.indexOf ('Windows') != -1) isWindows = true;
+
+    setInterval(function() {
+        timerLeave++;
+        if(timerLeave > 120){
+            showLeave = true;
+            timerLeave = 0;
+        }
+    }, 1000);
+
+    $(document).mouseleave(function(){
+        if(!$(".fancybox-slide .b-popup-1").length && showLeave){
+            $(".b-btn-leave").click();
+            showLeave = false;
+            timerLeave = 0;
+        }
+    });
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,

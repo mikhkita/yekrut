@@ -78,6 +78,7 @@ $(document).ready(function(){
 	      	btnTpl : {
 		      smallBtn   : '<button data-fancybox-close class="fancybox-close-small icon-cross" title="{{CLOSE}}"></button>'
 		    },
+		    autofocus: true,
 			beforeShow: function(){
 				$(".fancybox-wrap").addClass("beforeShow");
 				$popup.find(".custom-field").remove();
@@ -168,6 +169,7 @@ $(document).ready(function(){
 					var $form;
 					if( msg == "1" ){
 						$link = $this.find(".b-thanks-link");
+						alert();
 					}else{
 						$link = $(".b-error-link");
 					}

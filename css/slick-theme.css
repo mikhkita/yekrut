@@ -77,6 +77,8 @@
     z-index: 10;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
     top: 250px;
+    right: 50%;
+    margin-right: 518px;
     
 }
 
@@ -86,13 +88,15 @@
     height: 70px;
     background: #ffffff;
     border-radius: 70px;
-    right: 0px;
+    left: 50%;
+    margin-left: 518px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
     top: 250px;
     -webkit-transition: box-shadow 0.2s box-shadow 0.2s;
     -moz-transition: box-shadow 0.2s box-shadow 0.2s;
     -o-transition: box-shadow 0.2s box-shadow 0.2s;
     transition: box-shadow 0.2s box-shadow 0.2s;
+    
 }
 .slick-prev:after,
 .slick-next:after{
