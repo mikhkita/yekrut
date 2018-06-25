@@ -1194,7 +1194,7 @@
 	letter-spacing: 0.5px;
 	text-align: center;
 	line-height: 26px;
-	
+
 }
 .submit:hover{
 	font-family: Gilroy-Heavy;
@@ -1203,6 +1203,9 @@
 	text-align: center;
 }*/
 
+.slick-slider{
+	z-index: 30;
+}
 
 #typed-show{
 	font-family: Gilroy-Regular;
