@@ -425,16 +425,18 @@ body.fancybox-iosfix {
       -o-transition: transform 0.15s;
          transition: transform 0.15s; }*/
 .icon-cross:before{
-  color: #ffffff;
-  font-size: 28px;
-  width:30px;
-  height:30px;
-  display:inline-block;
+     color: #ffffff;
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+     pointer-events: none;
+
+
 
 }       
 .icon-cross:hover:before{
-
   color: #EC8100;
+  pointer-events: auto;
 }
 
 /*.fancybox-close-small:focus {
