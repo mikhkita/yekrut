@@ -237,10 +237,10 @@
 				box-shadow: 0 10px 20px 0 rgba(255,152,0,0.50);
 				border-radius: 100px;
 				position: relative;
-				-webkit-transition: box-shadow 0.2s color 0.2s box-shadow 0.2s;
-			    -moz-transition: box-shadow 0.2s color 0.2s box-shadow 0.2s;
-			    -o-transition: box-shadow 0.2s color 0.2s box-shadow 0.2s;
-		    	transition: box-shadow 0.2s color 0.2s box-shadow 0.2s;
+				-webkit-transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
+			    -moz-transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
+			    -o-transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
+		    	transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
 				}
 				.orange:after{
 					content: ' ';
@@ -252,10 +252,10 @@
     				top: 0px;
     				right: 0px;
     				border-radius: 100px;
-    				-webkit-transition: opacity 0.2s box-shadow 0.2s;
-			    	-moz-transition: opacity 0.2s box-shadow 0.2s;
-			    	-o-transition: opacity 0.2s box-shadow 0.2s;
-		    		transition: opacity 0.2s box-shadow 0.2s;
+    				-webkit-transition: opacity 0.2s, box-shadow 0.2s;
+			    	-moz-transition: opacity 0.2s, box-shadow 0.2s;
+			    	-o-transition: opacity 0.2s, box-shadow 0.2s;
+		    		transition: opacity 0.2s, box-shadow 0.2s;
 				}
 				.orange:hover{
 					box-shadow: 0 10px 25px 0 rgba(255, 118, 0, 0.5);
@@ -269,16 +269,20 @@
 				    	-ms-transform: translateY(5px);
 				    	 -o-transform: translateY(5px); 
 				    		transform: translateY(5px);
-				   -webkit-transition: transform 0.15s;
+					box-shadow: 0 8px 10px 0 rgba(255, 118, 0, 0.5);    
+				  /* -webkit-transition: transform 0.15s;
 				      -moz-transition: transform 0.15s;
 				        -o-transition: transform 0.15s;
-			    	       transition: transform 0.15s;
+			    	       transition: transform 0.15s;*/
 
 
 				}
 				.b-button p{
 					z-index: 10;
 					position: relative;
+				}
+				.b-button p b{
+					font-family: Gilroy-Bold;
 				}
 				.consult{
 					width: 383px;
@@ -500,7 +504,7 @@
 			background: #FFFFFF;
 			box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10);
 			border-radius: 4px;
-			font-family: OpenSans;
+			font-family: OpenSans-Regular;
 			font-size: 16px;
 			color: #999292;
 			line-height: 24px;
@@ -637,6 +641,10 @@
 				    z-index: 10;
 				    top: 177px;
 				}
+				.b-4 .slick-next:active, 
+				.b-4 .slick-prev:active {
+				     box-shadow: 0 7px 12px 0 rgba(255, 118, 0, 0.3);
+				}
 				.b-4 .slick-dots{
 					top: -12px;
 					z-index: 10;
@@ -646,6 +654,8 @@
 					position: relative;
     				z-index: 10;
 				}
+
+
 .b-5{
 	padding-top: 80px;
 	background-image: url(../i/rounds.svg);
@@ -711,31 +721,31 @@
 					padding-top: 86px;
    					padding-left: 43px;
 				}
-				.line-1:before{
+				.line-1{
 				    position: absolute;
-				    width: 164px;
+				    width: 0px;
 				    height: 97px;
 				    background-image: url(../i/line-1.svg);
 				    background-repeat: no-repeat;
-				    background-size: contain;
+				   /* background-size: contain;*/
 				    content: ' ';
 				    font-size: 0px;
 				    line-height: 0px;
-				    top: 216px;
-				    left: -172px;
+			        top: 215px;
+    				left: -166px;
 				}
-				.line-2:after{
+				.line-2{
 				    position: absolute;
-				    width: 258px;
+				    width: 0px;
 				    height: 169px;
 				    background-image: url(../i/line-2.svg);
 				    background-repeat: no-repeat;
-				    background-size: contain;
+				   /* background-size: auto;*/
 				    content: ' ';
 				    font-size: 0px;
 				    line-height: 0px;
-				    bottom: 32px;
-    				right: -27px;
+			        bottom: 33px;
+    				left: 363px;
 				}
 				.line-1 .b-button{
 					position: relative;
@@ -780,9 +790,9 @@
 				    top: -59px;
 				    padding-left: 51px;
 				}
-				.line-2 .b-expert-quote{
-					padding-top: 48px;
-    				padding-left: 48px;
+				.right + .b-expert-quote-wrap{
+				    padding-top: 86px;
+    				padding-left: 38px;
 				}
 .b-6{
 		padding-bottom: 54px;
@@ -818,6 +828,9 @@
 			text-align: left;
 			padding-top: 43px;
 			display: none;
+		}
+		.b-header-h2-b-6{
+			opacity: 0;
 		}
 		.b-header-h2-b-6-2{
 			text-align: left;
@@ -884,9 +897,18 @@
 			background-color: #ffffff;
 			background-image: none;
 			color: #EC8100;
+			box-shadow: 0 8px 20px 0 rgba(255,255,255,0.40);
 		}
 		.meeting:hover{
-			color: #ffffff;
+			color: #EC8100;
+			background-color: #FFF3A8;
+			box-shadow: 0 15px 25px 0 rgba(255,255,255,0.40) !important;
+		}
+		.meeting:active{
+			box-shadow: 0 8px 15px 0 rgba(255,255,255,0.40) !important;
+		}
+		.meeting:after{
+			display: none;
 		}
 		.b-office{
 			margin-top: 12px;
@@ -1042,7 +1064,8 @@
 			}
 
 #b-popup-1,
-#b-popup-2{
+#b-popup-2,
+#b-popup-6{
 	background-image: url(../i/bg-popup.jpg);
 	position: relative;
 	background-repeat: no-repeat;
@@ -1050,6 +1073,10 @@
 	padding: 90px 36px 80px 50px; 
 	width: 960px;
 	border-radius: 10px;
+	overflow: hidden;
+}
+#b-popup-6{
+	height: 760px;
 }
 .b-popup{
 		box-shadow: 0 15px 30px 0 rgba(0,0,0,0.30);
@@ -1092,6 +1119,17 @@
 			margin: 0 auto;
 			width: 100%;
 		}
+.transfer{
+	background-image: url(../i/transfer.png);
+	height: 226px;
+	width: 189px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.transfer-but{
+	width: 100% !important;
+}
 #b-popup-3,
 #b-popup-4{
 
@@ -1185,9 +1223,6 @@
 .lol{
 	color: #000000;
 }
-.b-thanks{
-	border-radius: 10px;
-}
 /*.submit{
 	font-family: Gilroy-Heavy;
 	font-size: 19px;
@@ -1206,6 +1241,18 @@
 .slick-slider{
 	z-index: 30;
 }
+
+.b-thanks{
+	border-radius: 10px;
+}
+	.b-thanks .b-button{
+		font-family: Gilroy-Heavy;
+		text-transform: uppercase;
+		font-size: 19px;
+		letter-spacing: 0.5px; 
+		text-align: center;
+		line-height: 26px;
+		}
 
 #typed-show{
 	font-family: Gilroy-Regular;
@@ -1361,3 +1408,9 @@ body{min-width: 1216px};
 @media screen and (max-width: 1020px){
 
 }
+input[type="submit" i] {
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    border-style: none;
+    padding: 19px 55px 19px 55px;
+	box-shadow: 0 10px 20px 0 rgba(255,152,0,0.50);
+	border-radius: 100px;

@@ -203,7 +203,7 @@
                         '</svg>' +
                     '</button>',
 
-            close : '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}">' +
+            close : '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{Закрыть}}">' +
                         '<svg viewBox="0 0 40 40">' +
                             '<path d="M10,10 L30,30 M30,10 L10,30" />' +
                         '</svg>' +
@@ -211,7 +211,7 @@
 
             // This small close button will be appended to your html/inline/ajax content by default,
             // if "smallBtn" option is not set to false
-            smallBtn   : '<button data-fancybox-close class="fancybox-close-small" title="{{CLOSE}}"></button>',
+            smallBtn   : '<button data-fancybox-close class="fancybox-close-small" title="{{Закрыть}}"></button>',
 
             // Arrows
             arrowLeft : '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +

@@ -79,6 +79,11 @@
     top: 250px;
     right: 50%;
     margin-right: 518px;
+    -webkit-transition: box-shadow 0.15s, transform 0.15s;
+    -moz-transition: box-shadow 0.15s, transform 0.15s;
+    -o-transition: box-shadow 0.15s, transform 0.15s;
+    transition: box-shadow 0.15s, transform 0.15s;
+    
     
 }
 
@@ -92,10 +97,10 @@
     margin-left: 518px;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.10);
     top: 250px;
-    -webkit-transition: box-shadow 0.2s box-shadow 0.2s;
-    -moz-transition: box-shadow 0.2s box-shadow 0.2s;
-    -o-transition: box-shadow 0.2s box-shadow 0.2s;
-    transition: box-shadow 0.2s box-shadow 0.2s;
+    -webkit-transition: box-shadow 0.15s, transform 0.15s;
+    -moz-transition: box-shadow 0.15s, transform 0.15s;
+    -o-transition: box-shadow 0.15s, transform 0.15s;
+    transition: box-shadow 0.15s, transform 0.15s;
     
 }
 .slick-prev:after,
@@ -110,10 +115,10 @@
     top:0px;
     left: 0px;
     position: absolute;
-    -webkit-transition: opacity 0.2s;
-    -moz-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s, box-shadow 0.15s, transform 0.15s;
+    -moz-transition: opacity 0.2s, box-shadow 0.15s, transform 0.15s;
+    -o-transition: opacity 0.2s, box-shadow 0.15s, transform 0.15s;
+    transition: opacity 0.2s,  box-shadow 0.15s, transform 0.15s;
 }
 .slick-prev:hover:after,
 .slick-next:hover:after{
@@ -136,7 +141,6 @@
         -ms-transform: translateY(-42%);
          -o-transform: translateY(-42%); 
             transform: translateY(-42%);
-    box-shadow: 0 8px 10px 0 rgba(255, 118, 0, 0.5);
 }
 .slick-prev:active, 
 .slick-prev:active:before
@@ -146,7 +150,10 @@
         -ms-transform: translateY(-42%);
          -o-transform: translateY(-42%); 
             transform: translateY(-42%);
-    box-shadow: 0 8px 10px 0 rgba(255, 118, 0, 0.5);
+}
+.slick-next:active, 
+.slick-prev:active {
+     box-shadow: 0 8px 10px 0 rgba(255, 118, 0, 0.5);
 }
 /* Dots */
 .slick-dotted.slick-slider

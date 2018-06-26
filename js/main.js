@@ -104,19 +104,7 @@ $(document).ready(function(){
 //             showCursor: false
 //         });
     
-
-        jQuery.preloadImages = function()
-     {
-      for(var i = 0; i < arguments.length; i++)
-      {
-       jQuery("<img>").attr("src", arguments[ i ]);
-      }
-     };
-
-     $.preloadImages("/i/bg-popup.jpg");
-
-
-     var elem =  document.getElementsByClassName('b-header-h2-b-6')[0];
+    var elem =  document.getElementsByClassName('b-header-h2-b-6')[0];
     var str = elem.innerText;
     var symbols = str.split("");
     var body = document.getElementsByClassName('b-header-h2-b-6-2')[0];
@@ -131,6 +119,7 @@ $(document).ready(function(){
           span.innerHTML = item;
           span.className = 'lol anim fadeIn';
           span.setAttribute('data-cont', '.b-6');
+          span.setAttribute('data-offset', '-70px');
           span.style.transitionDelay = delay+'ms';
           if (i < 21) {
             span.style.fontFamily = 'Gilroy-Bold'
@@ -151,6 +140,7 @@ $(document).ready(function(){
           span.innerHTML = item;
           span.className = 'lol anim fadeIn';
           span.setAttribute('data-cont', '.b-6');
+          span.setAttribute('data-offset', '-70px');
           span.style.transitionDelay = delay+'ms';
           if (i > 4 && i < 14) {
             span.style.fontFamily = 'Gilroy-Bold'
@@ -160,9 +150,17 @@ $(document).ready(function(){
           delay += 20;
     });
 
-     var isWindows = false,
+    var isWindows = false,
         timerLeave = 0,
         showLeave = true;
+        inputFocus= false;
+
+    $( "input" ).focus(function() {
+        inputFocus = true;
+        showLeave = false;
+      });
+
+
 
     if (navigator.userAgent.indexOf ('Windows') != -1) isWindows = true;
 
@@ -175,12 +173,14 @@ $(document).ready(function(){
     }, 1000);
 
     $(document).mouseleave(function(){
-        if(!$(".fancybox-slide .b-popup-1").length && showLeave){
-            $(".b-btn-leave").click();
+        if(!$(".fancybox-slide .b-popup").length && showLeave){
+            $(".pop6").click();
             showLeave = false;
             timerLeave = 0;
         }
     });
+
+
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
  //    var myOptions = {
  //        zoom: 16,

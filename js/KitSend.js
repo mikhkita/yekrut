@@ -76,7 +76,7 @@ $(document).ready(function(){
 			$this = $(this);
 		$this.fancybox({
 	      	btnTpl : {
-		      smallBtn   : '<button data-fancybox-close class="fancybox-close-small icon-cross" title="{{CLOSE}}"></button>'
+		      smallBtn   : '<button data-fancybox-close class="fancybox-close-small icon-cross" title="Закрыть"></button>'
 		    },
 		    autofocus: true,
 			beforeShow: function(){
