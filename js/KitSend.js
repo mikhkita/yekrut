@@ -143,7 +143,7 @@ $(document).ready(function(){
 
 	$(".goal-click").click(function(){
 		if( $(this).attr("data-goal") )
-			yaCounter12345678.reachGoal($(this).attr("data-goal"));
+			yaCounter49375867.reachGoal($(this).attr("data-goal"));
 	});
 
 	$(".ajax").parents("form").submit(function(){
@@ -158,7 +158,7 @@ $(document).ready(function(){
 			}
 
 			if( $this.attr("data-goal") ){
-				yaCounter12345678.reachGoal($this.attr("data-goal"));
+				yaCounter49375867.reachGoal($this.attr("data-goal"));
 			}
 
   			$.ajax({

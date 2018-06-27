@@ -119,7 +119,6 @@ $(document).ready(function(){
           span.innerHTML = item;
           span.className = 'lol anim fadeIn';
           span.setAttribute('data-cont', '.b-6');
-          span.setAttribute('data-offset', '-70px');
           span.style.transitionDelay = delay+'ms';
           if (i < 21) {
             span.style.fontFamily = 'Gilroy-Bold'
@@ -140,7 +139,6 @@ $(document).ready(function(){
           span.innerHTML = item;
           span.className = 'lol anim fadeIn';
           span.setAttribute('data-cont', '.b-6');
-          span.setAttribute('data-offset', '-70px');
           span.style.transitionDelay = delay+'ms';
           if (i > 4 && i < 14) {
             span.style.fontFamily = 'Gilroy-Bold'
