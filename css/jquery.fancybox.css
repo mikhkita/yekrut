@@ -386,7 +386,6 @@ body.fancybox-iosfix {
       -ms-transform: rotate(90deg);
        -o-transform: rotate(90deg); 
           transform: rotate(90deg);
-  pointer-events: auto;
    -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
