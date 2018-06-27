@@ -242,6 +242,22 @@
 			    -o-transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
 		    	transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
 				}
+				.orange:before{
+					width: 100%;
+					height: 10px;
+					position: absolute;
+					content: ' ';
+					font-size: 0px;
+					line-height: 0px;
+					top: 0px;
+					left: 0px;
+				}
+				.orange:active:before{
+					width: 100%;
+					height: 10px;
+					position: absolute;
+					top: -10px;
+				}
 				.orange:after{
 					content: ' ';
 					width: 100%;
@@ -346,7 +362,17 @@
 		width: 100%;
 		display: flex !important;
 	}
-		.b-picture{
+		.b-picture-1{
+			background-image: url(../i/delight.jpg);
+		    width: 522px;
+		    height: 527px;
+		    background-size: contain;
+		    background-position: 50% 50%;
+		    float: left;
+		    display: inline-block;
+		    background-repeat: no-repeat;
+		}
+		.b-picture-2{
 			background-image: url(../i/photos.jpg);
 		    width: 522px;
 		    height: 527px;
@@ -356,7 +382,43 @@
 		    display: inline-block;
 		    background-repeat: no-repeat;
 		}
-		.b-reason-text{
+		.b-picture-3{
+		    background-image: url(../i/turtle.jpg);
+		    width: 684px;
+		    height: 390px;
+		    background-size: contain;
+		    background-position: 50% 50%;
+		    display: inline-block;
+		    background-repeat: no-repeat;
+		    position: absolute;
+		    left: -122px;
+		    top: 53px;
+		}
+		.b-picture-4{
+		    background-image: url(../i/inclusive.jpg);
+		    width: 689px;
+		    height: 481px;
+		    background-size: contain;
+		    background-position: 50% 50%;
+		    display: inline-block;
+		    background-repeat: no-repeat;
+		    position: absolute;
+		    left: -120px;
+		}
+		.b-picture-5{
+			background-image: url(../i/low-price.jpg);
+		    width: 696px;
+		    height: 436px;
+		    background-size: contain;
+		    background-position: 50% 50%;
+		    float: left;
+		    display: inline-block;
+		    background-repeat: no-repeat;
+		    position: absolute;
+		    left: -115px;
+		    top: 25px;
+		}
+		.b-reason-text-1{
 			float: left;
 			display: inline-block;
 			text-align: left;
@@ -366,6 +428,52 @@
 			padding-right: 111px;
 			position: relative;
    		    top: 25%;
+		}
+		.b-reason-text-2{
+			float: left;
+			display: inline-block;
+			text-align: left;
+			width: 50%;
+			margin: auto;
+			padding-left: 48px;
+			padding-right: 111px;
+			position: relative;
+   		    top: 25%;
+		}
+		.b-reason-text-3{
+		    float: right;
+		    display: inline-block;
+		    text-align: left;
+		    width: 47%;
+		    margin: auto;
+		    padding-left: 48px;
+		    padding-right: 111px;
+		    position: relative;
+		    top: 35%;
+		    left: -60px;
+		}
+		.b-reason-text-4{
+		    float: right;
+		    display: inline-block;
+		    text-align: left;
+		    width: 44%;
+		    margin: auto;
+		    /* padding-left: 48px; */
+		    padding-right: 111px;
+		    position: relative;
+		    top: 42%;
+		    left: -55px;
+		}
+		.b-reason-text-5{
+			float: left;
+		    display: inline-block;
+		    text-align: left;
+		    width: 44%;
+		    margin: auto;
+		    padding-right: 111px;
+		    position: relative;
+		    top: 40%;
+		    left: 52%;
 		}
 			.b-header-h3{
 				font-family: Gilroy-Regular;
@@ -378,7 +486,7 @@
 					font-family: Gilroy-Bold;
 				}
 			.b-text{
-				font-family: OpenSans;
+				font-family: OpenSans-Regular;
 				font-size: 18px;
 				color: #585858;
 				line-height: 32px;
@@ -389,6 +497,7 @@
 				.b-text em{
 					font-style: normal;
 					color: #282828;
+					font-family: OpenSans-Bold;
 				}
 		.more{
 			margin-top: -11px;
@@ -567,12 +676,38 @@
 				.b-r-wrap{
 					display: inline-block;
 				}
-					.b-r-photo{
+					.b-r-photo-1{
+						width: 91px;
+						height: 91px;
+						border-radius: 90px;
+						border: 1px solid #ffffff;
+						background-image: url(../i/alena.jpg);
+						background-repeat: no-repeat;
+						background-position: 50% 50%;
+						background-size: cover;
+						overflow: hidden;
+						display: inline-block;
+						float: left;
+					}
+					.b-r-photo-2{
 						width: 91px;
 						height: 91px;
 						border-radius: 90px;
 						border: 1px solid #ffffff;
 						background-image: url(../i/marta@2x.jpg);
+						background-repeat: no-repeat;
+						background-position: 50% 50%;
+						background-size: cover;
+						overflow: hidden;
+						display: inline-block;
+						float: left;
+					}
+					.b-r-photo-3{
+						width: 91px;
+						height: 91px;
+						border-radius: 90px;
+						border: 1px solid #ffffff;
+						background-image: url(../i/arina.jpg);
 						background-repeat: no-repeat;
 						background-position: 50% 50%;
 						background-size: cover;
@@ -685,7 +820,7 @@
 					overflow: hidden;
 					border-radius: 0 0 500px 500px;
 					width: 458px;
-					height: 800px;
+					height: 720px;
 					position: absolute;
 					bottom: 0;
 				}
@@ -697,18 +832,18 @@
 					    background-position: 100% 50%;
 					    background-color: rgba(0,0,0,0);
 					    margin: 0 auto;
-					    top: 140px;
+					    top: 60px;
 					    left: 50px;
 					}
 					.b-expert-pic-2{
-						width: 387px;
+					    width: 387px;
 					    height: 820px;
 					    background-image: url(../i/kate@2x.png);
 					    background-size: cover;
 					    background-position: 100% 50%;
 					    background-color: rgba(0,0,0,0);
 					    margin: 0 auto;
-					    top: 140px;
+					    top: 60px;
 					    left: 50px;
 					}
 			.b-expert-quote-wrap{
@@ -897,15 +1032,15 @@
 			background-color: #ffffff;
 			background-image: none;
 			color: #EC8100;
-			box-shadow: 0 8px 20px 0 rgba(255,255,255,0.40);
+			
 		}
 		.meeting:hover{
 			color: #EC8100;
 			background-color: #FFF3A8;
-			box-shadow: 0 15px 25px 0 rgba(255,255,255,0.40) !important;
+			
 		}
 		.meeting:active{
-			box-shadow: 0 8px 15px 0 rgba(255,255,255,0.40) !important;
+			
 		}
 		.meeting:after{
 			display: none;
@@ -1252,7 +1387,16 @@
 		letter-spacing: 0.5px; 
 		text-align: center;
 		line-height: 26px;
+		cursor: pointer;
 		}
+	.b-thanks .b-form-header{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.b-thanks .b-right{
+		padding-bottom: 50px;
+		padding-top: 30px;
+	}
 
 #typed-show{
 	font-family: Gilroy-Regular;
@@ -1394,6 +1538,24 @@ input:-moz-placeholder {
 }
 strong, b{
 	font-weight: normal!important;
+}
+.fancybox-close-small{
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: 0px solid #fff;
+    border-radius: 40px;
+    background: transparent;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-transition: transform 0.15s;
+    -moz-transition: transform 0.15s;
+    -o-transition: transform 0.15s;
+    transition: transform 0.15s;
 }
 .fancybox-close-small:after{
 	display: none;

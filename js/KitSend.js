@@ -169,7 +169,6 @@ $(document).ready(function(){
 					var $form;
 					if( msg == "1" ){
 						$link = $this.find(".b-thanks-link");
-						alert();
 					}else{
 						$link = $(".b-error-link");
 					}
