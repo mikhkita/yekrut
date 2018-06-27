@@ -237,6 +237,7 @@
 				box-shadow: 0 10px 20px 0 rgba(255,152,0,0.50);
 				border-radius: 100px;
 				position: relative;
+				cursor: pointer;
 				-webkit-transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
 			    -moz-transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
 			    -o-transition: box-shadow 0.2s, color 0.2s, transform 0.15s, background-color 0.2s;
@@ -931,6 +932,7 @@
 				}
 .b-6{
 		padding-bottom: 54px;
+		overflow: hidden;
 }
 	.b-car{
 		background-image: url(../i/car.jpg);
