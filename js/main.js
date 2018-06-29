@@ -178,9 +178,9 @@ $(document).ready(function(){
         }
     });
 
-    $("body").children().each(function() {
-        $(this).html($(this).html().replace(/&#8232;/g," "));
-    });
+    // $("body").children().each(function() {
+    //     $(this).html($(this).html().replace(/&#8232;/g," "));
+    // });
 
 
 	// var myPlace = new google.maps.LatLng(55.754407, 37.625151);
