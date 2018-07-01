@@ -91,6 +91,7 @@ if( count($_POST) ){
 	}
 }
 
+die();
 
 
 $params = array( 
