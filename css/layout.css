@@ -836,10 +836,10 @@
 					.b-expert-pic{
 						width: 359px;
 					    height: 761px;
-					    background-image: url(../i/julia-2@2x.png);
+					    /*background-image: url(../i/julia-2@2x.png);
 					    background-size: cover;
 					    background-position: 100% 50%;
-					    background-color: rgba(0,0,0,0);
+					    background-color: rgba(0,0,0,0);*/
 					    margin: 0 auto;
 					    top: 60px;
 					    left: 50px;
@@ -847,10 +847,10 @@
 					.b-expert-pic-2{
 					    width: 387px;
 					    height: 820px;
-					    background-image: url(../i/kate@2x.png);
+					    /*background-image: url(../i/kate@2x.png);
 					    background-size: cover;
 					    background-position: 100% 50%;
-					    background-color: rgba(0,0,0,0);
+					    background-color: rgba(0,0,0,0);*/
 					    margin: 0 auto;
 					    top: 60px;
 					    left: 50px;
