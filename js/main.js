@@ -192,7 +192,18 @@ $(document).ready(function(){
         return false;
     }
 
-    
+    if(isRetina){
+        $("*[data-retina]").each(function(){
+            var $this = $(this),
+                img = new Image(),
+                src = $this.attr("data-retina");
+
+            img.onload = function(){
+                $this.attr("src", $this.attr("data-retina"));
+            };
+            img.src = src;
+        });
+    }
 
     // $("body").children().each(function() {
     //     $(this).html($(this).html().replace(/&#8232;/g," "));
