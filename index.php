@@ -82,8 +82,6 @@ getSource();
 </head>
 <body>
 	<img src="i/bg-popup.jpg" style="display:none">
-	<img src="i/julia-2@2x.png" style="display:none">
-	<img src="i/kate@2x.png" style="display:none">
 	<img src="i/transfer.png" style="display:none">
 	<div class="b b-1">
 		<div class="b-block">
