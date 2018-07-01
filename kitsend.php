@@ -7,8 +7,8 @@ $email_admin = "mike@kitaev.pro";
 $from = "Лэндинг “Турция”";
 $email_from = "turkey@kru-god.ru";
 
-$chatid = "245407908";
-// $chatid = "-203450551";
+// $chatid = "245407908";
+$chatid = "-203450551";
 
 function sendMessage($messaggio) {
 	global $chatid;
