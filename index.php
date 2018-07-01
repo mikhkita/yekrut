@@ -276,6 +276,7 @@
 						<p class="small">Это просто и ни к чему не обязывает</p>
 
 					</div>
+					<input type="submit" style="display: none;">
 					<input type="hidden" name="subject" value="Форма с личным авто">
 					<input required checked id="agree" class="agree" type="checkbox" name="agreement">
 					<label for="agree"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
@@ -323,6 +324,7 @@
 						<p class="small">Это просто и ни к чему не обязывает</p>
 					</div>
 					<input type="hidden" name="subject" value="Запись на консультацию">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-1" class="agree" type="checkbox" name="agreement">
 					<label for="agree-1"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -351,6 +353,7 @@
 						<p class="small">Это просто и ни к чему не обязывает</p>
 					</div>
 					<input type="hidden" name="subject" value="Запрос на подбор тура">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-2" class="agree" type="checkbox" name="agreement">
 					<label for="agree-2"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -374,6 +377,7 @@
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 					</div>
 					<input type="hidden" name="subject" value="Вопрос Юлии">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-3" class="agree" type="checkbox" name="agreement">
 					<label for="agree-3"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 					<div class="pop-cont-1">
@@ -403,6 +407,7 @@
 						<div class="b-kate-pop"></div>
 					</div>
 					<input type="hidden" name="subject" value="Вопрос Екатерине">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-4" class="agree" type="checkbox" name="agreement">
 					<label for="agree-4"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -425,6 +430,7 @@
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 					</div>
 					<input type="hidden" name="subject" value="Заявка на обратный звонок">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-5" class="agree" type="checkbox" name="agreement">
 					<label for="agree-5"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -455,6 +461,7 @@
 						<p class="small">Это просто и ни к чему не обязывает</p>
 					</div>
 					<input type="hidden" name="subject" value="Форма с трансфером в аэропорт">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-6" class="agree" type="checkbox" name="agreement">
 					<label for="agree-6"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
