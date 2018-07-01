@@ -72,7 +72,7 @@ $(document).ready(function(){
 	whenScroll();
 
 	$(".fancy").each(function(){
-		var $popup = $($(this).attr("data-block")),
+		var $popup = $($(this).attr("href")),
 			$this = $(this);
 		$this.fancybox({
 	      	btnTpl : {
@@ -142,7 +142,7 @@ $(document).ready(function(){
 	});
 
 	$(".goal-click").click(function(){
-		if( $(this).attr("data-goal") )
+		if( $(this).attr("data-goal") && typeof yaCounter49375867 != "undefined" )
 			yaCounter49375867.reachGoal($(this).attr("data-goal"));
 	});
 
@@ -157,7 +157,7 @@ $(document).ready(function(){
 				customHandlers[$this.attr("data-beforeAjax")]($this);
 			}
 
-			if( $this.attr("data-goal") ){
+			if( $this.attr("data-goal") && typeof yaCounter49375867 != "undefined" ){
 				yaCounter49375867.reachGoal($this.attr("data-goal"));
 			}
 
