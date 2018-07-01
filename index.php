@@ -1,7 +1,50 @@
-<!DOCTYPE html>
+<?
+	session_start();
+	
+	function getSource(){
+	   if( isset($_SESSION["source"]) ) return true;
+
+	   if( isset($_SERVER["HTTP_REFERER"]) && $_SERVER["HTTP_REFERER"] != "" ){
+	      $refer = $_SERVER["HTTP_REFERER"];
+	   }
+	   $source = "Неизвестен";
+	   $keyWord = NULL;
+
+	   if( isset($_GET["utm_source"]) ){
+	      $sources = array(
+	         "yandex.search" => "Яндекс.Директ (поиск)",
+	         "yandex.context" => "Яндекс.Директ (РСЯ)",
+	         "yadirect" => "Яндекс.Директ (поиск)",
+	      );
+	      if( isset($sources[ $_GET["utm_source"] ]) ){
+	         $source = $sources[ $_GET["utm_source"] ];
+	      }else{
+	         $source = $_GET["utm_source"];
+	      }
+
+	      $keyWord = $_GET["utm_term"];
+	      // $keyWord = $_GET["utm_content"];
+	   }elseif( strpos($refer, "vk.com") !== false ){
+	      $source = "Вконтакте";
+	   }elseif( strpos($refer, "link.2gis.ru") !== false ){
+	      $source = "2Gis";
+	   }elseif( strpos($refer, "instagram.com") !== false ){
+	      $source = "Инстаграм";
+	   }elseif( strpos($refer, "yandex.ru") !== false ){
+	      $source = "Яндекс (органика)";
+	   }elseif( strpos($refer, "google.ru") !== false ){
+	      $source = "Google (органика)";
+	   }
+
+	   $_SESSION["source"] = $source;
+	   $_SESSION["keyWord"] = $keyWord;
+}
+
+getSource();
+?><!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Незабываемое путешествие в Турцию по системе «все включено»</title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
@@ -21,35 +64,6 @@
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-	    (function (d, w, c) {
-	        (w[c] = w[c] || []).push(function() {
-	            try {
-	                w.yaCounter49375867 = new Ya.Metrika2({
-	                    id:49375867,
-	                    clickmap:true,
-	                    trackLinks:true,
-	                    accurateTrackBounce:true,
-	                    webvisor:true
-	                });
-	            } catch(e) { }
-	        });
-
-	        var n = d.getElementsByTagName("script")[0],
-	            s = d.createElement("script"),
-	            f = function () { n.parentNode.insertBefore(s, n); };
-	        s.type = "text/javascript";
-	        s.async = true;
-	        s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-	        if (w.opera == "[object Opera]") {
-	            d.addEventListener("DOMContentLoaded", f, false);
-	        } else { f(); }
-	    })(document, window, "yandex_metrika_callbacks2");
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/49375867" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
 </head>
 <body>
 	<img src="i/bg-popup.jpg" style="display:none">
@@ -305,6 +319,8 @@
 						<p class="small">Это просто и ни к чему не обязывает</p>
 
 					</div>
+					<input type="submit" style="display: none;">
+					<input type="hidden" name="subject" value="Форма с личным авто">
 					<input required checked id="agree" class="agree" type="checkbox" name="agreement">
 					<label for="agree"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</form>	
@@ -350,6 +366,8 @@
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 						<p class="small">Это просто и ни к чему не обязывает</p>
 					</div>
+					<input type="hidden" name="subject" value="Запись на консультацию">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-1" class="agree" type="checkbox" name="agreement">
 					<label for="agree-1"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -377,6 +395,8 @@
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 						<p class="small">Это просто и ни к чему не обязывает</p>
 					</div>
+					<input type="hidden" name="subject" value="Запрос на подбор тура">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-2" class="agree" type="checkbox" name="agreement">
 					<label for="agree-2"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -389,7 +409,7 @@
 				<div class="b-right">
 					<p class="b-form-header">Напишите Юлии – старшему менеджеру турагентства</p>
 					<p class="b-form-subtitle">Юлия ответит вам в течение рабочего дня: <b>с&nbsp10:00 до 18:00</b></p>
-					<textarea class="b-form-input" type="textarea" id="name" name="name" placeholder="Ваш вопрос"></textarea>
+					<textarea class="b-form-input" type="textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	
@@ -399,6 +419,8 @@
 						</a>
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 					</div>
+					<input type="hidden" name="subject" value="Вопрос Юлии">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-3" class="agree" type="checkbox" name="agreement">
 					<label for="agree-3"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 					<div class="pop-cont-1">
@@ -414,7 +436,7 @@
 				<div class="b-right">
 					<p class="b-form-header">Напишите Екатерине – менеджеру турагентства</p>
 					<p class="b-form-subtitle">Юлия ответит вам в течение рабочего дня: <b>с&nbsp10:00 до 18:00</b></p>
-					<textarea class="b-form-input" type="textarea" id="name" name="name" placeholder="Ваш вопрос"></textarea>
+					<textarea class="b-form-input" type="textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	
@@ -427,6 +449,8 @@
 					<div class="pop-cont-2">
 						<div class="b-kate-pop"></div>
 					</div>
+					<input type="hidden" name="subject" value="Вопрос Екатерине">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-4" class="agree" type="checkbox" name="agreement">
 					<label for="agree-4"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -448,6 +472,8 @@
 						</a>
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 					</div>
+					<input type="hidden" name="subject" value="Заявка на обратный звонок">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-5" class="agree" type="checkbox" name="agreement">
 					<label for="agree-5"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -477,6 +503,8 @@
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 						<p class="small">Это просто и ни к чему не обязывает</p>
 					</div>
+					<input type="hidden" name="subject" value="Форма с трансфером в аэропорт">
+					<input type="submit" style="display: none;">
 					<input required checked id="agree-6" class="agree" type="checkbox" name="agreement">
 					<label for="agree-6"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
 				</div>
@@ -493,7 +521,7 @@
 		<div class="b-thanks b-popup" id="b-popup-error">
 			<div class="b-right">
 				<p class="b-form-header">Ошибка!</p>
-				<p class="b-form-subtitle">При отправке заявки произошла ошибка. Вы можете позвонить нам по номеру: <b>+7 (3822) 909-303</b></p>
+				<p class="b-form-subtitle">При отправке заявки произошла ошибка. Вы можете позвонить нам по номеру: <b>+7 (3822) 909-303</b></p>
 				<input type="submit" class="b-button orange find submit meeting ajax" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
 			</div>
 		</div>
@@ -513,5 +541,37 @@
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/jquery.enllax.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<? if($_SERVER["HTTP_HOST"] == "turkey.kru-god.ru" ): ?>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter49375867 = new Ya.Metrika2({
+	                    id:49375867,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<? endif; ?>
+	<noscript><div><img src="https://mc.yandex.ru/watch/49375867" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 </body>
 </html>
