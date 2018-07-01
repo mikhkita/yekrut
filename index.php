@@ -288,7 +288,7 @@ getSource();
 					<div class="b-expert right">
 						<div class="b-circle">
 							<div class="b-expert-cont">
-								<img src="i/kate.png" id="expert" class="b-expert-pic-2" data-enllax-ratio="0.07" data-enllax-type="foreground" data-enllax-direction="vertical" data-retina="i/kate@2x.png"></div>
+								<img src="i/kate.png" id="expert" class="b-expert-pic-2" data-enllax-ratio="0.07" data-enllax-type="foreground" data-enllax-direction="vertical" data-retina="i/kate@2x.png">
 							</div>
 						</div>
 					</div>
