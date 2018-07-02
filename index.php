@@ -48,7 +48,7 @@ getSource();
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
-	<meta name="viewport" content="width=1216">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -75,8 +75,7 @@ getSource();
 	<link rel="icon" type="image/png" href="i/favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="i/favicon/favicon-128.png" sizes="128x128" />
 
-	<!-- <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
@@ -100,7 +99,7 @@ getSource();
 			<div class="b-bottom">	
 				<div class="b-h1-wrap">
 					<h1>Незабываемое<br><b>путешествие в Турцию</b><br>по системе «все включено»</h1>
-					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию<br></b> прямо сейчас. Ведь все что вам нужно – это 20 минут<br>свободного времени и желание отлично отдохнуть!</p>
+					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо сейчас. Ведь все что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
 					<div class="consult">
 						<a href="#b-popup-1" class="b-button orange left fancy">
 							<p class="button-bold">Получить консультацию</p>
@@ -114,8 +113,7 @@ getSource();
 	</div>
 	<div class="b b-2">
 		<div class="b-block">
-			<h2 class="b-header-h2"><b>5 причин,</b> почему вам стоит хотя бы<br> раз посетить Турцию</h2>
-			
+			<h2 class="b-header-h2"><b>5 причин,</b> почему вам стоит хотя бы раз посетить Турцию</h2>	
 		</div>
 		<div class="b-reasons clearfix">
 				<div class="b-reason">
@@ -133,7 +131,7 @@ getSource();
 						<div class="b-picture-4">
 						</div>
 						<div class="b-reason-text-4">
-								<h3 class="b-header-h3 slider-anim fadeDown">Знаменитый <b><br>«All&nbsp;inclusive»</b></h3>
+								<h3 class="b-header-h3 slider-anim fadeDown">Знаменитый<br><b>«All&nbsp;inclusive»</b></h3>
 								<p class="b-text slider-anim fadeDown delay200">Что мы чаще всего слышим про Турцию? Правильно, что там все включено. Практически в каждом отеле в стоимость проживания <em>входит завтрак, обед и ужин, </em>и на каждом – шикарный шведский стол.</p>
 						</div>
 					</div>
@@ -143,7 +141,7 @@ getSource();
 						<div class="b-picture-3">
 						</div>
 						<div class="b-reason-text-3  slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown">Больше морей – <br><b>больше пляжей</b></h3>
+								<h3 class="b-header-h3 slider-anim fadeDown">Больше морей – <b>больше&nbsp;пляжей</b></h3>
 								<p class="b-text slider-anim fadeDown delay200">Турция омывается 4-мя морями – Средиземным, Черным, Эгейским и Мраморным. А пляжи входят в десятку <em>чистейших пляжей мира.</em> Эти факты уже неплохой повод приехать сюда на отдых.</p>
 						</div>
 					</div>
@@ -153,8 +151,8 @@ getSource();
 						<div class="b-picture-1">
 						</div>
 						<div class="b-reason-text-1 slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown"><b>Вкуснейшие</b> восточные сладости</h3>
-								<p class="b-text slider-anim fadeDown delay200">Турция знаменита <em>своими сладостями</em> –<br> баклава, рахат-лукум, халва, кадаиф,<br> кюнефе. Пробовали? Уверены? Поверьте,</br> так, как их готовят в Турции, <em>не готовят больше нигде.</em></p>
+								<h3 class="b-header-h3 slider-anim fadeDown"><b>Вкуснейшие</b> восточные&nbsp;сладости</h3>
+								<p class="b-text slider-anim fadeDown delay200">Турция знаменита <em>своими сладостями</em> – баклава, рахат-лукум, халва, кадаиф,<br> кюнефе. Пробовали? Уверены? Поверьте, так, как их готовят в Турции, <em>не готовят больше нигде.</em></p>
 					</div>
 				</div>
 				</div>
@@ -174,9 +172,12 @@ getSource();
 				<p class="button-thin">о путешествии по Турции</p>
 			</a>
 	</div>
+	<div class="b-block">
+		<img id="b-title-logo" class="b-title-logo" src="i/logo-big.svg" data-enllax-ratio=".15" data-enllax-type="foreground" data-enllax-direction="vertical">
+	</div>
 	<div class="b b-3">
 		<div class="b-block">
-			<img id="b-title-logo" class="b-title-logo" src="i/logo-big.svg" data-enllax-ratio=".15" data-enllax-type="foreground" data-enllax-direction="vertical">
+			
 			<h2 class="b-header-h2">Чем <b>турагентство «Отдых круглый год»</b> отличается от обычных банков туров?</h2>
 			<div class="b-differences clearfix">
 				<div class="b-difference">
@@ -201,6 +202,17 @@ getSource();
 					<p class="b-header-h3"><b>Опытные эксперты</b> по направлению&nbspТурция </p> 
 					<p class="b-text">Наши менеджеры <b>знают абсолютно все<br> об отдыхе в Турции: </b>где находятся самые чистые пляжи,<br> как и где дешевле записаться на экскурсию и т.д.</p>
 				</div>
+			</div>
+			<div class="b-bottom-b-3-m">
+				<div class="b-expert">
+					<div class="b-circle">
+						<div class="b-expert-cont">
+							<img src="i/julia-mobile.png" class="b-expert-pic anim fadeDown"  data-retina="i/julia-mobile@2x.png">
+						</div>
+					</div>
+				</div>
+				<h4 class="b-dif-title"><b>Опытные эксперты</b> по направлению&nbspТурция</h4>
+				<p class="b-dif-text">Наши менеджеры <b>знают абсолютно всеоб отдыхе в Турции: </b>где находятся самые чистые пляжи, как и где дешевле записаться на экскурсию и т.д.</p>
 			</div>
 		</div>
 	</div>
