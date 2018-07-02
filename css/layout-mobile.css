@@ -295,3 +295,36 @@ body{
 	    .b-4 .slick-next{
 	    	margin-left: 127px;
 	    }
+	.b-5{
+		padding-top: 40px;
+	}
+		.b-circle{
+			width: 100%;
+			max-width: 350px;
+			margin: 0 auto;
+			box-shadow: inset 0 0 0 30px #E4E4E4;
+		}
+		.line-1,
+		.line-2{
+			display: none;
+		}
+		.b-expert-quote-wrap{
+			display: none;
+		}
+			.b-expert-cont{
+				width: 100%;
+				height: auto;
+			}
+				.b-expert{
+					width: 100%;
+					float: none;
+					padding-top: 33.2%;
+				}
+					.b-expert-pic{
+						width: 78%;
+						position: relative;
+						top: 94px;
+						height: auto;
+						left: 0px;
+					}	
+

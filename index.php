@@ -271,14 +271,13 @@ getSource();
 					</a>
 			</div>
 		</div>
-
 	<div class="b b-5">
 		<div class="b-block">
-			<h2 class="b-header-h2"><b>Над вашим отдыхом</b> будут работать лучшие&nbspв&nbspсвоем деле <b>эксперты</b></h2>
+			<h2 class="b-header-h2"><b>Над вашим отдыхом</b> будут работать лучшие в&nbspсвоем деле <b>эксперты</b></h2>
 			<div class="b-experts">
 				<div class="b-expert-1-wrap clearfix">
 					<div class="b-expert">
-						<div class="b-circle">
+						<div id="circle" class="b-circle">
 							<div class="b-expert-cont">
 								<img src="i/julia-2.png" id="expert" class="b-expert-pic" data-enllax-ratio="-0.07" data-enllax-type="foreground" data-enllax-direction="vertical" data-retina="i/julia-2@2x.png">
 							</div>
@@ -296,7 +295,7 @@ getSource();
 						</div>
 					</div>
 				</div>
-				<div class="b-expert-1-wrap clearfix">
+				<!-- <div class="b-expert-1-wrap clearfix">
 					<div class="b-expert right">
 						<div class="b-circle">
 							<div class="b-expert-cont">
@@ -314,7 +313,7 @@ getSource();
 							</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
