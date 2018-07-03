@@ -158,6 +158,7 @@ $(document).ready(function(){
 			}
 
 			if( $this.attr("data-goal") && typeof yaCounter49375867 != "undefined" ){
+				console.log("send goal: " + $this.attr("data-goal"));
 				yaCounter49375867.reachGoal($this.attr("data-goal"));
 			}
 
