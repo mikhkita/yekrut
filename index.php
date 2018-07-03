@@ -374,12 +374,12 @@ getSource();
 			<form action="kitsend.php" method="POST" data-goal="BOTTOM" id="b-form-1">
 				<div class="b-left" id="typed-strings">
 					<h2 class="b-header-h2"><b>Узнайте подробнее<br></b> о путешествии по Турции</h2>
-					<h3 class="b-subtitle">Наши эксперты готовы<br>проконсультировать вас<br><b>абсолютно бесплатно.</b></h3>
+					<h3 class="b-subtitle">Наши эксперты готовы проконсультировать вас <b>абсолютно бесплатно.</b></h3>
 				</div>
 				
 				<div class="b-right">
 					<p class="b-form-header">Заполните простую форму</p>
-					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение <br>2 минут и предложит удобное время</p>
+					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2 минут и предложит удобное время</p>
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	
@@ -408,7 +408,7 @@ getSource();
 				
 				<div class="b-right">
 					<p class="b-form-header">Заполните простую форму</p>
-					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение <br>2 минут и предложит удобное время</p>
+					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2 минут и предложит удобное время</p>
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	

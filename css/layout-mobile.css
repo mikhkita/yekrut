@@ -477,6 +477,7 @@ body{
 			font-size: 12px;
 			line-height: 18px;
 			padding-left: 36px;
+			max-width: 286px;
 		}
 		.b-condition a:after{
 		    width: 104px;
@@ -489,6 +490,7 @@ body{
 			}
 		.b-office{
 			margin-top: 6px;
+			text-align: center;
 		}
 		.b-6 .small{
 			padding-top: 13px;
@@ -533,7 +535,6 @@ body{
 		left: 1px;
 	}
 
-
 input::-webkit-input-placeholder {
 	font-family: Gilroy-Regular;
 	font-size: 16px;
@@ -545,4 +546,64 @@ input:-moz-placeholder {
 	font-size: 16px;
 	color: #FFFFFF;
 	line-height: 28px;
+}
+
+/*ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ*/
+
+#b-popup-1,
+#b-popup-2{
+	position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 30px 24px 24px 24px;
+    width: 100%;
+    border-radius: 0px;
+    overflow: hidden;
+    background-size: cover;
+}
+.b-popup .b-header-h2{
+	font-size: 28px;
+	line-height: 36px;
+}
+
+.b-popup .b-subtitle{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.b-popup .b-left{
+	width: 100%;
+    display: block;
+    float: left;
+}
+.b-popup .b-right{
+	width: 100%;
+    max-width: none;
+    left: 0px;
+    padding: 24px 24px 37px 24px;
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+}
+.fancybox-slide > *{
+	margin: 0;
+}
+.b-popup .b-condition:before{
+	left: 0px;
+	top: 31px
+}
+.b-popup .agree + label:after{
+	left: 5px;
+    bottom: 12px;
+}
+.icon-cross:before{
+	width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+.fancybox-close-small{
+	top: 24px;
+    right: 19px;
+    width: 30px;
+    height: 30px;
 }
