@@ -48,7 +48,7 @@ getSource();
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
-	<meta name="viewport" content="width=1216">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
 	<meta name="format-detection" content="telephone=no">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -60,15 +60,27 @@ getSource();
 	<link rel="stylesheet" href="css/slick-theme.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
-	<!-- <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="i/favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="i/favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="i/favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="i/favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="i/favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="i/favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="i/favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="i/favicon/apple-touch-icon-152x152.png" />
+	
+	<link rel="icon" type="image/png" href="i/favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="i/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="i/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="i/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="i/favicon/favicon-128.png" sizes="128x128" />
+
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
 <body>
 	<img src="i/bg-popup.jpg" style="display:none">
-	<img src="i/julia-2@2x.png" style="display:none">
-	<img src="i/kate@2x.png" style="display:none">
 	<img src="i/transfer.png" style="display:none">
 	<div class="b b-1">
 		<div class="b-block">
@@ -87,7 +99,7 @@ getSource();
 			<div class="b-bottom">	
 				<div class="b-h1-wrap">
 					<h1>Незабываемое<br><b>путешествие в Турцию</b><br>по системе «все включено»</h1>
-					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию<br></b> прямо сейчас. Ведь все что вам нужно – это 20 минут<br>свободного времени и желание отлично отдохнуть!</p>
+					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо сейчас. Ведь все что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
 					<div class="consult">
 						<a href="#b-popup-1" class="b-button orange left fancy">
 							<p class="button-bold">Получить консультацию</p>
@@ -101,30 +113,9 @@ getSource();
 	</div>
 	<div class="b b-2">
 		<div class="b-block">
-			<h2 class="b-header-h2"><b>5 причин,</b> почему вам стоит хотя бы<br> раз посетить Турцию</h2>
-			
+			<h2 class="b-header-h2"><b>5 причин,</b> почему вам стоит хотя бы раз посетить Турцию</h2>	
 		</div>
 		<div class="b-reasons clearfix">
-				<div class="b-reason slider-anim">
-					<div class="b-block">
-						<div class="b-picture-1">
-						</div>
-						<div class="b-reason-text-1 slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown"><b>Вкуснейшие</b> восточные сладости</h3>
-								<p class="b-text slider-anim fadeDown delay200">Турция знаменита <em>своими сладостями</em> –<br> баклава, рахат-лукум, халва, кадаиф,<br> кюнефе. Пробовали? Уверены? Поверьте,</br> так, как их готовят в Турции, <em>не готовят больше нигде.</em></p>
-					</div>
-				</div>
-				</div>
-				<div class="b-reason">
-					<div class="b-block">
-						<div class="b-picture-3">
-						</div>
-						<div class="b-reason-text-3  slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown">Больше морей – <br><b>больше пляжей</b></h3>
-								<p class="b-text slider-anim fadeDown delay200">Турция омывается 4-мя морями – Средиземным, Черным, Эгейским и Мраморным. А пляжи входят в десятку <em>чистейших пляжей мира.</em> Эти факты уже неплохой повод приехать сюда на отдых.</p>
-						</div>
-					</div>
-				</div>
 				<div class="b-reason">
 					<div class="b-block">
 						<div class="b-picture-2">
@@ -140,10 +131,30 @@ getSource();
 						<div class="b-picture-4">
 						</div>
 						<div class="b-reason-text-4">
-								<h3 class="b-header-h3 slider-anim fadeDown">Знаменитый <b><br>«All&nbsp;inclusive»</b></h3>
+								<h3 class="b-header-h3 slider-anim fadeDown">Знаменитый<br><b>«All&nbsp;inclusive»</b></h3>
 								<p class="b-text slider-anim fadeDown delay200">Что мы чаще всего слышим про Турцию? Правильно, что там все включено. Практически в каждом отеле в стоимость проживания <em>входит завтрак, обед и ужин, </em>и на каждом – шикарный шведский стол.</p>
 						</div>
 					</div>
+				</div>
+				<div class="b-reason">
+					<div class="b-block">
+						<div class="b-picture-3">
+						</div>
+						<div class="b-reason-text-3  slider-anim fadeDown">
+								<h3 class="b-header-h3 slider-anim fadeDown">Больше морей – <b>больше&nbsp;пляжей</b></h3>
+								<p class="b-text slider-anim fadeDown delay200">Турция омывается 4-мя морями – Средиземным, Черным, Эгейским и Мраморным. А пляжи входят в десятку <em>чистейших пляжей мира.</em> Эти факты уже неплохой повод приехать сюда на отдых.</p>
+						</div>
+					</div>
+				</div>
+				<div class="b-reason">
+					<div class="b-block">
+						<div class="b-picture-1">
+						</div>
+						<div class="b-reason-text-1 slider-anim fadeDown">
+								<h3 class="b-header-h3 slider-anim fadeDown"><b>Вкуснейшие</b> восточные&nbsp;сладости</h3>
+								<p class="b-text slider-anim fadeDown delay200">Турция знаменита <em>своими сладостями</em> – баклава, рахат-лукум, халва, кадаиф,<br> кюнефе. Пробовали? Уверены? Поверьте, так, как их готовят в Турции, <em>не готовят больше нигде.</em></p>
+					</div>
+				</div>
 				</div>
 				<div class="b-reason">
 					<div class="b-block">
@@ -161,22 +172,25 @@ getSource();
 				<p class="button-thin">о путешествии по Турции</p>
 			</a>
 	</div>
+	<div class="b-block">
+		<img id="b-title-logo" class="b-title-logo" src="i/logo-big.svg" data-enllax-ratio=".15" data-enllax-type="foreground" data-enllax-direction="vertical">
+	</div>
 	<div class="b b-3">
 		<div class="b-block">
-			<img id="b-title-logo" class="b-title-logo" src="i/logo-big.svg" data-enllax-ratio=".15" data-enllax-type="foreground" data-enllax-direction="vertical">
+			
 			<h2 class="b-header-h2">Чем <b>турагентство «Отдых круглый год»</b> отличается от обычных банков туров?</h2>
 			<div class="b-differences clearfix">
 				<div class="b-difference">
-					<div class="b-money anim fadeDown delay100" data-cont=".b-3">
+					<div class="b-money anim fadeDown" data-cont=".b-3">
 					</div>
-					<h4 class="b-dif-title anim fadeDown delay200" data-cont=".b-3">Железная цена,<br> никаких скрытых доплат</h4>
-					<p class="b-dif-text anim fadeDown delay300" data-cont=".b-3">Вы платите <b>только стоимость тура</b>, которую устанавливает туроператор и ни копейки больше.</p>
+					<h4 class="b-dif-title anim fadeDown delay100" data-cont=".b-3">Железная цена,<br> никаких скрытых доплат</h4>
+					<p class="b-dif-text anim fadeDown delay200" data-cont=".b-3">Вы платите <b>только стоимость тура</b>, которую устанавливает туроператор и ни копейки больше.</p>
 				</div>
 				<div class="b-difference">
-					<div class="b-docs anim fadeDown delay500" data-cont=".b-3">
+					<div class="b-docs anim fadeDown delay400" data-cont=".b-3">
 					</div>
-					<h4 class="b-dif-title anim fadeDown delay600" data-cont=".b-3">Бесплатная помощь при оформлении тура</h4>
-					<p class="b-dif-text anim fadeDown delay700" data-cont=".b-3">Подбор и бронирование тура, оформление документов, а также сопровождение на протяжении всего путешествия – <b>бесплатно.</b> </p>
+					<h4 class="b-dif-title anim fadeDown delay500" data-cont=".b-3">Бесплатная помощь при оформлении тура</h4>
+					<p class="b-dif-text anim fadeDown delay600" data-cont=".b-3">Подбор и бронирование тура, оформление документов, а также сопровождение на протяжении всего путешествия – <b>бесплатно.</b> </p>
 				</div>
 			</div>
 			<div class="b-bottom-b-3 clearfix">
@@ -188,6 +202,17 @@ getSource();
 					<p class="b-header-h3"><b>Опытные эксперты</b> по направлению&nbspТурция </p> 
 					<p class="b-text">Наши менеджеры <b>знают абсолютно все<br> об отдыхе в Турции: </b>где находятся самые чистые пляжи,<br> как и где дешевле записаться на экскурсию и т.д.</p>
 				</div>
+			</div>
+			<div class="b-bottom-b-3-m">
+				<div class="b-expert">
+					<div class="b-circle">
+						<div class="b-expert-cont">
+							<img src="i/julia-mobile.png" class="b-expert-pic anim fadeDown"  data-retina="i/julia-mobile@2x.png">
+						</div>
+					</div>
+				</div>
+				<h4 class="b-dif-title"><b>Опытные эксперты</b> по направлению&nbspТурция</h4>
+				<p class="b-dif-text">Наши менеджеры <b>знают абсолютно всеоб отдыхе в Турции: </b>где находятся самые чистые пляжи, как и где дешевле записаться на экскурсию и т.д.</p>
 			</div>
 		</div>
 	</div>
@@ -246,16 +271,15 @@ getSource();
 					</a>
 			</div>
 		</div>
-
 	<div class="b b-5">
 		<div class="b-block">
-			<h2 class="b-header-h2"><b>Над вашим отдыхом</b> будут работать лучшие&nbspв&nbspсвоем деле <b>эксперты</b></h2>
+			<h2 class="b-header-h2"><b>Над вашим отдыхом</b> будут работать лучшие в&nbspсвоем деле <b>эксперты</b></h2>
 			<div class="b-experts">
 				<div class="b-expert-1-wrap clearfix">
 					<div class="b-expert">
-						<div class="b-circle">
+						<div id="circle" class="b-circle">
 							<div class="b-expert-cont">
-								<div id="expert" class="b-expert-pic" data-enllax-ratio="-0.07" data-enllax-type="foreground" data-enllax-direction="vertical"></div>
+								<img src="i/julia-2.png" id="expert" class="b-expert-pic" data-enllax-ratio="-0.07" data-enllax-type="foreground" data-enllax-direction="vertical" data-retina="i/julia-2@2x.png">
 							</div>
 						</div>
 					</div>
@@ -271,11 +295,11 @@ getSource();
 						</div>
 					</div>
 				</div>
-				<div class="b-expert-1-wrap clearfix">
+				<!-- <div class="b-expert-1-wrap clearfix">
 					<div class="b-expert right">
 						<div class="b-circle">
 							<div class="b-expert-cont">
-								<div id="expert" class="b-expert-pic-2" data-enllax-ratio="0.07" data-enllax-type="foreground" data-enllax-direction="vertical"></div>
+								<img src="i/kate.png" id="expert" class="b-expert-pic-2" data-enllax-ratio="0.07" data-enllax-type="foreground" data-enllax-direction="vertical" data-retina="i/kate@2x.png">
 							</div>
 						</div>
 					</div>
@@ -289,7 +313,7 @@ getSource();
 							</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>

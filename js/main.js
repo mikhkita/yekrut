@@ -1,3 +1,7 @@
+var     isDesktop = false,
+        isTablet = false,
+        isMobile = false;
+
 $(document).ready(function(){	
     function resize(){
        if( typeof( window.innerWidth ) == 'number' ) {
@@ -10,6 +14,16 @@ $(document).ready(function(){
         } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
             myWidth = document.body.clientWidth;
             myHeight = document.body.clientHeight;
+        }
+
+        if( myWidth > 767 ){
+            isDesktop = true;
+            isTablet = false;
+            isMobile = false;
+        }else{
+            isDesktop = false;
+            isTablet = false;
+            isMobile = true;
         }
     }
     $(window).resize(resize);
@@ -82,9 +96,24 @@ $(document).ready(function(){
         $(".b-review[data-slick-index='"+currentSlide+"'] .slider-anim").addClass("show");
     });
 
-    $('#b-title-logo').enllax();
-    $('#expert').enllax();
     particlesJS.load('particles-js', 'js/particles.json', function() {
+    });
+    
+    var circleWidth = 0;
+    function circleWidthDet(){
+        var circle = document.getElementById("circle");
+        circleWidth = circle.offsetWidth;
+        document.getElementById('circle').style.height = circleWidth+'px';
+    }
+    circleWidthDet();
+   
+    if (isDesktop) {
+            $('#b-title-logo').enllax();
+            $('#expert').enllax();
+        }
+        
+    $(window).resize(function () {
+        circleWidthDet();
     });
 // custom["footer-animate"] = function(){
 //     var typed = new Typed("#typed-show", {
@@ -103,7 +132,6 @@ $(document).ready(function(){
 //             typeSpeed: 5,
 //             showCursor: false
 //         });
-    
     var elem =  document.getElementsByClassName('b-header-h2-b-6')[0];
     var str = elem.innerText;
     var symbols = str.split("");
@@ -148,35 +176,62 @@ $(document).ready(function(){
           delay += 20;
     });
 
-    var isWindows = false,
-        timerLeave = 0,
-        showLeave = true;
-        inputFocus= false;
+    // var isWindows = false,
+    //     timerLeave = 0,
+    //     showLeave = true;
+    //     inputFocus= false;
 
-    $( "input" ).focus(function() {
-        inputFocus = true;
-        showLeave = false;
-      });
+    // $( "input" ).focus(function() {
+    //     inputFocus = true;
+    //     showLeave = false;
+    //   });
 
 
 
-    if (navigator.userAgent.indexOf ('Windows') != -1) isWindows = true;
+    // if (navigator.userAgent.indexOf ('Windows') != -1) isWindows = true;
 
-    setInterval(function() {
-        timerLeave++;
-        if(timerLeave > 120){
-            showLeave = true;
-            timerLeave = 0;
-        }
-    }, 1000);
+    // setInterval(function() {
+    //     timerLeave++;
+    //     if(timerLeave > 120){
+    //         // showLeave = true;
+    //         timerLeave = 0;
+    //     }
+    // }, 1000);
 
-    $(document).mouseleave(function(){
-        if(!$(".fancybox-slide .b-popup").length && showLeave){
-            $(".pop6").click();
-            showLeave = false;
-            timerLeave = 0;
-        }
-    });
+    // $(document).mouseleave(function(){
+    //     if(!$(".fancybox-slide .b-popup").length && showLeave){
+    //         $(".pop6").click();
+    //         showLeave = false;
+    //         timerLeave = 0;
+    //     }
+    // });
+
+    isRetina = retina();
+
+    function retina(){
+        var mediaQuery = "(-webkit-min-device-pixel-ratio: 1.5),\
+            (min--moz-device-pixel-ratio: 1.5),\
+            (-o-min-device-pixel-ratio: 3/2),\
+            (min-resolution: 1.5dppx)";
+        if (window.devicePixelRatio > 1)
+            return true;
+        if (window.matchMedia && window.matchMedia(mediaQuery).matches)
+            return true;
+        return false;
+    }
+
+    if(isRetina){
+        $("*[data-retina]").each(function(){
+            var $this = $(this),
+                img = new Image(),
+                src = $this.attr("data-retina");
+
+            img.onload = function(){
+                $this.attr("src", $this.attr("data-retina"));
+            };
+            img.src = src;
+        });
+    }
 
     // $("body").children().each(function() {
     //     $(this).html($(this).html().replace(/&#8232;/g," "));

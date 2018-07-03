@@ -521,7 +521,8 @@
 	.b-title-logo{
 		position: absolute;
 		left: -570px;
-    	top: -50px;
+    	top: 20px;
+    	z-index: 10;
 	}
 	.b-differences{
 		display: inline-block;
@@ -590,6 +591,9 @@
 				font-family: OpenSans-Bold;
 				color: #282828;
 			}
+	.b-bottom-b-3-m{
+		display: none;
+	}
 	.b-julia{
 	    width: 291px;
 	    height: 549px;
@@ -836,10 +840,10 @@
 					.b-expert-pic{
 						width: 359px;
 					    height: 761px;
-					    background-image: url(../i/julia-2@2x.png);
+					    /*background-image: url(../i/julia-2@2x.png);
 					    background-size: cover;
 					    background-position: 100% 50%;
-					    background-color: rgba(0,0,0,0);
+					    background-color: rgba(0,0,0,0);*/
 					    margin: 0 auto;
 					    top: 60px;
 					    left: 50px;
@@ -847,10 +851,10 @@
 					.b-expert-pic-2{
 					    width: 387px;
 					    height: 820px;
-					    background-image: url(../i/kate@2x.png);
+					    /*background-image: url(../i/kate@2x.png);
 					    background-size: cover;
 					    background-position: 100% 50%;
-					    background-color: rgba(0,0,0,0);
+					    background-color: rgba(0,0,0,0);*/
 					    margin: 0 auto;
 					    top: 60px;
 					    left: 50px;
@@ -1437,7 +1441,7 @@ body {
 	position: relative;
 }
 body {
-	min-width: 1178px;
+	min-width: 1217px;
 	text-align: center;
 	font-family: 'OpenSans-Regular';
 	overflow-x: hidden;
@@ -1588,7 +1592,6 @@ strong, b{
 			padding-left: 0px;
 			float: right;
 		}
-body{min-width: 1217px};
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	
 }	
