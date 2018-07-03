@@ -212,7 +212,7 @@ getSource();
 					</div>
 				</div>
 				<h4 class="b-dif-title"><b>Опытные эксперты</b> по направлению&nbspТурция</h4>
-				<p class="b-dif-text">Наши менеджеры <b>знают абсолютно всеоб отдыхе в Турции: </b>где находятся самые чистые пляжи, как и где дешевле записаться на экскурсию и т.д.</p>
+				<p class="b-dif-text">Наши менеджеры <b>знают абсолютно всё об отдыхе в Турции: </b>где находятся самые чистые пляжи, как и где дешевле записаться на экскурсию и т.д.</p>
 			</div>
 		</div>
 	</div>
@@ -295,9 +295,9 @@ getSource();
 						</div>
 					</div>
 				</div>
-				<!-- <div class="b-expert-1-wrap clearfix">
+				<div class="b-expert-1-wrap clearfix">
 					<div class="b-expert right">
-						<div class="b-circle">
+						<div id="circle-2" class="b-circle">
 							<div class="b-expert-cont">
 								<img src="i/kate.png" id="expert" class="b-expert-pic-2" data-enllax-ratio="0.07" data-enllax-type="foreground" data-enllax-direction="vertical" data-retina="i/kate@2x.png">
 							</div>
@@ -305,15 +305,15 @@ getSource();
 					</div>
 					<div class="b-expert-quote-wrap">
 						<div class="line-2 anim width-2" data-cont='.line-2'></div>
-						<div class="b-expert-name anim fadeDown" data-cont='.line-2'>Екатерина Белозёрова</div>
-						<div class="b-expert-quote anim fadeDown delay100" data-cont='.line-2'>«С детства мечтала знать всё о всех странах&nbspмира, теперь хочу поделиться этим&nbspс&nbspмоими клиентами»</div>
+						<div id="expert-name-2" class="b-expert-name anim fadeDown" data-cont='.line-2'>Екатерина Белозёрова</div>
+						<div id="expert-quote-2" class="b-expert-quote anim fadeDown delay100" data-cont='.line-2'>«С детства мечтала знать всё о всех странах&nbspмира, теперь хочу поделиться этим&nbspс&nbspмоими клиентами»</div>
 						<div class="anim fadeLeft delay300" data-cont='.line-2'>
 							<a href="#b-popup-4" class="b-button orange question left fancy">
 								<p class="button-bold">Задать вопрос</p>
 							</a>
 						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>
@@ -330,7 +330,7 @@ getSource();
 			<div class="b-car fadeLeft anim delay2000" data-cont=".b-6" data-offset="-50px"></div>
 			<div class="b-right fadeDown anim delay2800" data-cont=".b-6" data-offset="-50px">
 				<p class="b-form-header">Заполните простую форму</p>
-				<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение <br>2 минут и предложит удобное время</p>
+				<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2 минут и предложит удобное время</p>
 				<form action="kitsend.php" method="POST" data-goal="" id="b-form-1">	
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
@@ -356,7 +356,7 @@ getSource();
 					<div class="b-f-contacts">
 						<ul>
 							<li>г. Томск, пр. Кирова, 58 ст. 26,<br> офис 21, 2 этаж</li>
-							<li>Остались вопросы? Звоните +7 (3822) 909-303</li>
+							<li>Остались вопросы? Звоните&nbsp;+7&nbsp;(3822)&nbsp;909-303</li>
 							<li><a>Политика по работе с персональными данными</a></li>
 						</ul>
 					</div>

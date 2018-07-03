@@ -104,6 +104,9 @@ $(document).ready(function(){
         var circle = document.getElementById("circle");
         circleWidth = circle.offsetWidth;
         document.getElementById('circle').style.height = circleWidth+'px';
+        var circle2 = document.getElementById("circle-2");
+        circleWidth = circle.offsetWidth;
+        document.getElementById('circle-2').style.height = circleWidth+'px';
     }
     circleWidthDet();
    
@@ -111,7 +114,7 @@ $(document).ready(function(){
             $('#b-title-logo').enllax();
             $('#expert').enllax();
         }
-        
+
     $(window).resize(function () {
         circleWidthDet();
     });
