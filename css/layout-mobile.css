@@ -524,6 +524,7 @@ body{
 		}
 		.b-f-contacts{
 			padding-top: 18px;
+			width: 100%;
 		}
 		.b-redder{
 			padding-top: 7px;
@@ -551,7 +552,8 @@ input:-moz-placeholder {
 /*ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ*/
 
 #b-popup-1,
-#b-popup-2{
+#b-popup-2,
+#b-popup-6{
 	position: relative;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -560,6 +562,28 @@ input:-moz-placeholder {
     border-radius: 0px;
     overflow: hidden;
     background-size: cover;
+    height: auto;
+}
+
+
+#b-popup-5,
+#b-popup-4,
+#b-popup-3{
+	width: calc(100% - 48px);
+	height: auto;
+}
+#b-popup-4 .b-right,
+#b-popup-3 .b-right{
+	width: 100%;
+	padding: 24px 24px 24px 24px;
+}
+#b-popup-3 .b-form-header, 
+#b-popup-4 .b-form-header{
+	min-width: 0;
+}
+.pop-cont-2,
+.pop-cont-1{
+	display: none;
 }
 .b-popup .b-header-h2{
 	font-size: 28px;
@@ -606,4 +630,14 @@ input:-moz-placeholder {
     right: 19px;
     width: 30px;
     height: 30px;
+}
+.b-orange-popup .fancybox-close-small{
+	top: 11px;
+    right: 10px;
+}
+.transfer{
+	display: none;
+}
+textarea{
+	min-width: 0;
 }

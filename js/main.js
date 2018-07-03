@@ -199,35 +199,35 @@ $(document).ready(function(){
           delay += 20;
     });
 
-    // var isWindows = false,
-    //     timerLeave = 0,
-    //     showLeave = true;
-    //     inputFocus= false;
+    var isWindows = false,
+        timerLeave = 0,
+        showLeave = true;
+        inputFocus= false;
 
-    // $( "input" ).focus(function() {
-    //     inputFocus = true;
-    //     showLeave = false;
-    //   });
+    $( "input" ).focus(function() {
+        inputFocus = true;
+        showLeave = false;
+      });
 
 
 
-    // if (navigator.userAgent.indexOf ('Windows') != -1) isWindows = true;
+    if (navigator.userAgent.indexOf ('Windows') != -1) isWindows = true;
 
-    // setInterval(function() {
-    //     timerLeave++;
-    //     if(timerLeave > 120){
-    //         // showLeave = true;
-    //         timerLeave = 0;
-    //     }
-    // }, 1000);
+    setInterval(function() {
+        timerLeave++;
+        if(timerLeave > 120){
+            showLeave = true;
+            timerLeave = 0;
+        }
+    }, 1000);
 
-    // $(document).mouseleave(function(){
-    //     if(!$(".fancybox-slide .b-popup").length && showLeave){
-    //         $(".pop6").click();
-    //         showLeave = false;
-    //         timerLeave = 0;
-    //     }
-    // });
+    $(document).mouseleave(function(){
+        if(!$(".fancybox-slide .b-popup").length && showLeave){
+            $(".pop6").click();
+            showLeave = false;
+            timerLeave = 0;
+        }
+    });
 
     isRetina = retina();
 
