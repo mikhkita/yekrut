@@ -126,6 +126,7 @@ $(document).ready(function(){
         document.getElementById('question-button').className = ('anim fadeDown delay400');
 
 
+
         document.getElementById('expert-2').className = ('b-expert-pic-2 anim fadeDown');
         document.getElementById('expert-2').setAttribute('data-cont', '#circle-2');
         document.getElementById('expert-name-2').setAttribute('data-cont', '#circle-2');
@@ -134,6 +135,9 @@ $(document).ready(function(){
         document.getElementById('expert-quote-2').className = ('b-expert-quote anim fadeDown delay200');
         document.getElementById('question-button-2').setAttribute('data-cont', '#circle-2');
         document.getElementById('question-button-2').className = ('anim fadeDown delay400');
+
+        document.getElementById('link-1').className = ('b-button orange question fancy left');
+        document.getElementById('link-1').setAttribute('data-cont', ' ');
     };
     $(window).resize(function () {
         circleWidthDet();

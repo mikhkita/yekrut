@@ -225,6 +225,7 @@
 				padding-left: 55px;
 				margin-bottom: 60px;
 				position: relative;
+				max-width: 812px;
 			}
 				.b-subtitle b{
 					font-family: Gilroy-Bold;
@@ -352,9 +353,12 @@
 		text-align: center;
 		line-height: 60px;
 		margin-bottom: 23px;
+		
 	}
 	.b-2 .b-header-h2{
 		margin-bottom: 19px;
+		max-width: 759px;
+    	display: inline-block;
 
 	}
 		.b-header-h2 b{
@@ -428,7 +432,7 @@
 			text-align: left;
 			margin: auto;
 			padding-left: 48px;
-			padding-right: 111px;
+			padding-right: 196px;
 			position: relative;
    		    top: 25%;
 
@@ -443,7 +447,7 @@
 			width: 50%;
 			margin: auto;
 			padding-left: 48px;
-			padding-right: 111px;
+			padding-right: 181px;
 			position: relative;
    		    top: 25%;
 		}
@@ -454,7 +458,7 @@
 		    width: 47%;
 		    margin: auto;
 		    padding-left: 48px;
-		    padding-right: 111px;
+		    padding-right: 170px;
 		    position: relative;
 		    top: 35%;
 		    left: -60px;
@@ -466,7 +470,7 @@
 		    width: 44%;
 		    margin: auto;
 		    /* padding-left: 48px; */
-		    padding-right: 111px;
+		    padding-right: 180px;
 		    position: relative;
 		    top: 42%;
 		    left: -55px;
@@ -477,7 +481,7 @@
 		    text-align: left;
 		    width: 44%;
 		    margin: auto;
-		    padding-right: 111px;
+		    padding-right: 201px;
 		    position: relative;
 		    top: 40%;
 		    left: 52%;
@@ -811,6 +815,10 @@
 	background-position: 50% 50%;
 	padding-bottom: 185px;
 }
+	.b-5 .b-header-h2{
+		max-width: 880px;
+		display: inline-block;
+	}
 	.b-experts{
 
 	}
@@ -1325,7 +1333,9 @@
    	#b-popup-4 .b-button{
    		padding: 19px 5px 18px 5px;
    	}
- 	
+ 	#b-popup-4 .b-form-header{
+ 		min-width: 380px;
+ 	}
    	.b-julia-pop{
 	    background-image: url(../i/julia-2@2x.png);
 	    background-size: contain;

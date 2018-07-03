@@ -163,6 +163,12 @@ body{
 			.more{
 			    margin-top: 14px;
 			}
+		.b-title-logo{
+			left: -165px;
+    		top: -34px;
+    		height: 113px;
+    		z-index: 0;
+		}
 	.b-3{
 		padding-top: 42px;
 		background-image: url(../i/bg-2-mobile.svg);

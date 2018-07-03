@@ -99,7 +99,7 @@ getSource();
 			<div class="b-bottom">	
 				<div class="b-h1-wrap">
 					<h1>Незабываемое<br><b>путешествие в Турцию</b><br>по системе «все включено»</h1>
-					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо сейчас. Ведь все, что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
+					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо&nbsp;сейчас. Ведь все, что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
 					<div class="consult">
 						<a href="#b-popup-1" class="b-button orange left fancy">
 							<p class="button-bold">Получить консультацию</p>
@@ -121,8 +121,8 @@ getSource();
 						<div class="b-picture-2">
 						</div>
 						<div class="b-reason-text-2  slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown">Непередаваемые эмоции <br>от <b>активного</b> отдыха</h3>
-								<p class="b-text slider-anim fadeDown delay200">Для людей, которые <em>не любят сидеть на одном месте</em></p2> в Турции есть множество активных видов отдыха - дайвинг, рафтинг, яхтинг, альпинизм, сафари, водные лыжи, парапланы и воздушные шары.</p>
+								<h3 class="b-header-h3 slider-anim fadeDown">Капля адреналина и <b>множество</b> эмоций</h3>
+								<p class="b-text slider-anim fadeDown delay200">Для людей, которые <em>не любят сидеть на&nbsp;одном месте</em></p2> в Турции есть множество активных видов отдыха - дайвинг, рафтинг, яхтинг, альпинизм, сафари, водные лыжи, парапланы и воздушные шары.</p>
 						</div>
 					</div>
 				</div>
@@ -152,7 +152,7 @@ getSource();
 						</div>
 						<div class="b-reason-text-1 slider-anim fadeDown">
 								<h3 class="b-header-h3 slider-anim fadeDown"><b>Вкуснейшие</b> восточные&nbsp;сладости</h3>
-								<p class="b-text slider-anim fadeDown delay200">Турция знаменита <em>своими сладостями</em> – баклава, рахат-лукум, халва, кадаиф,<br> кюнефе. Пробовали? Уверены? Поверьте, так, как их готовят в Турции, <em>не готовят больше нигде.</em></p>
+								<p class="b-text slider-anim fadeDown delay200">Турция знаменита <em>своими сладостями</em> – баклава, рахат-лукум, халва, кадаиф, кюнефе. Пробовали? Уверены? Поверьте, так, как их готовят в Турции, <em>не готовят больше нигде.</em></p>
 					</div>
 				</div>
 				</div>
@@ -289,7 +289,7 @@ getSource();
 						<div id="expert-name" class="b-expert-name anim fadeDown delay500" data-cont='.b-5'>Юлия Лозовая</div>
 						<div id="expert-quote" class="b-expert-quote anim fadeDown delay600" data-cont='.b-5'>«Я счастлива от того, что делаю людей&nbspсчастливыми»</div>
 						<div id="question-button" class="anim fadeRight delay800" data-cont='.b-5'>
-							<a href="#b-popup-3" class="b-button orange question fancy left anim fadeRight" data-cont='.b-5'">
+							<a id="link-1" href="#b-popup-3" class="b-button orange question fancy left anim fadeRight" data-cont='.b-5'">
 								<p class="button-bold">Задать вопрос</p>
 							</a>
 						</div>
@@ -330,7 +330,7 @@ getSource();
 			<div class="b-car fadeLeft anim delay2000" data-cont=".b-6" data-offset="-50px"></div>
 			<div class="b-right fadeDown anim delay2800" data-cont=".b-6" data-offset="-50px">
 				<p class="b-form-header">Заполните простую форму</p>
-				<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2 минут и предложит удобное время</p>
+				<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
 				<form action="kitsend.php" method="POST" data-goal="" id="b-form-1">	
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
@@ -379,7 +379,7 @@ getSource();
 				
 				<div class="b-right">
 					<p class="b-form-header">Заполните простую форму</p>
-					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2 минут и предложит удобное время</p>
+					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	
@@ -408,7 +408,7 @@ getSource();
 				
 				<div class="b-right">
 					<p class="b-form-header">Заполните простую форму</p>
-					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2 минут и предложит удобное время</p>
+					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	
@@ -486,7 +486,7 @@ getSource();
 			<form action="kitsend.php" method="POST" id="b-form-5">			
 				<div class="b-right">
 					<p class="b-form-header">Перезвоните мне</p>
-					<p class="b-form-subtitle">Наш менеджер свяжется с вами в&nbsp;течение&nbsp;2&nbsp;минут</b></p>
+					<p class="b-form-subtitle">Наш менеджер свяжется с вами в течение 2&nbsp;минут</b></p>
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	
@@ -510,7 +510,7 @@ getSource();
 			<form action="kitsend.php" method="POST" id="b-form-6">
 				<div class="b-left" id="typed-strings">
 					<h2 class="b-header-h2">Не уходите <b>с&nbsp;пустыми&nbsp;руками</b></h2>
-					<h3 class="b-subtitle"><b>До 30 июня</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;вылета.</b></h3>
+					<h3 class="b-subtitle"><b>До 30 июня</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;</b>вылета.</h3>
 					<div class="transfer"></div>
 				</div>
 				
