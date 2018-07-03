@@ -70,6 +70,8 @@ body{
 					.b-button{
 						width: 100%;
 						padding: 19px 15px 19px 15px;
+						max-width: 327px;
+						float: none !important;
 					}
 						.button-bold{
 							font-size: 16px;
@@ -135,10 +137,13 @@ body{
 		    top: 12px;	
 		}
 		.slick-prev{
-			margin-right: 128px;			
+			margin-right: 0px;	
+			left: 10px;		
 		}
 		.slick-next{
-			margin-left: 128px;			
+			margin-left: 0px;
+			right: 10px;	
+			left: auto;	
 		}
 		.slick-next,
 		.slick-prev{
@@ -153,6 +158,7 @@ body{
 			}
 		.b-2 .b-button{
 			width: calc(100% - 48px);
+			max-width: 327px;
 		}
 			.more{
 			    margin-top: 14px;
@@ -286,16 +292,20 @@ body{
 			   	}
 		.b-4 .b-button{
 				width: calc(100% - 48px);
+				max-width: 327px;
 			}
 	    .b-4 .slick-next,
 	    .b-4 .slick-prev{
 		   	top: 66px;
 	    }
 	    .b-4 .slick-prev{
-	    	margin-left: -176px;
+	    	margin-left: 0px;
+	    	left: 10px;
 	    }
 	    .b-4 .slick-next{
-	    	margin-left: 127px;
+	    	margin-left: 0px;
+	    	right: 10px;
+	    	left: auto;
 	    }
 	.b-5{
 		padding-top: 40px;
@@ -515,6 +525,7 @@ body{
 		}
 		.b-redder{
 			padding-top: 7px;
+			float: left;
 		}
 	.b-f-contacts ul li a:after{
 		width: 75px;

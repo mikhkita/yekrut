@@ -286,9 +286,9 @@ getSource();
 					<div class="b-expert-quote-wrap">
 						<div class="line-1 anim width-1" data-cont='.b-5'>
 						</div>
-						<div class="b-expert-name anim fadeDown delay500" data-cont='.b-5'>Юлия Лозовая</div>
-						<div class="b-expert-quote anim fadeDown delay600" data-cont='.b-5'>«Я счастлива от того, что делаю людей&nbspсчастливыми»</div>
-						<div class="anim fadeRight delay800" data-cont='.b-5'>
+						<div id="expert-name" class="b-expert-name anim fadeDown delay500" data-cont='.b-5'>Юлия Лозовая</div>
+						<div id="expert-quote" class="b-expert-quote anim fadeDown delay600" data-cont='.b-5'>«Я счастлива от того, что делаю людей&nbspсчастливыми»</div>
+						<div id="question-button" class="anim fadeRight delay800" data-cont='.b-5'>
 							<a href="#b-popup-3" class="b-button orange question fancy left anim fadeRight" data-cont='.b-5'">
 								<p class="button-bold">Задать вопрос</p>
 							</a>
@@ -299,7 +299,7 @@ getSource();
 					<div class="b-expert right">
 						<div id="circle-2" class="b-circle">
 							<div class="b-expert-cont">
-								<img src="i/kate.png" id="expert" class="b-expert-pic-2" data-enllax-ratio="0.07" data-enllax-type="foreground" data-enllax-direction="vertical" data-retina="i/kate@2x.png">
+								<img src="i/kate.png" id="expert-2" class="b-expert-pic-2" data-enllax-ratio="0.07" data-enllax-type="foreground" data-enllax-direction="vertical" data-retina="i/kate@2x.png">
 							</div>
 						</div>
 					</div>
@@ -307,7 +307,7 @@ getSource();
 						<div class="line-2 anim width-2" data-cont='.line-2'></div>
 						<div id="expert-name-2" class="b-expert-name anim fadeDown" data-cont='.line-2'>Екатерина Белозёрова</div>
 						<div id="expert-quote-2" class="b-expert-quote anim fadeDown delay100" data-cont='.line-2'>«С детства мечтала знать всё о всех странах&nbspмира, теперь хочу поделиться этим&nbspс&nbspмоими клиентами»</div>
-						<div class="anim fadeLeft delay300" data-cont='.line-2'>
+						<div id="question-button-2" class="anim fadeLeft delay300" data-cont='.line-2'>
 							<a href="#b-popup-4" class="b-button orange question left fancy">
 								<p class="button-bold">Задать вопрос</p>
 							</a>

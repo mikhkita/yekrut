@@ -113,8 +113,28 @@ $(document).ready(function(){
     if (isDesktop) {
             $('#b-title-logo').enllax();
             $('#expert').enllax();
-        }
+            $('#expert-2').enllax();
+        };
+    if (isMobile){
+        document.getElementById('expert').className = ('b-expert-pic anim fadeDown');
+        document.getElementById('expert').setAttribute('data-cont', '#circle');
+        document.getElementById('expert-name').setAttribute('data-cont', '#circle');
+        document.getElementById('expert-name').className = ('b-expert-name anim fadeDown delay100');
+        document.getElementById('expert-quote').setAttribute('data-cont', '#circle');
+        document.getElementById('expert-quote').className = ('b-expert-quote anim fadeDown delay200');
+        document.getElementById('question-button').setAttribute('data-cont', '#circle');
+        document.getElementById('question-button').className = ('anim fadeDown delay400');
 
+
+        document.getElementById('expert-2').className = ('b-expert-pic-2 anim fadeDown');
+        document.getElementById('expert-2').setAttribute('data-cont', '#circle-2');
+        document.getElementById('expert-name-2').setAttribute('data-cont', '#circle-2');
+        document.getElementById('expert-name-2').className = ('b-expert-name anim fadeDown delay100');
+        document.getElementById('expert-quote-2').setAttribute('data-cont', '#circle-2');
+        document.getElementById('expert-quote-2').className = ('b-expert-quote anim fadeDown delay200');
+        document.getElementById('question-button-2').setAttribute('data-cont', '#circle-2');
+        document.getElementById('question-button-2').className = ('anim fadeDown delay400');
+    };
     $(window).resize(function () {
         circleWidthDet();
     });
