@@ -406,6 +406,7 @@ body{
 .b-6{
 	    top: -83px;
 	    padding-bottom: 0px;
+	    overflow: hidden;
 }
  	.b-left{
  		width: 100%;
