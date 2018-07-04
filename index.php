@@ -57,8 +57,8 @@ getSource();
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimateDelays.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
-	<link rel="stylesheet" href="css/slick-theme.css" type="text/css">
-	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/slick-theme.css" type="text/css"?1>
+	<link rel="stylesheet" href="css/layout.css" type="text/css"?1>
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="i/favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="i/favicon/apple-touch-icon-114x114.png" />
@@ -75,7 +75,7 @@ getSource();
 	<link rel="icon" type="image/png" href="i/favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="i/favicon/favicon-128.png" sizes="128x128" />
 
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"?1>
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
@@ -331,7 +331,7 @@ getSource();
 			<div class="b-right fadeDown anim delay2800" data-cont=".b-6" data-offset="-50px">
 				<p class="b-form-header">Заполните простую форму</p>
 				<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
-				<form action="kitsend.php" method="POST" data-goal="" id="b-form-1">	
+				<form action="kitsend.php" method="POST" data-goal="BOTTOM" id="b-form-1">	
 					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	
@@ -371,7 +371,7 @@ getSource();
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-1">
-			<form action="kitsend.php" method="POST" data-goal="BOTTOM" id="b-form-1">
+			<form action="kitsend.php" method="POST" data-goal="MEETING" id="b-form-1">
 				<div class="b-left" id="typed-strings">
 					<h2 class="b-header-h2"><b>Узнайте подробнее<br></b> о путешествии по Турции</h2>
 					<h3 class="b-subtitle">Наши эксперты готовы проконсультировать вас <b>абсолютно бесплатно.</b></h3>
@@ -483,7 +483,7 @@ getSource();
 
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup b-orange-popup" id="b-popup-5">
-			<form action="kitsend.php" method="POST" id="b-form-5">			
+			<form action="kitsend.php" method="POST" data-goal="CALLME" id="b-form-5">			
 				<div class="b-right">
 					<p class="b-form-header">Перезвоните мне</p>
 					<p class="b-form-subtitle">Наш менеджер свяжется с вами в течение 2&nbsp;минут</b></p>
@@ -505,9 +505,9 @@ getSource();
 		</div>
 
 		<div style="display:none;">
-		<a href="#b-popup-error" class="b-error-link fancy" data-goal="TRANSFER" style="display:none;"></a>
+		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-6">
-			<form action="kitsend.php" method="POST" id="b-form-6">
+			<form action="kitsend.php" method="POST" data-goal="TRANSFER" id="b-form-6">
 				<div class="b-left" id="typed-strings">
 					<h2 class="b-header-h2">Не уходите <b>с&nbsp;пустыми&nbsp;руками</b></h2>
 					<h3 class="b-subtitle"><b>До 30 июня</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;</b>вылета.</h3>

@@ -844,6 +844,8 @@
 					height: 720px;
 					position: absolute;
 					bottom: 0;
+					-webkit-mask-image: -webkit-radial-gradient(white, black);
+					box-sizing: border-box;
 				}
 					.b-expert-pic{
 						width: 359px;

@@ -13,6 +13,7 @@ body{
 			height: 100vh;
 			max-height: none;
 			min-height: auto;
+			background-position: 63% 100%;
 		}	
 			.b-logo-cont{
 				margin: 0;
@@ -69,7 +70,7 @@ body{
 
 					.b-button{
 						width: 100%;
-						padding: 19px 15px 19px 15px;
+						padding: 18px 15px 18px 15px;
 						max-width: 327px;
 						float: none !important;
 					}
@@ -513,7 +514,7 @@ body{
     		left: 2px;
 		}
 		.b-office .orange{
-			padding: 19px 5px 19px 5px;
+			padding: 18px 5px 18px 5px;
 		}
 		.b-condition a:before{
 		    border-bottom: 1px solid rgba(255,255,255,0.5);
