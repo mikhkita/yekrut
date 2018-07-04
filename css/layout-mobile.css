@@ -259,6 +259,7 @@ body{
 			}
 	.b-4{
 		padding-top: 40px;
+		padding-bottom: 50px;
 	}
 		.b-4 .b-header-h2{
 			padding: 0px;
@@ -514,7 +515,7 @@ body{
     		left: 2px;
 		}
 		.b-office .orange{
-			padding: 18px 5px 18px 5px;
+			padding: 20px 5px 16px 5px;
 		}
 		.b-condition a:before{
 		    border-bottom: 1px solid rgba(255,255,255,0.5);
