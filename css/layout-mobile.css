@@ -654,3 +654,38 @@ input:-moz-placeholder {
 textarea{
 	min-width: 0;
 }
+
+@media screen and (max-width: 321px){
+	.b-logo-cont img{
+		width: 128px;
+	}
+	.phone{
+		font-size: 16px;
+	}
+	.b-1 h1,
+	.b-1 h1 b{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.b-header-h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.b-header-h3{
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.b-header-h2-b-6-2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.b-subtitle-b-6-2 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.b-popup .b-header-h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
