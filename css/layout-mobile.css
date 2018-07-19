@@ -701,7 +701,7 @@ textarea{
 	.b-overprice .b-header-h2{
 		font-size: 28px;
 	    padding-top: 69px;
-    	margin-bottom: 70px;
+    	margin-bottom: 46px;
     	text-align: center;
 	}
 .b-expert-3-wrap{
@@ -740,9 +740,10 @@ textarea{
 }
 .explanation{
 	width: 100% !important;
-	text-align: left;
+	text-align: justify;
 	top: 0px !important;
-	padding-top: 50px;
+	padding-top: 30px;
+	max-width: 327px;
 }
 	.explanation:nth-child(1){
 		padding-top: 20px;
@@ -750,11 +751,13 @@ textarea{
 	.explanation img{
 		height: auto !important;
 		display: inline-block;
+		float: none;
+		vertical-align: middle;
 	}
 		.explanation p a:after{
 			width: 154px;
-			right: 28px;
-			bottom: 92px;
+			left: 28px;
+			bottom: 3px;
 		}
 		.explanation:nth-child(1) img{
 			width: 96px;
@@ -772,9 +775,11 @@ textarea{
 			top: 0px;
 		}
 	.explanation .b-dif-text{
-		float: right;
+		float: none;
 		margin-top: auto;
 		width: 64%;
+	    display: inline-block;
+    	vertical-align: middle;
 	}
 .payoff{
 	margin-top: 30px !important;
@@ -783,4 +788,13 @@ textarea{
 	background-image: url(../i/bg-overprice-m.svg);
 	background-position: 50% 100%;
 	background-repeat: no-repeat;
+}
+.explain{
+	text-align: center;
+}
+.explanation:after{
+	content: '';
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
 }
