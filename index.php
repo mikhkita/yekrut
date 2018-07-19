@@ -1,50 +1,11 @@
 <?
-	session_start();
-	
-	function getSource(){
-	   if( isset($_SESSION["source"]) ) return true;
 
-	   if( isset($_SERVER["HTTP_REFERER"]) && $_SERVER["HTTP_REFERER"] != "" ){
-	      $refer = $_SERVER["HTTP_REFERER"];
-	   }
-	   $source = "Неизвестен";
-	   $keyWord = NULL;
+require_once("controller.php");
 
-	   if( isset($_GET["utm_source"]) ){
-	      $sources = array(
-	         "yandex.search" => "Яндекс.Директ (поиск)",
-	         "yandex.context" => "Яндекс.Директ (РСЯ)",
-	         "yadirect" => "Яндекс.Директ (поиск)",
-	      );
-	      if( isset($sources[ $_GET["utm_source"] ]) ){
-	         $source = $sources[ $_GET["utm_source"] ];
-	      }else{
-	         $source = $_GET["utm_source"];
-	      }
-
-	      $keyWord = $_GET["utm_term"];
-	      // $keyWord = $_GET["utm_content"];
-	   }elseif( strpos($refer, "vk.com") !== false ){
-	      $source = "Вконтакте";
-	   }elseif( strpos($refer, "link.2gis.ru") !== false ){
-	      $source = "2Gis";
-	   }elseif( strpos($refer, "instagram.com") !== false ){
-	      $source = "Инстаграм";
-	   }elseif( strpos($refer, "yandex.ru") !== false ){
-	      $source = "Яндекс (органика)";
-	   }elseif( strpos($refer, "google.ru") !== false ){
-	      $source = "Google (органика)";
-	   }
-
-	   $_SESSION["source"] = $source;
-	   $_SESSION["keyWord"] = $keyWord;
-}
-
-getSource();
 ?><!DOCTYPE html>
 <html>
 <head>
-	<title>Незабываемое путешествие в Турцию по системе «все включено»</title>
+	<title><?=$browserTitle?></title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
@@ -98,7 +59,7 @@ getSource();
 			</div>
 			<div class="b-bottom">	
 				<div class="b-h1-wrap">
-					<h1>Незабываемое<br><b>путешествие в Турцию</b><br>по системе «все включено»</h1>
+					<h1><?=$title?></h1>
 					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо&nbsp;сейчас. Ведь все, что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
 					<div class="consult">
 						<a href="#b-popup-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN">
