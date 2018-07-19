@@ -172,6 +172,47 @@ getSource();
 				<p class="button-thin">о путешествии по Турции</p>
 			</a>
 	</div>
+	<div class="b b-2-1">
+		<div class="b-block">
+			<div class="b-overprice clearfix">
+				<div class="b-expert-3-wrap">
+					<div class="b-expert-3">
+						<div id="circle-3" class="b-circle anim fadeDown">
+							<div class="b-expert-cont anim fadeDown delay200">
+								<img src="i/girl-overprice.png" id="expert-3" class="b-expert-pic-3"  data-retina="i/girl-overprice@2x.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-header-h2">
+					Допустим, нет сомнений, что я хочу в Турцию, но где мне взять путевку <b>не переплачивая турагентам?</b>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b b-2-2">
+		<div class="b-block">
+				<div class="b-header-h2">
+					Турагентство «Отдых круглый год» занимается&nbsp;продажей туров <b>напрямую от&nbsp;туроператоров</b>
+				</div>
+				<p class="b-subtitle" id="b-2-2h2">Как это работает:</p>
+				<div class="explain clearfix">
+					<div class = "explanation clearfix anim fadeDown" data-cont="#b-2-2h2">
+						<img src="i/direct-1.jpg" data-retina="i/direct-1@2x.jpg">
+						<p class="b-dif-text">Вы <a href="#b-popup-2" class="fancy"><b>оставляете заявку</b></a>  на поиск тура</p>
+					</div>
+					<div class = "explanation clearfix anim fadeDown delay200" data-cont="#b-2-2h2">
+						<img src="i/direct-2.jpg" data-retina="i/direct-2@2x.jpg">
+						<p class="b-dif-text">Наш менеджер подбирает  для вас <b>лучший тур</b> под все ваши запросы</p>
+					</div>
+					<div class = "explanation clearfix anim fadeDown delay400" data-cont="#b-2-2h2">
+						<img src="i/direct-3.jpg" data-retina="i/direct-3@2x.jpg">
+						<p class="b-dif-text">Мы бронируем путевку  <b>по цене туроператора</b></p>
+					</div>
+				</div>
+				<p class="b-subtitle payoff"><b>Вы не платите комиссию</b> нашим менеджерам: за вас это делает туроператор</p>
+		</div>
+	</div>
 	<div class="b-block">
 		<img id="b-title-logo" class="b-title-logo" src="i/logo-big.svg" data-enllax-ratio=".15" data-enllax-type="foreground" data-enllax-direction="vertical">
 	</div>
@@ -374,7 +415,7 @@ getSource();
 			<form action="kitsend.php" method="POST" data-goal="MEETING" id="b-form-1">
 				<div class="b-left" id="typed-strings">
 					<h2 class="b-header-h2"><b>Узнайте подробнее<br></b> о путешествии по Турции</h2>
-					<h3 class="b-subtitle">Наши эксперты готовы проконсультировать вас <b>абсолютно бесплатно.</b></h3>
+					<h3 class="b-subtitle">Наши эксперты готовы проконсультировать вас <b>абсолютно&nbsp;бесплатно.</b></h3>
 				</div>
 				
 				<div class="b-right">
@@ -403,7 +444,7 @@ getSource();
 			<form action="kitsend.php" method="POST" data-goal="WANTSAME" id="b-form-2">
 				<div class="b-left">
 					<h2 class="b-header-h2">Подберем для вас<br>тур под<b> все ваши запросы</b></h2>
-					<h3 class="b-subtitle">За нашими плечами <b>5 лет опыта</b>работы на рынке туризма и сотни довольных клиентов.</b></h3>
+					<h3 class="b-subtitle">За нашими плечами <b>5 лет опыта</b> работы на рынке туризма и сотни довольных клиентов.</b></h3>
 				</div>
 				
 				<div class="b-right">
@@ -597,5 +638,17 @@ getSource();
 	<? endif; ?>
 	<noscript><div><img src="https://mc.yandex.ru/watch/49375867" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
+	<!-- Begin LeadBack code {literal} -->
+	<script>
+	    var _emv = _emv || [];
+	    _emv['campaign'] = '8ea1e4f9f24c38bac6ab6f28';
+	    
+	    (function() {
+	        var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+	        em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+	    })();
+	</script>
+	<!-- End LeadBack code {/literal} -->
 </body>
 </html>

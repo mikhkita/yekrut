@@ -100,15 +100,18 @@ $(document).ready(function(){
     });
     
     var circleWidth = 0;
-    function circleWidthDet(){
+    function circleWidthDeterm(){
         var circle = document.getElementById("circle");
         circleWidth = circle.offsetWidth;
         document.getElementById('circle').style.height = circleWidth+'px';
         var circle2 = document.getElementById("circle-2");
-        circleWidth = circle.offsetWidth;
+        circleWidth = circle2.offsetWidth;
         document.getElementById('circle-2').style.height = circleWidth+'px';
+        var circle3 = document.getElementById("circle-3");
+        circleWidth = circle3.offsetWidth;
+        document.getElementById('circle-3').style.height = circleWidth+'px';
     }
-    circleWidthDet();
+    circleWidthDeterm();
    
     if (isDesktop) {
             $('#b-title-logo').enllax();
@@ -140,7 +143,7 @@ $(document).ready(function(){
         document.getElementById('link-1').setAttribute('data-cont', ' ');
     };
     $(window).resize(function () {
-        circleWidthDet();
+        circleWidthDeterm();
     });
 // custom["footer-animate"] = function(){
 //     var typed = new Typed("#typed-show", {
