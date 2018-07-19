@@ -57,8 +57,8 @@ getSource();
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimateDelays.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
-	<link rel="stylesheet" href="css/slick-theme.css" type="text/css"?1>
-	<link rel="stylesheet" href="css/layout.css" type="text/css"?1>
+	<link rel="stylesheet" href="css/slick-theme.css?1" type="text/css">
+	<link rel="stylesheet" href="css/layout.css?1" type="text/css">
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="i/favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="i/favicon/apple-touch-icon-114x114.png" />
@@ -75,7 +75,7 @@ getSource();
 	<link rel="icon" type="image/png" href="i/favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="i/favicon/favicon-128.png" sizes="128x128" />
 
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"?1>
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css?1">
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
@@ -93,7 +93,7 @@ getSource();
 				</div>
 				<div class="b-phone">
 					<label for="recall" class="phone">+7 (3822) 909-303</label>
-					<a class="recall fancy" id="recall" href="#b-popup-5">перезвоните мне</a>
+					<a class="recall fancy goal-click" data-goal="CALLME_OPEN" id="recall" href="#b-popup-5">перезвоните мне</a>
 				</div>
 			</div>
 			<div class="b-bottom">	
@@ -101,7 +101,7 @@ getSource();
 					<h1>Незабываемое<br><b>путешествие в Турцию</b><br>по системе «все включено»</h1>
 					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо&nbsp;сейчас. Ведь все, что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
 					<div class="consult">
-						<a href="#b-popup-1" class="b-button orange left fancy">
+						<a href="#b-popup-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN">
 							<p class="button-bold">Получить консультацию</p>
 							<p class="button-thin">бесплатно</p>
 						</a>
@@ -167,7 +167,7 @@ getSource();
 					</div>
 				</div>
 			</div>
-			<a href="#b-popup-1" class="b-button orange more fancy">
+			<a href="#b-popup-1" class="b-button orange more fancy goal-click" data-goal="MEETING_OPEN">
 				<p class="button-bold">Узнать подробнее</p>
 				<p class="button-thin">о путешествии по Турции</p>
 			</a>
@@ -265,7 +265,7 @@ getSource();
 					</div>
 					
 				</div>
-				<a href="#b-popup-2" class="b-button orange relax fancy">
+				<a href="#b-popup-2" class="b-button orange relax fancy goal-click" data-goal="WANTSAME_OPEN">
 						<p class="button-bold">Хочу так же отдохнуть</p>
 						<p class="button-thin">подберите мне тур</p>
 					</a>
@@ -289,7 +289,7 @@ getSource();
 						<div id="expert-name" class="b-expert-name anim fadeDown delay500" data-cont='.b-5'>Юлия Лозовая</div>
 						<div id="expert-quote" class="b-expert-quote anim fadeDown delay600" data-cont='.b-5'>«Я счастлива от того, что делаю людей&nbspсчастливыми»</div>
 						<div id="question-button" class="anim fadeRight delay800" data-cont='.b-5'>
-							<a id="link-1" href="#b-popup-3" class="b-button orange question fancy left anim fadeRight" data-cont='.b-5'">
+							<a id="link-1" href="#b-popup-3" class="b-button orange question fancy left anim fadeRight goal-click" data-goal="JULIA_OPEN" data-cont='.b-5'">
 								<p class="button-bold">Задать вопрос</p>
 							</a>
 						</div>
@@ -308,7 +308,7 @@ getSource();
 						<div id="expert-name-2" class="b-expert-name anim fadeDown" data-cont='.line-2'>Екатерина Белозёрова</div>
 						<div id="expert-quote-2" class="b-expert-quote anim fadeDown delay100" data-cont='.line-2'>«С детства мечтала знать всё о всех странах&nbspмира, теперь хочу поделиться этим&nbspс&nbspмоими клиентами»</div>
 						<div id="question-button-2" class="anim fadeLeft delay300" data-cont='.line-2'>
-							<a href="#b-popup-4" class="b-button orange question left fancy">
+							<a href="#b-popup-4" class="b-button orange question left fancy goal-click" data-goal="KATE_OPEN">
 								<p class="button-bold">Задать вопрос</p>
 							</a>
 						</div>
@@ -346,7 +346,7 @@ getSource();
 					<input type="submit" style="display: none;">
 					<input type="hidden" name="subject" value="Форма с личным авто">
 					<input required checked id="agree" class="agree" type="checkbox" name="agreement">
-					<label for="agree"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+					<label for="agree"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
 				</form>	
 			</div>
 				<div class="b-footer clearfix">
@@ -357,7 +357,7 @@ getSource();
 						<ul>
 							<li>г. Томск, пр. Кирова, 58 ст. 26,<br> офис 21, 2 этаж</li>
 							<li>Остались вопросы? Звоните&nbsp;+7&nbsp;(3822)&nbsp;909-303</li>
-							<li><a href="https://kru-god.ru/politics/">Политика по работе с персональными данными</a></li>
+							<li><a href="https://kru-god.ru/politics/" target="_blank">Политика по работе с персональными данными</a></li>
 						</ul>
 					</div>
 					<a class="b-redder">
@@ -393,7 +393,7 @@ getSource();
 					<input type="hidden" name="subject" value="Запись на консультацию">
 					<input type="submit" style="display: none;">
 					<input required checked id="agree-1" class="agree" type="checkbox" name="agreement">
-					<label for="agree-1"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+					<label for="agree-1"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
 				</div>
 			</form>
 		</div>
@@ -422,7 +422,7 @@ getSource();
 					<input type="hidden" name="subject" value="Запрос на подбор тура">
 					<input type="submit" style="display: none;">
 					<input required checked id="agree-2" class="agree" type="checkbox" name="agreement">
-					<label for="agree-2"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+					<label for="agree-2"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
 				</div>
 			</form>
 		</div>
@@ -446,7 +446,7 @@ getSource();
 					<input type="hidden" name="subject" value="Вопрос Юлии">
 					<input type="submit" style="display: none;">
 					<input required checked id="agree-3" class="agree" type="checkbox" name="agreement">
-					<label for="agree-3"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+					<label for="agree-3"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
 					<div class="pop-cont-1">
 						<div class="b-julia-pop"></div>
 					</div>
@@ -476,7 +476,7 @@ getSource();
 					<input type="hidden" name="subject" value="Вопрос Екатерине">
 					<input type="submit" style="display: none;">
 					<input required checked id="agree-4" class="agree" type="checkbox" name="agreement">
-					<label for="agree-4"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+					<label for="agree-4"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
 				</div>
 			</form>
 		</div>
@@ -499,7 +499,7 @@ getSource();
 					<input type="hidden" name="subject" value="Заявка на обратный звонок">
 					<input type="submit" style="display: none;">
 					<input required checked id="agree-5" class="agree" type="checkbox" name="agreement">
-					<label for="agree-5"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+					<label for="agree-5"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
 				</div>
 			</form>
 		</div>
@@ -510,7 +510,7 @@ getSource();
 			<form action="kitsend.php" method="POST" data-goal="TRANSFER" id="b-form-6">
 				<div class="b-left" id="typed-strings">
 					<h2 class="b-header-h2">Не уходите <b>с&nbsp;пустыми&nbsp;руками</b></h2>
-					<h3 class="b-subtitle"><b>До 30 июня</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;</b>вылета.</h3>
+					<h3 class="b-subtitle"><b>До 30 июля</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;</b>вылета.</h3>
 					<div class="transfer"></div>
 				</div>
 				
@@ -530,7 +530,7 @@ getSource();
 					<input type="hidden" name="subject" value="Форма с трансфером в аэропорт">
 					<input type="submit" style="display: none;">
 					<input required checked id="agree-6" class="agree" type="checkbox" name="agreement">
-					<label for="agree-6"><p class="b-condition">Я принимаю <a href="#">условия передачи информации</a></p></label>
+					<label for="agree-6"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
 				</div>
 			</form>
 		</div>
@@ -559,12 +559,12 @@ getSource();
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
-	<script type="text/javascript" src="js/KitSend.js"></script>
 	<script type="text/javascript" src="js/particles.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/jquery.enllax.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/KitSend.js?1"></script>
+	<script type="text/javascript" src="js/main.js?1"></script>
 
 	<? if($_SERVER["HTTP_HOST"] == "turkey.kru-god.ru" ): ?>
 	<!-- Yandex.Metrika counter -->
