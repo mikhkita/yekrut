@@ -563,7 +563,66 @@ input:-moz-placeholder {
 	color: #FFFFFF;
 	line-height: 28px;
 }
-
+.explanation{
+	width: 100% !important;
+	text-align: justify;
+	top: 0px !important;
+	padding-top: 30px;
+	max-width: 327px;
+}
+	.explanation:nth-child(1){
+		padding-top: 20px;
+	}
+	.explanation img{
+		height: auto !important;
+		display: inline-block;
+		float: none;
+		vertical-align: middle;
+	}
+		.explanation p a:after{
+			width: 154px;
+			left: 28px;
+			bottom: 3px;
+		}
+		.explanation:nth-child(1) img{
+			width: 96px;
+			left: 0px;
+			top: 0px;
+		}
+		.explanation:nth-child(2) img{
+			width: 88px;
+			left: 0px;
+			top: 0px;
+		}
+		.explanation:nth-child(3) img{
+			width: 99px;
+			left: 0px;
+			top: 0px;
+		}
+	.explanation .b-dif-text{
+		float: none;
+		margin-top: auto;
+		width: 64%;
+	    display: inline-block;
+    	vertical-align: middle;
+	}
+.payoff{
+	margin-top: 30px !important;
+}
+.b-overprice{
+	background-image: url(../i/bg-overprice-m.svg);
+	background-position: 50% 100%;
+	background-repeat: no-repeat;
+}
+.explain{
+	text-align: center;
+}
+.explanation:after{
+	content: '';
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
 /*ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ--ПОПАПЫ*/
 
 #b-popup-1,
@@ -737,64 +796,4 @@ textarea{
 }
 .b-2-2 .b-header-h2 {
     line-height: 36px;
-}
-.explanation{
-	width: 100% !important;
-	text-align: justify;
-	top: 0px !important;
-	padding-top: 30px;
-	max-width: 327px;
-}
-	.explanation:nth-child(1){
-		padding-top: 20px;
-	}
-	.explanation img{
-		height: auto !important;
-		display: inline-block;
-		float: none;
-		vertical-align: middle;
-	}
-		.explanation p a:after{
-			width: 154px;
-			left: 28px;
-			bottom: 3px;
-		}
-		.explanation:nth-child(1) img{
-			width: 96px;
-			left: 0px;
-			top: 0px;
-		}
-		.explanation:nth-child(2) img{
-			width: 88px;
-			left: 0px;
-			top: 0px;
-		}
-		.explanation:nth-child(3) img{
-			width: 99px;
-			left: 0px;
-			top: 0px;
-		}
-	.explanation .b-dif-text{
-		float: none;
-		margin-top: auto;
-		width: 64%;
-	    display: inline-block;
-    	vertical-align: middle;
-	}
-.payoff{
-	margin-top: 30px !important;
-}
-.b-overprice{
-	background-image: url(../i/bg-overprice-m.svg);
-	background-position: 50% 100%;
-	background-repeat: no-repeat;
-}
-.explain{
-	text-align: center;
-}
-.explanation:after{
-	content: '';
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
 }

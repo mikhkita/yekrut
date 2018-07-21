@@ -101,7 +101,7 @@ getSource();
 					<h1>Незабываемое<br><b>путешествие в Турцию</b><br>по системе «все включено»</h1>
 					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо&nbsp;сейчас. Ведь все, что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
 					<div class="consult">
-						<a href="#b-popup-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN">
+						<a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN">
 							<p class="button-bold">Получить консультацию</p>
 							<p class="button-thin">бесплатно</p>
 						</a>
@@ -199,7 +199,7 @@ getSource();
 				<div class="explain clearfix">
 					<div class = "explanation anim fadeDown" data-cont="#b-2-2h2">
 						<img src="i/direct-1.jpg" data-retina="i/direct-1@2x.jpg">
-						<p class="b-dif-text">Вы <a href="#b-popup-2" class="fancy"><b>оставляете заявку</b></a> на поиск тура</p>
+						<p class="b-dif-text">Вы <a href="#b-popup-2" class="fancy goal-click" data-goal="REQUEST_OPEN"><b>оставляете заявку</b></a> на поиск тура</p>
 					</div>
 					<div class = "explanation clearfix anim fadeDown delay200" data-cont="#b-2-2h2">
 						<img src="i/direct-2.jpg" data-retina="i/direct-2@2x.jpg">
@@ -541,6 +541,121 @@ getSource();
 					<input type="submit" style="display: none;">
 					<input required checked id="agree-5" class="agree" type="checkbox" name="agreement">
 					<label for="agree-5"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
+				</div>
+			</form>
+		</div>
+
+		<div class="b-popup" id="b-popup-quiz-1">
+			<form action="kitsend.php" method="POST" data-goal="QUIZ" id="b-form-2">
+				<div class="b-quiz">
+					<!-- <div class="quiz-screen scr-1">
+						<h2 class="b-header-h2"><b>Рассчитайте</b> стоимость вашего&nbsp;путешествия в Турцию</h2>
+						<h3 class="b-subtitle">Когда вы планируете отдохнуть?</b></h3>
+						<form>
+							<div class="quiz-answers">
+								<input name="when" type="radio" class="radio" id="radio-1" value="1">
+								<label for="radio-1">Чемоданы собраны, хоть завтра</label>
+
+								<input name="when" type="radio" class="radio" id="radio-2" value="2">
+								<label for="radio-2">В течении месяца</label>
+
+								<input name="when" type="radio" class="radio" id="radio-3" value="3">
+								<label for="radio-3">Через 2-3 месяца</label>
+
+								<input name="when" type="radio" class="radio" id="radio-4" value="4">
+								<label for="radio-4">Планирую через полгода</label>
+							</div>
+							<a href="#" class="b-button orange quiz-but">
+								<p class="button-bold">дальше</p>
+							</a>
+							<p class="small">Ещё три шага</p>
+						</form>
+					</div> -->
+					<!-- <div class="quiz-screen scr-2">
+						<h2 class="b-header-h2"><b>Отлично!</b><br>Теперь укажите количество отдыхающих&nbsp;<b>взрослых и детей</b></h2>
+						<h3 class="b-subtitle">Количество взрослых</b></h3>
+						<form>
+							<div class="quiz-answers">
+								<input name="adults" type="radio" class="radio" id="radio-2-1" value="1">
+								<label for="radio-2-1">1</label>
+
+								<input name="adults" type="radio" class="radio" id="radio-2-2" value="2">
+								<label for="radio-2-2">2</label>
+
+								<input name="adults" type="radio" class="radio" id="radio-2-3" value="3">
+								<label for="radio-2-3">3</label>
+
+								<input name="adults" type="radio" class="radio" id="radio-2-4" value="4">
+								<label for="radio-2-4">4</label>
+
+								<input name="adults" type="radio" class="radio" id="radio-2-5" value="5">
+								<label for="radio-2-5">5</label>
+							</div>
+							<h3 class="b-subtitle">Количество детей</b></h3>
+							<div class="quiz-answers">
+								<input name="children" type="radio" class="radio" id="radio-2-6" value="0">
+								<label for="radio-2-6">0</label>
+
+								<input name="children" type="radio" class="radio" id="radio-2-7" value="1">
+								<label for="radio-2-7">1</label>
+
+								<input name="children" type="radio" class="radio" id="radio-2-8" value="2">
+								<label for="radio-2-8">2</label>
+
+								<input name="children" type="radio" class="radio" id="radio-2-9" value="3">
+								<label for="radio-2-9">3</label>
+
+								<input name="children" type="radio" class="radio" id="radio-2-10" value="4">
+								<label for="radio-2-10">4</label>
+							</div>
+							<a href="#" class="b-button orange quiz-but">
+								<p class="button-bold">дальше</p>
+							</a>
+							<p class="small">Ещё два шага</p>
+						</form>
+					</div> -->
+					<!-- <div class="quiz-screen scr-3">
+						<h2 class="b-header-h2">На <b>сколько ночей</b> хотели бы слетать&nbsp;в&nbsp;Турцию?</h2>
+						<h3 class="b-subtitle">Когда вы планируете отдохнуть?</b></h3>
+						<form>
+							<div class="quiz-answers">
+								<input name="nigts" type="radio" class="radio" id="radio-3-1" value="5-7 ночей">
+								<label for="radio-1">5-7 ночей</label>
+
+								<input name="nigts" type="radio" class="radio" id="radio-3-2" value="8–10 ночей">
+								<label for="radio-2">8–10 ночей</label>
+
+								<input name="nigts" type="radio" class="radio" id="radio-3-3" value="11–13 ночей">
+								<label for="radio-3">11–13 ночей</label>
+
+								<input name="nigts" type="radio" class="radio" id="radio-3-4" value="Более 13 ночей">
+								<label for="radio-4">Более 13 ночей</label>
+
+								<input name="nigts" type="radio" class="radio" id="radio-3-5" value="Не важно">
+								<label for="radio-4">Не важно</label>
+							</div>
+							<a href="#" class="b-button orange quiz-but">
+								<p class="button-bold">дальше</p>
+							</a>
+							<p class="small">Остался всего один шаг</p>
+						</form>
+					</div> -->
+					<div class="quiz-screen scr-4">
+						<h2 class="b-header-h2"><b>Остался всего один шаг!</b></h2>
+						<h3 class="b-subtitle">Оставьте ваши контакты и получите расчёт</b></h3>
+						<form>
+							<div class="quiz-answers">
+								<input class="b-form-input" type="text" id="name-quiz" name="name" required="" placeholder="Ваше имя*">
+								<input class="b-form-input" type="text" id="tel-quiz" name="phone" required="" placeholder="Ваш телефон*">
+							</div>
+							<a href="#" class="b-button orange quiz-but">
+								<p class="button-bold">получить расчёт</p>
+								<p class="button-thin">в ближайшее время</p>
+							</a>
+							<input required checked id="agree-quiz" class="agree" type="checkbox" name="agreement">
+							<label for="agree-quiz"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
+						</form>
+					</div>
 				</div>
 			</form>
 		</div>
