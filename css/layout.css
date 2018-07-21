@@ -211,6 +211,7 @@
 				line-height: 75px;
 				text-align: left;
 				margin-bottom: 32px;
+				max-width: 850px;
 			}
 				.b-1 h1 b{
 				font-family: Gilroy-Bold;

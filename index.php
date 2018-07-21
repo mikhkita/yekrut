@@ -1,50 +1,12 @@
 <?
-	session_start();
-	
-	function getSource(){
-	   if( isset($_SESSION["source"]) ) return true;
 
-	   if( isset($_SERVER["HTTP_REFERER"]) && $_SERVER["HTTP_REFERER"] != "" ){
-	      $refer = $_SERVER["HTTP_REFERER"];
-	   }
-	   $source = "Неизвестен";
-	   $keyWord = NULL;
+require_once("controller.php");
+$version = 3;
 
-	   if( isset($_GET["utm_source"]) ){
-	      $sources = array(
-	         "yandex.search" => "Яндекс.Директ (поиск)",
-	         "yandex.context" => "Яндекс.Директ (РСЯ)",
-	         "yadirect" => "Яндекс.Директ (поиск)",
-	      );
-	      if( isset($sources[ $_GET["utm_source"] ]) ){
-	         $source = $sources[ $_GET["utm_source"] ];
-	      }else{
-	         $source = $_GET["utm_source"];
-	      }
-
-	      $keyWord = $_GET["utm_term"];
-	      // $keyWord = $_GET["utm_content"];
-	   }elseif( strpos($refer, "vk.com") !== false ){
-	      $source = "Вконтакте";
-	   }elseif( strpos($refer, "link.2gis.ru") !== false ){
-	      $source = "2Gis";
-	   }elseif( strpos($refer, "instagram.com") !== false ){
-	      $source = "Инстаграм";
-	   }elseif( strpos($refer, "yandex.ru") !== false ){
-	      $source = "Яндекс (органика)";
-	   }elseif( strpos($refer, "google.ru") !== false ){
-	      $source = "Google (органика)";
-	   }
-
-	   $_SESSION["source"] = $source;
-	   $_SESSION["keyWord"] = $keyWord;
-}
-
-getSource();
 ?><!DOCTYPE html>
 <html>
 <head>
-	<title>Незабываемое путешествие в Турцию по системе «все включено»</title>
+	<title><?=$browserTitle?></title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
@@ -54,11 +16,10 @@ getSource();
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
-	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
-	<link rel="stylesheet" href="css/KitAnimateDelays.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css?<?=$version?>" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
-	<link rel="stylesheet" href="css/slick-theme.css?1" type="text/css">
-	<link rel="stylesheet" href="css/layout.css?1" type="text/css">
+	<link rel="stylesheet" href="css/slick-theme.css?<?=$version?>" type="text/css">
+	<link rel="stylesheet" href="css/layout.css?<?=$version?>" type="text/css">
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="i/favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="i/favicon/apple-touch-icon-114x114.png" />
@@ -75,7 +36,7 @@ getSource();
 	<link rel="icon" type="image/png" href="i/favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="i/favicon/favicon-128.png" sizes="128x128" />
 
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css?1">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css?<?=$version?>">
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
@@ -98,7 +59,7 @@ getSource();
 			</div>
 			<div class="b-bottom">	
 				<div class="b-h1-wrap">
-					<h1>Незабываемое<br><b>путешествие в Турцию</b><br>по системе «все включено»</h1>
+					<h1><?=$title?></h1>
 					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо&nbsp;сейчас. Ведь все, что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
 					<div class="consult">
 						<a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN">
@@ -719,8 +680,8 @@ getSource();
 	<script type="text/javascript" src="js/jquery.easing.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/jquery.enllax.js"></script>
-	<script type="text/javascript" src="js/KitSend.js?1"></script>
-	<script type="text/javascript" src="js/main.js?1"></script>
+	<script type="text/javascript" src="js/KitSend.js?<?=$version?>"></script>
+	<script type="text/javascript" src="js/main.js?<?=$version?>"></script>
 
 	<? if($_SERVER["HTTP_HOST"] == "turkey.kru-god.ru" ): ?>
 	<!-- Yandex.Metrika counter -->
