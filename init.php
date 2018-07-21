@@ -2,7 +2,8 @@
 
 function intersect($str, $arr){
 	foreach($arr as $arr_item){
-		if(strpos($str, $arr_item)){
+		// echo "arr_item " . $arr_item . " pos in " . $str . ": " . strpos($str, $arr_item)."<br>";
+		if(strpos($str, $arr_item) !== false){
 			return true;
 		}
 	}
@@ -31,7 +32,10 @@ function getSource(){
 		$sources = array(
 			"yandex.search" => "Яндекс.Директ (поиск)",
 			"yandex.context" => "Яндекс.Директ (РСЯ)",
+			"google.search" => "Google Adwords (поиск)",
+			"google.gdn" => "Google Adwords (КМС)",
 			"yadirect" => "Яндекс.Директ (поиск)",
+			"vk" => "Таргет Вконтакте"
 		);
 		if( isset($sources[ $_GET["utm_source"] ]) ){
 			$source = $sources[ $_GET["utm_source"] ];

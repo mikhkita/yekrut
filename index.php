@@ -1,6 +1,7 @@
 <?
 
 require_once("controller.php");
+$version = 3;
 
 ?><!DOCTYPE html>
 <html>
@@ -15,11 +16,10 @@ require_once("controller.php");
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
-	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
-	<link rel="stylesheet" href="css/KitAnimateDelays.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css?<?=$version?>" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
-	<link rel="stylesheet" href="css/slick-theme.css?1" type="text/css">
-	<link rel="stylesheet" href="css/layout.css?1" type="text/css">
+	<link rel="stylesheet" href="css/slick-theme.css?<?=$version?>" type="text/css">
+	<link rel="stylesheet" href="css/layout.css?<?=$version?>" type="text/css">
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="i/favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="i/favicon/apple-touch-icon-114x114.png" />
@@ -36,7 +36,7 @@ require_once("controller.php");
 	<link rel="icon" type="image/png" href="i/favicon/favicon-16x16.png" sizes="16x16" />
 	<link rel="icon" type="image/png" href="i/favicon/favicon-128.png" sizes="128x128" />
 
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css?1">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css?<?=$version?>">
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 </head>
@@ -565,8 +565,8 @@ require_once("controller.php");
 	<script type="text/javascript" src="js/jquery.easing.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/jquery.enllax.js"></script>
-	<script type="text/javascript" src="js/KitSend.js?1"></script>
-	<script type="text/javascript" src="js/main.js?1"></script>
+	<script type="text/javascript" src="js/KitSend.js?<?=$version?>"></script>
+	<script type="text/javascript" src="js/main.js?<?=$version?>"></script>
 
 	<? if($_SERVER["HTTP_HOST"] == "turkey.kru-god.ru" ): ?>
 	<!-- Yandex.Metrika counter -->
