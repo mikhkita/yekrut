@@ -82,6 +82,15 @@ $version = 3;
 		<div class="b-reasons clearfix">
 			<div class="b-reason">
 				<div class="b-block">
+					<div class="b-picture-3"></div>
+					<div class="b-reason-text-3  slider-anim fadeDown">
+						<h3 class="b-header-h3 slider-anim fadeDown">Больше морей – <b>больше&nbsp;пляжей</b></h3>
+						<p class="b-text slider-anim fadeDown delay200">Турция омывается 4-мя морями – Средиземным, Черным, Эгейским и Мраморным. А пляжи входят в десятку <em>чистейших пляжей мира.</em> Эти факты уже неплохой повод приехать сюда на отдых.</p>
+					</div>
+				</div>
+			</div>
+			<div class="b-reason">
+				<div class="b-block">
 					<div class="b-picture-2"></div>
 					<div class="b-reason-text-2  slider-anim fadeDown">
 						<h3 class="b-header-h3 slider-anim fadeDown">Капля адреналина и <b>множество</b> эмоций</h3>
@@ -95,15 +104,6 @@ $version = 3;
 					<div class="b-reason-text-4">
 						<h3 class="b-header-h3 slider-anim fadeDown">Знаменитый<br><b>«All&nbsp;inclusive»</b></h3>
 						<p class="b-text slider-anim fadeDown delay200">Что мы чаще всего слышим про Турцию? Правильно, что там все включено. Практически в каждом отеле в стоимость проживания <em>входит завтрак, обед и ужин, </em>и на каждом – шикарный шведский стол.</p>
-					</div>
-				</div>
-			</div>
-			<div class="b-reason">
-				<div class="b-block">
-					<div class="b-picture-3"></div>
-					<div class="b-reason-text-3  slider-anim fadeDown">
-						<h3 class="b-header-h3 slider-anim fadeDown">Больше морей – <b>больше&nbsp;пляжей</b></h3>
-						<p class="b-text slider-anim fadeDown delay200">Турция омывается 4-мя морями – Средиземным, Черным, Эгейским и Мраморным. А пляжи входят в десятку <em>чистейших пляжей мира.</em> Эти факты уже неплохой повод приехать сюда на отдых.</p>
 					</div>
 				</div>
 			</div>
