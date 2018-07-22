@@ -262,6 +262,51 @@ $(document).ready(function(){
             img.src = src;
         });
     }
+    $('#b-quiz').validate(
+      {
+        rules:
+        {
+            "when":{ 
+                required:true
+            }
+        },
+        messages:
+        {
+            "when": {
+                required:"Выберите один вариант"
+            }
+        },
+        errorPlacement: function(error, element) 
+        {
+            if ( element.is(":radio") ) 
+            {
+                error.addClass("visible-label");
+                error.appendTo('.b-error-placement');
+            }
+            else 
+            { // This is the default behavior 
+                error.insertAfter( element );
+            }
+         }
+          });
+
+
+    $(".quiz-screen").hide();
+    $(".scr-1").show();
+    $(".quiz-but").click(function(){
+        var lol = ($(this).parent(".quiz-answers").find("input.error"));
+        alert(lol);
+
+        $("#b-quiz").valid();
+        if ($(this).parent(".quiz-answers").find("input.error").length != 0) {
+            return false;  
+        }
+        else{ 
+            $(".quiz-screen").hide();
+            $(($(this)).attr("data-next")).show(); 
+        }
+    });
+
 
     // $("body").children().each(function() {
     //     $(this).html($(this).html().replace(/&#8232;/g," "));

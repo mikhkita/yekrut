@@ -1603,8 +1603,11 @@ li{
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
 }
-label.error{
+label.error:not(.visible-label){
 	display: none !important;
+}
+label.error.visible-label{
+	display: inline;
 }
 input.error,textarea.error{
 	border: 1px solid #F00 !important;
@@ -1808,6 +1811,10 @@ strong, b{
     	width: auto;
     	padding-left: 109px;
     }
+    .scr-2 .radio + label:after{
+    	left: 59px;
+    	top: 20px;
+    }
 	.radio + label {
 		position: relative;
 		padding: 0 0 0 35px;
@@ -1878,7 +1885,7 @@ strong, b{
 	background-image: url(../i/bg-quiz.svg);
 	background-repeat: no-repeat;
 	width: 760px;
-	background-position: 50% 100%;
+	background-position: 50% 54%;
 	padding: 60px 56px 50px 56px;
 }
 .quiz-screen{
@@ -1914,15 +1921,49 @@ strong, b{
 		padding-left: 0px;
 	}
 	.scr-4 .quiz-answers{
-		width: 100%;
+		width: 55.9%;
 		text-align: center;
 		padding-top: 44px;
 		padding-bottom: 36px;
+	}
+	.scr-4 .quiz-but{
+		width: 100%;
 	}
 	.quiz-screen input{
 		width: 363px;
 		border-color: #e4e4e4;
 		color: #585858;
+	}
+	.quiz-screen label p{
+		position: relative;
+	}
+	.quiz-screen label p,
+	.quiz-screen label p a{
+		color: rgba(119,119,119,0.7);
+		position: relative;
+	}
+	.quiz-screen label p a:hover{
+		color: #484848;
+	}
+	.quiz-screen label p a:after:hover{
+		border-color: #484848;
+	}
+	.quiz-screen label p a:after{
+		border-color: rgba(119,119,119,0.7);
+		bottom: 0px;
+		left: auto;
+		right: 0px;
+	}
+	.quiz-screen label p:before{
+		border-color: rgba(119,119,119,0.7);
+		background-color: rgba(255,255,255,0.2);
+		left: 5px;
+		top: 29px;
+	}
+	.quiz-screen .agree + label:after{
+		left: -172px;
+    	top: -25px;
+		background-image: url(../i/check-b.svg)
 	}
 
    	.quiz-screen input::-webkit-input-placeholder {
@@ -1937,6 +1978,16 @@ strong, b{
 		color: #585858;
 		line-height: 28px;
 	}
+	  .b-error-placement{
+	  	display: inline-block !important;
+	  	color: red;
+	  	font-family: Gilroy-Regular;
+	  	font-size: 20px;
+	  	line-height: 28px;
+	  	width: 100%;
+	  	text-align: center;
+	  }
+
 #b-popup-quiz-1 .icon-cross:before,
 #b-popup-quiz-2 .icon-cross:before,
 #b-popup-quiz-3 .icon-cross:before,

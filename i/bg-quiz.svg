@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="760px" height="383px" viewBox="0 0 760 383" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1171px" height="1055px" viewBox="0 0 1171 1055" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle 11</title>
+    <title>Group 3</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1171" height="1055"></rect>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="A4-Copy-4" transform="translate(-1037.000000, -6662.000000)" fill="#FAFAFA">
-            <g id="Квиз" transform="translate(1037.000000, 6360.000000)">
-                <g id="Когда-вы-планируете-отдохнуть">
-                    <g id="Форма">
-                        <g id="Group-3">
-                            <path d="M-121,584.050575 C-80.8911072,432.564421 13.68295,341.820081 162.722172,311.817554 C365.717423,270.953342 576.05912,381.386776 781.970436,304.536327 C905.683874,258.363861 995.027062,123.851752 1050,-99 L1050,833.570217 L-121,833.570217 L-121,584.050575 Z" id="Rectangle-11"></path>
-                        </g>
-                    </g>
+        <g id="A4-Copy-4" transform="translate(-340.000000, -6642.000000)">
+            <g id="Квиз" transform="translate(340.000000, 6390.000000)">
+                <g id="Group-3" transform="translate(0.000000, 252.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Rectangle-4" fill="#FFFFFF" xlink:href="#path-1"></use>
+                    <path d="M0,805.050575 C40.1088928,653.564421 134.68295,562.820081 283.722172,532.817554 C486.717423,491.953342 697.05912,602.386776 902.970436,525.536327 C1026.68387,479.363861 1116.02706,344.851752 1171,122 L1171,1054.57022 L0,1054.57022 L0,805.050575 Z" id="Rectangle-11" fill="#FAFAFA" mask="url(#mask-2)"></path>
                 </g>
             </g>
         </g>
