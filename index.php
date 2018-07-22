@@ -103,7 +103,7 @@ $version = 3;
 					<div class="b-picture-2"></div>
 					<div class="b-reason-text-2 slider-anim fadeDown">
 						<h3 class="b-header-h3 slider-anim fadeDown">Капля адреналина и <b>множество</b> эмоций</h3>
-						<p class="b-text slider-anim fadeDown delay200">Для людей, которые <em>не любят сидеть на&nbsp;одном месте</em></p2> в Турции есть множество активных видов отдыха - дайвинг, рафтинг, яхтинг, альпинизм, сафари, водные лыжи, парапланы и воздушные шары.</p>
+						<p class="b-text slider-anim fadeDown delay200">Для людей, которые <em>не любят сидеть на&nbsp;одном месте</em> в Турции есть множество активных видов отдыха - дайвинг, рафтинг, яхтинг, альпинизм, сафари, водные лыжи, парапланы и воздушные шары.</p>
 					</div>
 				</div>
 			</div>
@@ -205,7 +205,7 @@ $version = 3;
 					<div class="b-name anim fadeRight delay500" data-cont=".b-bottom-b-3">Юлия Лозовая</div>
 				</div>
 				<div class="p-description">
-					<p class="b-header-h3"><b>Опытные эксперты</b> по направлению&nbspТурция </p> 
+					<p class="b-header-h3"><b>Опытные эксперты</b> по направлению&nbsp;Турция </p> 
 					<p class="b-text">Наши менеджеры <b>знают абсолютно все<br> об отдыхе в Турции: </b>где находятся самые чистые пляжи,<br> как и где дешевле записаться на экскурсию и т.д.</p>
 				</div>
 			</div>
@@ -217,7 +217,7 @@ $version = 3;
 						</div>
 					</div>
 				</div>
-				<h4 class="b-dif-title"><b>Опытные эксперты</b> по направлению&nbspТурция</h4>
+				<h4 class="b-dif-title"><b>Опытные эксперты</b> по направлению&nbsp;Турция</h4>
 				<p class="b-dif-text">Наши менеджеры <b>знают абсолютно всё об отдыхе в Турции: </b>где находятся самые чистые пляжи, как и где дешевле записаться на экскурсию и т.д.</p>
 			</div>
 		</div>
@@ -234,7 +234,7 @@ $version = 3;
 						<div class="b-r-wrap"> 
 							<div class="b-r-photo-1"></div>
 							<p class="b-r-name">Алёна Шаипова<br>
-							<noindex><a href="https://vk.com/id11474406" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
+							<noindex><a href="https://vk.com/id11474406" class="b-r-link" target="_blank">ссылка VK</a></noindex></p>
 						</div>
 						<p class="b-r-header slider-anim fadeDown">«Это было лучше, чем в раю! Всем советую»</p>
 						<p class="b-r-text slider-anim fadeDown delay200">Выражаю огромную благодарность турагентству «Отдых круглый год» за мой первый великолепный отдых. Отель на первой линии, хороший район, шикарный пляж, через дорогу шикарное море... Это было лучше, чем в раю! Спасибо от души, всем советую это туристическое агентство.</p>
@@ -247,7 +247,7 @@ $version = 3;
 						<div class="b-r-wrap"> 
 							<div class="b-r-photo-2"></div>
 							<p class="b-r-name">Марта Казакова<br>
-							<noindex><a href="https://vk.com/id18874055" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
+							<noindex><a href="https://vk.com/id18874055" class="b-r-link" target="_blank">ссылка VK</a></noindex></p>
 						</div>
 						<p class="b-r-header slider-anim fadeDown">«Спасибо за отличную организацию нашего отпуска»</p>
 						<p class="b-r-text slider-anim fadeDown delay200">Очень понравилось работать с Юлией! Терпеливый менеджер, который подберёт идеальный вариант даже для самых капризных клиентов. Всё изучит, позвонит узнает нюансы, которые важны для клиентов... В общем, спасибо за отличную организацию нашего отпуска!</p>
@@ -260,7 +260,7 @@ $version = 3;
 						<div class="b-r-wrap"> 
 							<div class="b-r-photo-3"></div>
 							<p class="b-r-name">Арина Чикурова<br>
-							<noindex><a href="https://vk.com/arniechi" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
+							<noindex><a href="https://vk.com/arniechi" class="b-r-link" target="_blank">ссылка VK</a></noindex></p>
 						</div>
 						<p class="b-r-header slider-anim fadeDown">«Остались так довольны, что решили снова обратиться к вам»</p>
 						<p class="b-r-text slider-anim fadeDown delay200">Мы обратились в первый раз в связи со свадебным путешествием и остались так довольны, что с появлением новой возможности поехать отдыхать решили снова обратиться к агенту Юлии Лозовой. Её компетентность, индивидуальный подход и приятная индивидуальность - неоспоримы! </p>
@@ -268,15 +268,14 @@ $version = 3;
 				</div>
 			</div>
 		</div>
-			<a href="#b-popup-2" class="b-button orange relax fancy goal-click" data-goal="WANTSAME_OPEN">
-					<p class="button-bold">Хочу так же отдохнуть</p>
-					<p class="button-thin">подберите мне тур</p>
-				</a>
-		</div>
+		<a href="#b-popup-2" class="b-button orange relax fancy goal-click" data-goal="WANTSAME_OPEN">
+				<p class="button-bold">Хочу так же отдохнуть</p>
+				<p class="button-thin">подберите мне тур</p>
+		</a>
 	</div>
 	<div class="b b-5">
 		<div class="b-block">
-			<h2 class="b-header-h2"><b>Над вашим отдыхом</b> будут работать лучшие в&nbspсвоем деле <b>эксперты</b></h2>
+			<h2 class="b-header-h2"><b>Над вашим отдыхом</b> будут работать лучшие в&nbsp;своем деле <b>эксперты</b></h2>
 			<div class="b-experts">
 				<div class="b-expert-1-wrap clearfix">
 					<div class="b-expert">
@@ -287,11 +286,11 @@ $version = 3;
 						</div>
 					</div>
 					<div class="b-expert-quote-wrap">
-						<div class="line-1 anim width-1" data-cont='.b-5'></div>
-						<div id="expert-name" class="b-expert-name anim fadeDown delay500" data-cont='.b-5'>Юлия Лозовая</div>
-						<div id="expert-quote" class="b-expert-quote anim fadeDown delay600" data-cont='.b-5'>«Я счастлива от того, что делаю людей&nbspсчастливыми»</div>
-						<div id="question-button" class="anim fadeRight delay800" data-cont='.b-5'>
-							<a id="link-1" href="#b-popup-3" class="b-button orange question fancy left anim fadeRight goal-click" data-goal="JULIA_OPEN" data-cont='.b-5'">
+						<div class="line-1 anim width-1" data-cont=".b-5"></div>
+						<div id="expert-name" class="b-expert-name anim fadeDown delay500" data-cont=".b-5">Юлия Лозовая</div>
+						<div id="expert-quote" class="b-expert-quote anim fadeDown delay600" data-cont=".b-5">«Я счастлива от того, что делаю людей&nbsp;счастливыми»</div>
+						<div id="question-button" class="anim fadeRight delay800" data-cont=".b-5">
+							<a id="link-1" href="#b-popup-3" class="b-button orange question fancy left anim fadeRight goal-click" data-goal="JULIA_OPEN" data-cont=".b-5">
 								<p class="button-bold">Задать вопрос</p>
 							</a>
 						</div>
@@ -306,10 +305,10 @@ $version = 3;
 						</div>
 					</div>
 					<div class="b-expert-quote-wrap">
-						<div class="line-2 anim width-2" data-cont='.line-2'></div>
-						<div id="expert-name-2" class="b-expert-name anim fadeDown" data-cont='.line-2'>Екатерина Белозёрова</div>
-						<div id="expert-quote-2" class="b-expert-quote anim fadeDown delay100" data-cont='.line-2'>«С детства мечтала знать всё о всех странах&nbspмира, теперь хочу поделиться этим&nbspс&nbspмоими клиентами»</div>
-						<div id="question-button-2" class="anim fadeLeft delay300" data-cont='.line-2'>
+						<div class="line-2 anim width-2" data-cont=".line-2"></div>
+						<div id="expert-name-2" class="b-expert-name anim fadeDown" data-cont=".line-2">Екатерина Белозёрова</div>
+						<div id="expert-quote-2" class="b-expert-quote anim fadeDown delay100" data-cont=".line-2">«С детства мечтала знать всё о всех странах&nbsp;мира, теперь хочу поделиться этим&nbsp;с&nbsp;моими клиентами»</div>
+						<div id="question-button-2" class="anim fadeLeft delay300" data-cont=".line-2">
 							<a href="#b-popup-4" class="b-button orange question left fancy goal-click" data-goal="KATE_OPEN">
 								<p class="button-bold">Задать вопрос</p>
 							</a>
@@ -334,8 +333,8 @@ $version = 3;
 				<p class="b-form-header">Заполните простую форму</p>
 				<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
 				<form action="kitsend.php" method="POST" data-goal="BOTTOM" id="b-form-1">	
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange meeting ajax">
 							<p class="button-bold">Записаться на встречу</p>
@@ -350,21 +349,20 @@ $version = 3;
 					<label for="agree"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
 				</form>	
 			</div>
-				<div class="b-footer clearfix">
-					<a href="#" class="b-logo-cont">
-						<img src="i/logo-black.svg">
-					</a>
-					<div class="b-f-contacts">
-						<ul>
-							<li>г. Томск, пр. Кирова, 58 ст. 26,<br> офис 21, 2 этаж</li>
-							<li>Остались вопросы? Звоните&nbsp;+7&nbsp;(3822)&nbsp;909-303</li>
-							<li><a href="https://kru-god.ru/politics/" target="_blank">Политика по работе с персональными данными</a></li>
-						</ul>
-					</div>
-					<a class="b-redder">
-						Разработка сайта: <b>redder.pro</b>
-					</a>
+			<div class="b-footer clearfix">
+				<a href="#" class="b-logo-cont">
+					<img src="i/logo-black.svg">
+				</a>
+				<div class="b-f-contacts">
+					<ul>
+						<li>г. Томск, пр. Кирова, 58 ст. 26,<br> офис 21, 2 этаж</li>
+						<li>Остались вопросы? Звоните&nbsp;+7&nbsp;(3822)&nbsp;909-303</li>
+						<li><a href="https://kru-god.ru/politics/" target="_blank">Политика по работе с персональными данными</a></li>
+					</ul>
 				</div>
+				<a class="b-redder">
+					Разработка сайта: <b>redder.pro</b>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -381,8 +379,8 @@ $version = 3;
 				<div class="b-right">
 					<p class="b-form-header">Заполните простую форму</p>
 					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange meeting ajax">
 									<p class="button-bold">получить консультацию</p>
@@ -410,8 +408,8 @@ $version = 3;
 				<div class="b-right">
 					<p class="b-form-header">Заполните простую форму</p>
 					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange meeting find ajax">
 									<p class="button-bold">Подберите мне тур</p>
@@ -433,10 +431,10 @@ $version = 3;
 			<form action="kitsend.php" method="POST" data-goal="JULIA" id="b-form-3">			
 				<div class="b-right">
 					<p class="b-form-header">Напишите Юлии – старшему менеджеру турагентства</p>
-					<p class="b-form-subtitle">Юлия ответит вам в течение рабочего дня: <b>с&nbsp10:00 до 18:00</b></p>
+					<p class="b-form-subtitle">Юлия ответит вам в течение рабочего дня: <b>с&nbsp;10:00 до 18:00</b></p>
 					<textarea class="b-form-input" type="textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange find meeting ajax">
 									<p class="button-bold">Получить ответ от Юлии</p>
@@ -460,10 +458,10 @@ $version = 3;
 			<form action="kitsend.php" method="POST" data-goal="KATE" id="b-form-4">			
 				<div class="b-right">
 					<p class="b-form-header">Напишите Екатерине – менеджеру турагентства</p>
-					<p class="b-form-subtitle">Юлия ответит вам в течение рабочего дня: <b>с&nbsp10:00 до 18:00</b></p>
+					<p class="b-form-subtitle">Юлия ответит вам в течение рабочего дня: <b>с&nbsp;10:00 до 18:00</b></p>
 					<textarea class="b-form-input" type="textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange find meeting ajax">
 									<p class="button-bold">Получить ответ от Екатерины</p>
@@ -488,8 +486,8 @@ $version = 3;
 				<div class="b-right">
 					<p class="b-form-header">Перезвоните мне</p>
 					<p class="b-form-subtitle">Наш менеджер свяжется с вами в течение 2&nbsp;минут</b></p>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
+					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange find meeting ajax">
 							<p class="button-bold">Перезвоните мне</p>
@@ -510,7 +508,7 @@ $version = 3;
 				<div class="b-quiz">
 					<div class="quiz-screen scr-1">
 						<h2 class="b-header-h2"><b>Рассчитайте</b> стоимость вашего&nbsp;путешествия в Турцию</h2>
-						<h3 class="b-subtitle">Когда вы планируете отдохнуть?</b></h3>
+						<h3 class="b-subtitle">Когда вы планируете отдохнуть?</h3>
 							<div class="quiz-answers">
 								<div class="b-error-placement"></div>
 
@@ -534,7 +532,7 @@ $version = 3;
 					</div>
 					<div class="quiz-screen scr-2">
 						<h2 class="b-header-h2"><b>Отлично!</b><br>Теперь укажите количество отдыхающих&nbsp;<b>взрослых и детей</b></h2>
-						<h3 class="b-subtitle">Количество взрослых</b></h3>
+						<h3 class="b-subtitle">Количество взрослых</h3>
 						<div class="quiz-answers">
 							<input name="adults" type="radio" class="radio" id="radio-2-1" value="1">
 							<label for="radio-2-1">1</label>
@@ -551,7 +549,7 @@ $version = 3;
 							<input name="adults" type="radio" class="radio" id="radio-2-5" value="5">
 							<label for="radio-2-5">5</label>
 						</div>
-						<h3 class="b-subtitle">Количество детей</b></h3>
+						<h3 class="b-subtitle">Количество детей</h3>
 						<div class="quiz-answers">
 							<input name="children" type="radio" class="radio" id="radio-2-6" value="0">
 							<label for="radio-2-6">0</label>
@@ -575,7 +573,7 @@ $version = 3;
 					</div>
 					<div class="quiz-screen scr-3">
 						<h2 class="b-header-h2">На <b>сколько ночей</b> хотели бы слетать&nbsp;в&nbsp;Турцию?</h2>
-						<h3 class="b-subtitle">Когда вы планируете отдохнуть?</b></h3>
+						<h3 class="b-subtitle">Когда вы планируете отдохнуть?</h3>
 						<div class="quiz-answers">
 							<input name="nights" type="radio" class="radio" id="radio-3-1" value="5-7 ночей">
 							<label for="radio-3-1">5-7 ночей</label>
@@ -599,7 +597,7 @@ $version = 3;
 					</div>
 					<div class="quiz-screen scr-4">
 						<h2 class="b-header-h2"><b>Остался всего один шаг!</b></h2>
-						<h3 class="b-subtitle">Оставьте ваши контакты и получите расчёт</b></h3>
+						<h3 class="b-subtitle">Оставьте ваши контакты и получите расчёт</h3>
 						<div class="quiz-answers">
 							<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
 							<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
@@ -617,51 +615,50 @@ $version = 3;
 		</div>
 
 		<div style="display:none;">
-		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
-		<div class="b-popup" id="b-popup-6">
-			<form action="kitsend.php" method="POST" data-goal="TRANSFER" id="b-form-6">
-				<div class="b-left" id="typed-strings">
-					<h2 class="b-header-h2">Не уходите <b>с&nbsp;пустыми&nbsp;руками</b></h2>
-					<h3 class="b-subtitle"><b>До 30 июля</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;</b>вылета.</h3>
-					<div class="transfer"></div>
-				</div>
-				
-				<div class="b-right">
-					<p class="b-form-header">Заполните простую форму</p>
-					<p class="b-form-subtitle">И если в будущем вы выберете наше турагентство мы предоставим вам <b>бесплатный трансфер</b> до аэропорта Толмачево</p>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*"></p>
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
-					<div class="b-office">	
-						<a href="#" class="b-button orange meeting ajax transfer-but">
-									<p class="button-bold">Получить трансфер</p>
-									<p class="button-thin">до Толмачево <b>бесплатно</b></p>
-						</a>
-						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
-						<p class="small">Это просто и ни к чему не обязывает</p>
+			<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+			<div class="b-popup" id="b-popup-6">
+				<form action="kitsend.php" method="POST" data-goal="TRANSFER" id="b-form-6">
+					<div class="b-left" id="typed-strings">
+						<h2 class="b-header-h2">Не уходите <b>с&nbsp;пустыми&nbsp;руками</b></h2>
+						<h3 class="b-subtitle"><b>До 30 июля</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;</b>вылета.</h3>
+						<div class="transfer"></div>
 					</div>
-					<input type="hidden" name="subject" value="Форма с трансфером в аэропорт">
-					<input type="submit" style="display: none;">
-					<input required checked id="agree-6" class="agree" type="checkbox" name="agreement">
-					<label for="agree-6"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации</a></p></label>
-				</div>
-			</form>
-		</div>
+					
+					<div class="b-right">
+						<p class="b-form-header">Заполните простую форму</p>
+						<p class="b-form-subtitle">И если в будущем вы выберете наше турагентство мы предоставим вам <b>бесплатный трансфер</b> до аэропорта Толмачево</p>
+						<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
+						<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+						<div class="b-office">	
+							<a href="#" class="b-button orange meeting ajax transfer-but">
+										<p class="button-bold">Получить трансфер</p>
+										<p class="button-thin">до Толмачево <b>бесплатно</b></p>
+							</a>
+							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+							<p class="small">Это просто и ни к чему не обязывает</p>
+						</div>
+						<input type="hidden" name="subject" value="Форма с трансфером в аэропорт">
+						<input type="submit" style="display: none;">
+						<input required checked id="agree-6" class="agree" type="checkbox" name="agreement">
+						<label for="agree-6"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации></a></p></label>
+					</div>
+				</form>
+			</div>
 
-		<div class="b-thanks b-popup" id="b-popup-success">
-			<div class="b-right">
-				<p class="b-form-header">Отлично!</p>
-				<p class="b-form-subtitle">Мы <b>уже получили</b> вашу заявку и перезвоним вам в течение 2 минут</b></p>
-				<input type="submit" class="b-button orange find submit meeting ajax" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
+			<div class="b-thanks b-popup" id="b-popup-success">
+				<div class="b-right">
+					<p class="b-form-header">Отлично!</p>
+					<p class="b-form-subtitle">Мы <b>уже получили</b> вашу заявку и перезвоним вам в течение 2 минут</p>
+					<input type="submit" class="b-button orange find submit meeting" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
+				</div>
 			</div>
-		</div>
-		<div class="b-thanks b-popup" id="b-popup-error">
-			<div class="b-right">
-				<p class="b-form-header">Ошибка!</p>
-				<p class="b-form-subtitle">При отправке заявки произошла ошибка. Вы можете позвонить нам по номеру: <b>+7 (3822) 909-303</b></p>
-				<input type="submit" class="b-button orange find submit meeting ajax" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
+			<div class="b-thanks b-popup" id="b-popup-error">
+				<div class="b-right">
+					<p class="b-form-header">Ошибка!</p>
+					<p class="b-form-subtitle">При отправке заявки произошла ошибка. Вы можете позвонить нам по номеру: <b>+7 (3822) 909-303</b></p>
+					<input type="submit" class="b-button orange find submit meeting" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
+				</div>
 			</div>
-		</div>
-	</div>
 
 	<a href="#b-popup-6" class="fancy pop6" style="display: none">
 	<!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
