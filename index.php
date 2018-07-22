@@ -1,6 +1,15 @@
 <?
 
-require_once("controller.php");
+require_once("init.php");
+getSource();
+
+if( !isset($_SESSION["group"]) ){
+	$_SESSION["group"] = (rand(1, 100) > 50)?2:1;
+}
+$group = $_SESSION["group"];
+
+require_once("controller-1.php");
+
 $version = 3;
 
 ?><!DOCTYPE html>
@@ -49,7 +58,7 @@ $version = 3;
 	<div class="b b-1">
 		<div class="b-block">
 			<div class="b-header-wrap clearfix">
-				<a href="#" class="b-logo-cont">
+				<a href="http" class="b-logo-cont">
 					<img src="i/logo.svg">
 				</a>
 				<div class="b-adr">
@@ -63,13 +72,13 @@ $version = 3;
 			<div class="b-bottom">	
 				<div class="b-h1-wrap">
 					<h1><?=$title?></h1>
-					<p class="b-subtitle">Запишитесь на <b>бесплатную консультацию</b> прямо&nbsp;сейчас. Ведь все, что вам нужно – это 20 минут свободного времени и желание отлично отдохнуть!</p>
+					<p class="b-subtitle"><b>Узнайте стоимость</b> вашего путешествия,  ответив на несколько простых вопросов</p>
 					<div class="consult">
 						<a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
-							<p class="button-bold">Получить консультацию</p>
-							<p class="button-thin">бесплатно</p>
+							<p class="button-bold">Рассчитать стоимость</p>
+							<p class="button-thin">путешествия в Турцию</p>
 						</a>
-						<p class="small">Это просто и ни к чему не обязывает</p>
+						<p class="small">это не займет много времени</p>
 					</div>
 				</div>
 			</div>
@@ -92,7 +101,7 @@ $version = 3;
 			<div class="b-reason">
 				<div class="b-block">
 					<div class="b-picture-2"></div>
-					<div class="b-reason-text-2  slider-anim fadeDown">
+					<div class="b-reason-text-2 slider-anim fadeDown">
 						<h3 class="b-header-h3 slider-anim fadeDown">Капля адреналина и <b>множество</b> эмоций</h3>
 						<p class="b-text slider-anim fadeDown delay200">Для людей, которые <em>не любят сидеть на&nbsp;одном месте</em></p2> в Турции есть множество активных видов отдыха - дайвинг, рафтинг, яхтинг, альпинизм, сафари, водные лыжи, парапланы и воздушные шары.</p>
 					</div>
@@ -138,7 +147,7 @@ $version = 3;
 					<div class="b-expert-3">
 						<div id="circle-3" class="b-circle anim fadeDown">
 							<div class="b-expert-cont anim fadeDown delay200">
-								<img src="i/girl-overprice.png" id="expert-3" class="b-expert-pic-3"  data-retina="i/girl-overprice@2x.png" data-cont="notOverprice"> 
+								<img src="i/girl-overprice.png" id="expert-3" class="b-expert-pic-3" data-retina="i/girl-overprice@2x.png" data-cont="notOverprice"> 
 							</div>
 						</div>
 					</div>
