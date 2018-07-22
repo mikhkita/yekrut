@@ -39,6 +39,9 @@ $version = 3;
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css?<?=$version?>">
 
 	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+	<!-- Пиксель VK -->
+	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?157",t.onload=function(){VK.Retargeting.Init("VK-RTRG-264822-cLysz"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-264822-cLysz" style="position:fixed; left:-999px;" alt=""/></noscript>
 </head>
 <body>
 	<img src="i/bg-popup.jpg" style="display:none">
@@ -77,61 +80,56 @@ $version = 3;
 			<h2 class="b-header-h2"><b>5 причин,</b> почему вам стоит хотя бы раз посетить Турцию</h2>	
 		</div>
 		<div class="b-reasons clearfix">
-				<div class="b-reason">
-					<div class="b-block">
-						<div class="b-picture-2">
-						</div>
-						<div class="b-reason-text-2  slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown">Капля адреналина и <b>множество</b> эмоций</h3>
-								<p class="b-text slider-anim fadeDown delay200">Для людей, которые <em>не любят сидеть на&nbsp;одном месте</em></p2> в Турции есть множество активных видов отдыха - дайвинг, рафтинг, яхтинг, альпинизм, сафари, водные лыжи, парапланы и воздушные шары.</p>
-						</div>
-					</div>
-				</div>
-				<div class="b-reason">
-					<div class="b-block">
-						<div class="b-picture-4">
-						</div>
-						<div class="b-reason-text-4">
-								<h3 class="b-header-h3 slider-anim fadeDown">Знаменитый<br><b>«All&nbsp;inclusive»</b></h3>
-								<p class="b-text slider-anim fadeDown delay200">Что мы чаще всего слышим про Турцию? Правильно, что там все включено. Практически в каждом отеле в стоимость проживания <em>входит завтрак, обед и ужин, </em>и на каждом – шикарный шведский стол.</p>
-						</div>
-					</div>
-				</div>
-				<div class="b-reason">
-					<div class="b-block">
-						<div class="b-picture-3">
-						</div>
-						<div class="b-reason-text-3  slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown">Больше морей – <b>больше&nbsp;пляжей</b></h3>
-								<p class="b-text slider-anim fadeDown delay200">Турция омывается 4-мя морями – Средиземным, Черным, Эгейским и Мраморным. А пляжи входят в десятку <em>чистейших пляжей мира.</em> Эти факты уже неплохой повод приехать сюда на отдых.</p>
-						</div>
-					</div>
-				</div>
-				<div class="b-reason">
-					<div class="b-block">
-						<div class="b-picture-1">
-						</div>
-						<div class="b-reason-text-1 slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown"><b>Вкуснейшие</b> восточные&nbsp;сладости</h3>
-								<p class="b-text slider-anim fadeDown delay200">Турция знаменита <em>своими сладостями</em> – баклава, рахат-лукум, халва, кадаиф, кюнефе. Пробовали? Уверены? Поверьте, так, как их готовят в Турции, <em>не готовят больше нигде.</em></p>
-					</div>
-				</div>
-				</div>
-				<div class="b-reason">
-					<div class="b-block">
-						<div class="b-picture-5">
-						</div>
-						<div class="b-reason-text-5 slider-anim fadeDown">
-								<h3 class="b-header-h3 slider-anim fadeDown">Дорогой сервис по <b>невысокой</b> цене</h3>
-								<p class="b-text slider-anim fadeDown delay200">Звездные отели, большие бассейны, блеск и изящество – по уровню обслуживания Турция не уступит ни одной европейской стране. Только вот <em>заплатите</em> Вы за это <em>гораздо меньше.</em></p>
-						</div>
+			<div class="b-reason">
+				<div class="b-block">
+					<div class="b-picture-2"></div>
+					<div class="b-reason-text-2  slider-anim fadeDown">
+						<h3 class="b-header-h3 slider-anim fadeDown">Капля адреналина и <b>множество</b> эмоций</h3>
+						<p class="b-text slider-anim fadeDown delay200">Для людей, которые <em>не любят сидеть на&nbsp;одном месте</em></p2> в Турции есть множество активных видов отдыха - дайвинг, рафтинг, яхтинг, альпинизм, сафари, водные лыжи, парапланы и воздушные шары.</p>
 					</div>
 				</div>
 			</div>
-			<a href="#b-popup-1" class="b-button orange more fancy goal-click" data-goal="MEETING_OPEN">
-				<p class="button-bold">Узнать подробнее</p>
-				<p class="button-thin">о путешествии по Турции</p>
-			</a>
+			<div class="b-reason">
+				<div class="b-block">
+					<div class="b-picture-4"></div>
+					<div class="b-reason-text-4">
+						<h3 class="b-header-h3 slider-anim fadeDown">Знаменитый<br><b>«All&nbsp;inclusive»</b></h3>
+						<p class="b-text slider-anim fadeDown delay200">Что мы чаще всего слышим про Турцию? Правильно, что там все включено. Практически в каждом отеле в стоимость проживания <em>входит завтрак, обед и ужин, </em>и на каждом – шикарный шведский стол.</p>
+					</div>
+				</div>
+			</div>
+			<div class="b-reason">
+				<div class="b-block">
+					<div class="b-picture-3"></div>
+					<div class="b-reason-text-3  slider-anim fadeDown">
+						<h3 class="b-header-h3 slider-anim fadeDown">Больше морей – <b>больше&nbsp;пляжей</b></h3>
+						<p class="b-text slider-anim fadeDown delay200">Турция омывается 4-мя морями – Средиземным, Черным, Эгейским и Мраморным. А пляжи входят в десятку <em>чистейших пляжей мира.</em> Эти факты уже неплохой повод приехать сюда на отдых.</p>
+					</div>
+				</div>
+			</div>
+			<div class="b-reason">
+				<div class="b-block">
+					<div class="b-picture-1"></div>
+					<div class="b-reason-text-1 slider-anim fadeDown">
+						<h3 class="b-header-h3 slider-anim fadeDown"><b>Вкуснейшие</b> восточные&nbsp;сладости</h3>
+						<p class="b-text slider-anim fadeDown delay200">Турция знаменита <em>своими сладостями</em> – баклава, рахат-лукум, халва, кадаиф, кюнефе. Пробовали? Уверены? Поверьте, так, как их готовят в Турции, <em>не готовят больше нигде.</em></p>
+					</div>
+				</div>
+			</div>
+			<div class="b-reason">
+				<div class="b-block">
+					<div class="b-picture-5"></div>
+					<div class="b-reason-text-5 slider-anim fadeDown">
+						<h3 class="b-header-h3 slider-anim fadeDown">Дорогой сервис по <b>невысокой</b> цене</h3>
+						<p class="b-text slider-anim fadeDown delay200">Звездные отели, большие бассейны, блеск и изящество – по уровню обслуживания Турция не уступит ни одной европейской стране. Только вот <em>заплатите</em> Вы за это <em>гораздо меньше.</em></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#b-popup-1" class="b-button orange more fancy goal-click" data-goal="MEETING_OPEN">
+			<p class="button-bold">Узнать подробнее</p>
+			<p class="button-thin">о путешествии по Турции</p>
+		</a>
 	</div>
 	<div class="b b-2-1">
 		<div class="b-block">
@@ -153,25 +151,23 @@ $version = 3;
 	</div>
 	<div class="b b-2-2">
 		<div class="b-block">
-				<div class="b-header-h2">
-					Турагентство «Отдых круглый год» занимается&nbsp;продажей туров <b>напрямую от&nbsp;туроператоров</b>
+			<h2 class="b-header-h2">Турагентство «Отдых круглый год» занимается&nbsp;продажей туров <b>напрямую от&nbsp;туроператоров</b></h2>
+			<p class="b-subtitle" id="b-2-2h2">Как это работает:</p>
+			<div class="explain clearfix">
+				<div class = "explanation anim fadeDown" data-cont="#b-2-2h2">
+					<img src="i/direct-1.jpg" data-retina="i/direct-1@2x.jpg">
+					<p class="b-dif-text">Вы <a href="#b-popup-2" class="fancy goal-click" data-goal="REQUEST_OPEN"><b>оставляете заявку</b></a> на поиск тура</p>
 				</div>
-				<p class="b-subtitle" id="b-2-2h2">Как это работает:</p>
-				<div class="explain clearfix">
-					<div class = "explanation anim fadeDown" data-cont="#b-2-2h2">
-						<img src="i/direct-1.jpg" data-retina="i/direct-1@2x.jpg">
-						<p class="b-dif-text">Вы <a href="#b-popup-2" class="fancy goal-click" data-goal="REQUEST_OPEN"><b>оставляете заявку</b></a> на поиск тура</p>
-					</div>
-					<div class = "explanation clearfix anim fadeDown delay200" data-cont="#b-2-2h2">
-						<img src="i/direct-2.jpg" data-retina="i/direct-2@2x.jpg">
-						<p class="b-dif-text">Наш менеджер подбирает для вас <b>лучший тур</b> под все ваши запросы</p>
-					</div>
-					<div class = "explanation clearfix anim fadeDown delay400" data-cont="#b-2-2h2">
-						<img src="i/direct-3.jpg" data-retina="i/direct-3@2x.jpg">
-						<p class="b-dif-text">Мы бронируем путевку <b>по цене туроператора</b></p>
-					</div>
+				<div class = "explanation clearfix anim fadeDown delay200" data-cont="#b-2-2h2">
+					<img src="i/direct-2.jpg" data-retina="i/direct-2@2x.jpg">
+					<p class="b-dif-text">Наш менеджер подбирает для вас <b>лучший тур</b> под все ваши запросы</p>
 				</div>
-				<p class="b-subtitle payoff"><b>Вы не платите комиссию</b> нашим менеджерам: за вас это делает туроператор</p>
+				<div class = "explanation clearfix anim fadeDown delay400" data-cont="#b-2-2h2">
+					<img src="i/direct-3.jpg" data-retina="i/direct-3@2x.jpg">
+					<p class="b-dif-text">Мы бронируем путевку <b>по цене туроператора</b></p>
+				</div>
+			</div>
+			<p class="b-subtitle payoff"><b>Вы не платите комиссию</b> нашим менеджерам: за вас это делает туроператор</p>
 		</div>
 	</div>
 	<div class="b-block">
@@ -179,7 +175,6 @@ $version = 3;
 	</div>
 	<div class="b b-3">
 		<div class="b-block">
-			
 			<h2 class="b-header-h2">Чем <b>турагентство «Отдых круглый год»</b> отличается от обычных банков туров?</h2>
 			<div class="b-differences clearfix">
 				<div class="b-difference">
@@ -218,61 +213,58 @@ $version = 3;
 			</div>
 		</div>
 	</div>
-		<div class="b b-4">
-			<div id="particles-js"></div>	
-			<div class="b-block">
-			</div>
+	<div class="b b-4">
+		<div id="particles-js"></div>	
+		<div class="b-block">
+			<h2 class="b-header-h2">Посмотрите <b>отзывы туристов</b>, которые уже&nbsp;доверились нашему турагентству</h2>
+		</div>
+		<div class="b-reviews">
+			<div class="b-review">
 				<div class="b-block">
-					<h2 class="b-header-h2">Посмотрите <b>отзывы туристов</b>, которые уже&nbsp;доверились нашему турагентству</h2>
+					<div class="wrapper">
+						<div class="b-r-wrap"> 
+							<div class="b-r-photo-1"></div>
+							<p class="b-r-name">Алёна Шаипова<br>
+							<noindex><a href="https://vk.com/id11474406" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
+						</div>
+						<p class="b-r-header slider-anim fadeDown">«Это было лучше, чем в раю! Всем советую»</p>
+						<p class="b-r-text slider-anim fadeDown delay200">Выражаю огромную благодарность турагентству «Отдых круглый год» за мой первый великолепный отдых. Отель на первой линии, хороший район, шикарный пляж, через дорогу шикарное море... Это было лучше, чем в раю! Спасибо от души, всем советую это туристическое агентство.</p>
+					</div>
 				</div>
-				<div class="b-reviews">
-					<div class="b-review">
-						<div class="b-block">
-							<div class="wrapper">
-								<div class="b-r-wrap"> 
-									<div class="b-r-photo-1"></div>
-									<p class="b-r-name">Алёна Шаипова<br>
-									<noindex><a href="https://vk.com/id11474406" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
-								</div>
-								<p class="b-r-header slider-anim fadeDown">«Это было лучше, чем в раю! Всем советую»</p>
-								<p class="b-r-text slider-anim fadeDown delay200">Выражаю огромную благодарность турагентству «Отдых круглый год» за мой первый великолепный отдых. Отель на первой линии, хороший район, шикарный пляж, через дорогу шикарное море... Это было лучше, чем в раю! Спасибо от души, всем советую это туристическое агентство.</p>
-							</div>
+			</div>
+			<div class="b-review">
+				<div class="b-block">
+					<div class="wrapper">
+						<div class="b-r-wrap"> 
+							<div class="b-r-photo-2"></div>
+							<p class="b-r-name">Марта Казакова<br>
+							<noindex><a href="https://vk.com/id18874055" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
 						</div>
+						<p class="b-r-header slider-anim fadeDown">«Спасибо за отличную организацию нашего отпуска»</p>
+						<p class="b-r-text slider-anim fadeDown delay200">Очень понравилось работать с Юлией! Терпеливый менеджер, который подберёт идеальный вариант даже для самых капризных клиентов. Всё изучит, позвонит узнает нюансы, которые важны для клиентов... В общем, спасибо за отличную организацию нашего отпуска!</p>
 					</div>
-					<div class="b-review">
-						<div class="b-block">
-							<div class="wrapper">
-								<div class="b-r-wrap"> 
-									<div class="b-r-photo-2"></div>
-									<p class="b-r-name">Марта Казакова<br>
-									<noindex><a href="https://vk.com/id18874055" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
-								</div>
-								<p class="b-r-header slider-anim fadeDown">«Спасибо за отличную организацию нашего отпуска»</p>
-								<p class="b-r-text slider-anim fadeDown delay200">Очень понравилось работать с Юлией! Терпеливый менеджер, который подберёт идеальный вариант даже для самых капризных клиентов. Всё изучит, позвонит узнает нюансы, которые важны для клиентов... В общем, спасибо за отличную организацию нашего отпуска!</p>
-							</div>
-						</div>
-					</div>
-					<div class="b-review">
-						<div class="b-block">
-							<div class="wrapper">
-								<div class="b-r-wrap"> 
-									<div class="b-r-photo-3"></div>
-									<p class="b-r-name">Арина Чикурова<br>
-									<noindex><a href="https://vk.com/arniechi" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
-								</div>
-								<p class="b-r-header slider-anim fadeDown">«Остались так довольны, что решили снова обратиться к вам»</p>
-								<p class="b-r-text slider-anim fadeDown delay200">Мы обратились в первый раз в связи со свадебным путешествием и остались так довольны, что с появлением новой возможности поехать отдыхать решили снова обратиться к агенту Юлии Лозовой. Её компетентность, индивидуальный подход и приятная индивидуальность - неоспоримы! </p>
-							</div>
-						</div>
-					</div>
-					
 				</div>
-				<a href="#b-popup-2" class="b-button orange relax fancy goal-click" data-goal="WANTSAME_OPEN">
-						<p class="button-bold">Хочу так же отдохнуть</p>
-						<p class="button-thin">подберите мне тур</p>
-					</a>
+			</div>
+			<div class="b-review">
+				<div class="b-block">
+					<div class="wrapper">
+						<div class="b-r-wrap"> 
+							<div class="b-r-photo-3"></div>
+							<p class="b-r-name">Арина Чикурова<br>
+							<noindex><a href="https://vk.com/arniechi" class="b-r-link" target="_blank">ссылка VK</a></p></noindex>
+						</div>
+						<p class="b-r-header slider-anim fadeDown">«Остались так довольны, что решили снова обратиться к вам»</p>
+						<p class="b-r-text slider-anim fadeDown delay200">Мы обратились в первый раз в связи со свадебным путешествием и остались так довольны, что с появлением новой возможности поехать отдыхать решили снова обратиться к агенту Юлии Лозовой. Её компетентность, индивидуальный подход и приятная индивидуальность - неоспоримы! </p>
+					</div>
+				</div>
 			</div>
 		</div>
+			<a href="#b-popup-2" class="b-button orange relax fancy goal-click" data-goal="WANTSAME_OPEN">
+					<p class="button-bold">Хочу так же отдохнуть</p>
+					<p class="button-thin">подберите мне тур</p>
+				</a>
+		</div>
+	</div>
 	<div class="b b-5">
 		<div class="b-block">
 			<h2 class="b-header-h2"><b>Над вашим отдыхом</b> будут работать лучшие в&nbspсвоем деле <b>эксперты</b></h2>
@@ -286,8 +278,7 @@ $version = 3;
 						</div>
 					</div>
 					<div class="b-expert-quote-wrap">
-						<div class="line-1 anim width-1" data-cont='.b-5'>
-						</div>
+						<div class="line-1 anim width-1" data-cont='.b-5'></div>
 						<div id="expert-name" class="b-expert-name anim fadeDown delay500" data-cont='.b-5'>Юлия Лозовая</div>
 						<div id="expert-quote" class="b-expert-quote anim fadeDown delay600" data-cont='.b-5'>«Я счастлива от того, что делаю людей&nbspсчастливыми»</div>
 						<div id="question-button" class="anim fadeRight delay800" data-cont='.b-5'>
@@ -324,10 +315,10 @@ $version = 3;
 			<div class="b-left">
 				<p class="b-header-h2-b-6">Запишитесь на встречу в нашем офисе</p>
 				<p class="b-header-h2-b-6-2"></p>
-			<p class="b-subtitle-b-6">и мы бесплатно пришлем за вами автомобиль с личным водителем</p>
+				<p class="b-subtitle-b-6">и мы бесплатно пришлем за вами автомобиль с личным водителем</p>
 				<!-- <p id="typed-show"></p>
 				<p id="typed-show-2"></p> -->
-			<p class="b-subtitle-b-6-2"></p>
+				<p class="b-subtitle-b-6-2"></p>
 			</div>
 			<div class="b-car fadeLeft anim delay2000" data-cont=".b-6" data-offset="-50px"></div>
 			<div class="b-right fadeDown anim delay2800" data-cont=".b-6" data-offset="-50px">
@@ -338,12 +329,11 @@ $version = 3;
 					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*"></p>
 					<div class="b-office">	
 						<a href="#" class="b-button orange meeting ajax">
-									<p class="button-bold">Записаться на встречу</p>
-									<p class="button-thin">бесплатно в нашем офисе</p>
+							<p class="button-bold">Записаться на встречу</p>
+							<p class="button-thin">бесплатно в нашем офисе</p>
 						</a>
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 						<p class="small">Это просто и ни к чему не обязывает</p>
-
 					</div>
 					<input type="submit" style="display: none;">
 					<input type="hidden" name="subject" value="Форма с личным авто">
