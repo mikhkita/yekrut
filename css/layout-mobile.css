@@ -717,40 +717,7 @@ textarea{
 	min-width: 0;
 }
 
-@media screen and (max-width: 321px){
-	.b-logo-cont img{
-		width: 128px;
-	}
-	.phone{
-		font-size: 16px;
-	}
-	.b-1 h1,
-	.b-1 h1 b{
-		font-size: 24px;
-		line-height: 30px;
-	}
-	.b-header-h2{
-		font-size: 24px;
-		line-height: 32px;
-	}
-	.b-header-h3{
-		font-size: 22px;
-		line-height: 28px;
-	}
-	.b-header-h2-b-6-2{
-		font-size: 24px;
-		line-height: 32px;
-	}
 
-	.b-subtitle-b-6-2 {
-		font-size: 22px;
-		line-height: 28px;
-	}
-	.b-popup .b-header-h2{
-		font-size: 24px;
-		line-height: 32px;
-	}
-}
 
 
 
@@ -884,8 +851,8 @@ textarea{
 
 	}
 	.quiz-screen .agree + label:after{
-		left: -121px;
-		top: -33px;
+		left: -121px !important;
+		top: -33px !important;
 	}
 	
 	.quiz-screen label p a{
@@ -912,6 +879,9 @@ textarea{
 }
 #b-popup-quiz-1 .b-popup .b-subtitle{
 	text-align: left;
+}
+#b-popup-quiz-1 .b-button{
+	max-width:224px;
 }
 .b-thanks {
     border-radius: 10px;
@@ -955,7 +925,7 @@ textarea{
 .scr-2 .b-button{
 	margin-top: 44px;
 }
-.b-popup-quiz-1 .b-subtitle,.b-popup-quiz-1 .b-subtitle b{
+#b-popup-quiz-1 .b-subtitle,#b-popup-quiz-1 .b-subtitle b{
 	font-size: 16px;
 }
 .b-quiz #radio-1 + label:before{
@@ -968,4 +938,52 @@ textarea{
 }
 .b-quiz #radio-1 + label p{
 	color: #282828;
+}
+@media screen and (max-width: 321px){
+	.b-logo-cont img{
+		width: 128px;
+	}
+	.phone{
+		font-size: 16px;
+	}
+	.b-1 h1,
+	.b-1 h1 b{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.b-header-h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.b-header-h3{
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.b-header-h2-b-6-2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.b-subtitle-b-6-2 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.b-popup .b-header-h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	#b-popup-quiz-1 {
+    	width: calc(100% - 10px);
+	}
+	.b-quiz #radio-1 + label p,
+	.b-quiz .radio + label {
+	    font-size: 17px;
+	}
+	#b-popup-quiz-1 .b-header-h2{
+		max-width: 250px;
+	}
+	.quiz-screen .agree + label:after {
+	    left: -117px !important;
+	    top: -34px !important;
+	}
 }
