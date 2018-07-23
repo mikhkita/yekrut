@@ -966,9 +966,6 @@ textarea{
 #b-popup-quiz-1 .fancybox-close-small{
 	right: 12px;
 }
-.scr-4 .small {
-    color: #282828;
-}
 @media screen and (max-width: 321px){
 	.b-logo-cont img{
 		width: 128px;
@@ -1015,5 +1012,11 @@ textarea{
 	.quiz-screen .agree + label:after {
 	    left: -117px !important;
 	    top: -34px !important;
+	}
+	.explanation p a:after{
+		display: none;
+	}
+	.explanation p a b{
+		text-decoration: underline;
 	}
 }
