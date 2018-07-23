@@ -608,6 +608,7 @@ input:-moz-placeholder {
 		width: calc(100% - 110px);
 		display: inline-block;
 		vertical-align: middle;
+		max-width: none !important;
 	}
 .payoff{
 	margin-top: 30px !important;
