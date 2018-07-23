@@ -29,6 +29,12 @@ $(document).ready(function(){
     $(window).resize(resize);
     resize();
 
+    if( isMobile ){
+        $(".b-1").css("height", myHeight);
+    }else{
+        $(".b-1").css("height", "auto");
+    }
+
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
             $('[placeholder]').focus(function() {
