@@ -325,7 +325,6 @@ $(document).ready(function(){
     $("#b-quiz .radio").click(function(){
         if (!startQuiz) {
             startQuiz = true;
-            alert("lol");
             if(typeof yaCounter49375867 != "undefined" ){
                 console.log("send goal: " + "CALC_START");
                 yaCounter49375867.reachGoal("CALC_START");

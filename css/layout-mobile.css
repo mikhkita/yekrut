@@ -972,8 +972,8 @@ textarea{
 	left: -15px;
 }
 #b-popup-quiz-1 .fancybox-close-small{
-	top: 3px;
-    right: 12px;
+	/* top: 3px; */
+	right: 12px;
 }
 @media screen and (max-width: 321px){
 	.b-logo-cont img{
