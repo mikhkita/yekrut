@@ -969,6 +969,9 @@ textarea{
 .scr-4 .small {
     color: #282828;
 }
+.lb-widget-welcome-panel__balloon-wrapper{
+	display: none !important;
+}
 @media screen and (max-width: 321px){
 	.b-logo-cont img{
 		width: 128px;
