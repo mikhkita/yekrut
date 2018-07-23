@@ -10,7 +10,7 @@ $group = $_SESSION["group"];
 
 require_once("controller-1.php");
 
-$version = 5;
+$version = 6;
 
 ?><!DOCTYPE html>
 <html>

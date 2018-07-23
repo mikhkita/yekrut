@@ -73,7 +73,7 @@ function intersect($str, $arr){
 function intersectArray($keyWord, $arr){
 	foreach ($arr as $key => $item) {
 		if( $item->keys === NULL || intersect($keyWord, $item->keys) ){
-			if( isset($item->exclude) && !(is_array($item->exclude) && intersect($keyWord, $item->exclude)) ){
+			if( !(is_array($item->exclude) && intersect($keyWord, $item->exclude)) ){
 				return $item;
 			}
 		}
