@@ -55,6 +55,11 @@ $data = array(
 			(object) array(
 				"value" => array("путевки", "путевок"),
 				"keys" => array("путев"),
+				"exclude" => array("горящ", "горяч")
+			),
+			(object) array(
+				"value" => array("горящие путевки", "горящих путевок"),
+				"keys" => array("путев"),
 			),
 			(object) array(
 				"value" => array("горящие туры", "горящих туров"),
@@ -109,6 +114,30 @@ $data = array(
 	"COUNT" => (object) array(
 		"values" => array(
 			(object) array(
+				"value" => "из Новосибирска ",
+				"keys" => array("новосиб"),
+			),
+			(object) array(
+				"value" => "из Томска ",
+				"keys" => array("томск"),
+			),
+			(object) array(
+				"value" => "из Кемерово ",
+				"keys" => array("кемеро"),
+			),
+			(object) array(
+				"value" => "5 звезд ",
+				"keys" => array("5 зве"),
+			),
+			(object) array(
+				"value" => "4 звезды ",
+				"keys" => array("4 зве"),
+			),
+			(object) array(
+				"value" => "3 звезды ",
+				"keys" => array("3 зве"),
+			),
+			(object) array(
 				"value" => "на двоих ",
 				"keys" => array("двоих", "двоем", "двоём", "двое", "два "),
 			),
@@ -122,7 +151,7 @@ $data = array(
 			),
 			(object) array(
 				"value" => "с детьми ",
-				"keys" => array("стамбул"),
+				"keys" => array("детьми", "ребен", "ребён", "детка"),
 			),
 			(object) array(
 				"value" => "",
@@ -134,6 +163,11 @@ $data = array(
 		"values" => array(
 			(object) array(
 				"value" => "по системе «все включено»",
+				"keys" => array("включ"),
+				"exclude" => array("5 зве", "4 зве", "3 зве"),
+			),
+			(object) array(
+				"value" => "«все включено»",
 				"keys" => array("включ"),
 			),
 			(object) array(
