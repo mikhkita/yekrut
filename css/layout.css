@@ -2049,7 +2049,7 @@ strong, b{
 
 input[type=text], 
 input[type=textarea], 
-input[type=button] {   
+input[type=submit] {   
     /* Remove First */
     -webkit-appearance: none;
     -moz-appearance: none;
