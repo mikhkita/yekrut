@@ -54,12 +54,30 @@ $(document).ready(function(){
 		$(this).validate({
 			rules: {
 				email: 'email',
-				phone: 'customPhone'
-			}
+				phone: 'customPhone',
+				"when":{ 
+                	required:true
+	            },
+	            "nights":{ 
+	                required:true
+	            }
+			},
+			messages:{
+	            "when": "Выберите один вариант",
+	            "nights": "Выберите один вариант"
+	        },
+	        errorPlacement: function(error, element) {
+	            if ( element.is(":radio") ) 
+	            {
+	                error.addClass("visible-label");
+	                error.appendTo('.b-error-placement');
+	            }
+	        }
 		});
 		if( $(this).find("input[name=phone]").length ){
 			$(this).find("input[name=phone]").mask(tePhone,{placeholder:" "});
-		}
+		};
+
 	});
 
 	function whenScroll(){
