@@ -966,8 +966,13 @@ textarea{
 #b-popup-quiz-1 .fancybox-close-small{
 	right: 12px;
 }
-.scr-4 .small {
-    color: #282828;
+@media screen and (max-width: 350px){
+	.explanation p a:after{
+		display: none;
+	}
+	.explanation p a b{
+		text-decoration: underline;
+	}
 }
 .lb-widget-welcome-panel__balloon-wrapper{
 	display: none !important;
