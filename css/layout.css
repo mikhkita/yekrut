@@ -2041,7 +2041,9 @@ strong, b{
 .b-quiz #radio-1 + label p{
 	color: #282828;
 }
-
+.b-popup .agree + label:after {
+    left: 19px;
+}
 input[type=text] {   
     /* Remove First */
     -webkit-appearance: none;
