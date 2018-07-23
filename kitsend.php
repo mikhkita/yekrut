@@ -24,7 +24,7 @@ file_put_contents("amo.txt", $id);
 
 $user = $users[$id];
 
-$email_admin = "dima@redder.pro";
+$email_admin = "beatbox787@gmail.com";
 // $email_admin = "turizm-krugod@yandex.ru, mike@kitaev.pro";
 
 $from = "Лэндинг “Турция”";
@@ -41,7 +41,7 @@ function sendMessage($messaggio) {
 	return true;
 }
 
-$deafult = array("name"=>"Имя", "phone"=>"Телефон", "email"=>"E-mail", "question"=>"Вопрос", "when"=>"Планируемая дата вылета", "adults"=>"Количество взрослых", "children"=>"Количество детей", "nights"=>"Желаемое количество ночей" );
+$deafult = array("name"=>"Имя", "phone"=>"Телефон", "email"=>"E-mail", "question"=>"Вопрос" );
 
 $fields = array();
 

@@ -10,7 +10,7 @@ $group = $_SESSION["group"];
 
 require_once("controller-1.php");
 
-$version = 3;
+$version = 4;
 
 ?><!DOCTYPE html>
 <html>
@@ -74,11 +74,16 @@ $version = 3;
 					<h1><?=$title?></h1>
 					<p class="b-subtitle"><b>Узнайте стоимость</b> вашего путешествия,  ответив на несколько простых вопросов</p>
 					<div class="consult">
-						<a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
+						<!-- <a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
 							<p class="button-bold">Рассчитать стоимость</p>
 							<p class="button-thin">путешествия в Турцию</p>
 						</a>
-						<p class="small">это не займет много времени</p>
+						<p class="small">это не займет много времени</p> -->
+						<a href="#b-popup-2" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
+							<p class="button-bold">Получить консультацию</p>
+							<p class="button-thin">бесплатно</p>
+						</a>
+						<p class="small">это просто и ни к чему не обязывает</p>
 					</div>
 				</div>
 			</div>
