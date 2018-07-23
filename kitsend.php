@@ -41,7 +41,7 @@ function sendMessage($messaggio) {
 	return true;
 }
 
-$deafult = array("name"=>"Имя", "phone"=>"Телефон", "email"=>"E-mail", "question"=>"Вопрос" );
+$deafult = array("name"=>"Имя", "phone"=>"Телефон", "email"=>"E-mail", "question"=>"Вопрос", "when"=>"Планируемая дата вылета", "adults"=>"Количество взрослых", "children"=>"Количество детей", "nights"=>"Желаемое количество ночей" );
 
 $fields = array();
 
