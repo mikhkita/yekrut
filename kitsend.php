@@ -24,7 +24,7 @@ file_put_contents("amo.txt", $id);
 
 $user = $users[$id];
 
-$email_admin = "beatbox787@gmail.com";
+$email_admin = "dima@redder.pro";
 // $email_admin = "turizm-krugod@yandex.ru, mike@kitaev.pro";
 
 $from = "Лэндинг “Турция”";
