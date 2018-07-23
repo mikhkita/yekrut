@@ -510,7 +510,7 @@ $version = 6;
 		</div>
 
 		<div class="b-popup" id="b-popup-quiz-1">
-			<form action="kitsend.php" method="POST" data-goal="QUIZ" id="b-quiz">
+			<form action="kitsend.php" method="POST" data-goal="CALC" id="b-quiz">
 				<div class="b-quiz">
 					<div class="quiz-screen scr-1">
 						<h2 class="b-header-h2"><b>Рассчитайте</b> стоимость вашего&nbsp;путешествия в Турцию</h2>
