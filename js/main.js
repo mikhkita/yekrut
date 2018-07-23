@@ -332,6 +332,17 @@ $(document).ready(function(){
         }
     });
 
+    var quizInput = false;
+    $(".scr-4 .b-form-input").change(function(){
+        if (!quizInput) {
+            quizInput = true;
+            if(typeof yaCounter49375867 != "undefined" ){
+                console.log("send goal: " + "CALC_END");
+                yaCounter49375867.reachGoal("CALC_END");
+            }
+        }
+    });
+
 
     // $("body").children().each(function() {
     //     $(this).html($(this).html().replace(/&#8232;/g," "));
