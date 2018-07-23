@@ -94,6 +94,8 @@ function getSource(){
 		$sources = array(
 			"yandex.search" => "Яндекс.Директ (поиск)",
 			"yandex.context" => "Яндекс.Директ (РСЯ)",
+			"yandex.banner" => "Яндекс.Директ (Баннер)",
+			"yandex.source" => "Яндекс.Директ (Баннер)",
 			"google.search" => "Google Adwords (поиск)",
 			"google.gdn" => "Google Adwords (КМС)",
 			"yadirect" => "Яндекс.Директ (поиск)",
