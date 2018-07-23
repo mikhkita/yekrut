@@ -10,7 +10,7 @@ $group = $_SESSION["group"];
 
 require_once("controller-1.php");
 
-$version = 6;
+$version = 8;
 
 ?><!DOCTYPE html>
 <html>
@@ -339,8 +339,8 @@ $version = 6;
 				<p class="b-form-header">Заполните простую форму</p>
 				<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
 				<form action="kitsend.php" method="POST" data-goal="BOTTOM" id="b-form-1">	
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+					<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange meeting ajax">
 							<p class="button-bold">Записаться на встречу</p>
@@ -385,8 +385,8 @@ $version = 6;
 				<div class="b-right">
 					<p class="b-form-header">Заполните простую форму</p>
 					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+					<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange meeting ajax">
 									<p class="button-bold">получить консультацию</p>
@@ -414,8 +414,8 @@ $version = 6;
 				<div class="b-right">
 					<p class="b-form-header">Заполните простую форму</p>
 					<p class="b-form-subtitle">И наш менеджер свяжется с вами в течение 2&nbsp;минут и предложит удобное время</p>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+					<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange meeting find ajax">
 									<p class="button-bold">Подберите мне тур</p>
@@ -438,9 +438,9 @@ $version = 6;
 				<div class="b-right">
 					<p class="b-form-header">Напишите Юлии – старшему менеджеру турагентства</p>
 					<p class="b-form-subtitle">Юлия ответит вам в течение рабочего дня: <b>с&nbsp;10:00 до 18:00</b></p>
-					<textarea class="b-form-input" type="textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+					<textarea class="b-form-input ym-record-keys" type="textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
+					<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange find meeting ajax">
 									<p class="button-bold">Получить ответ от Юлии</p>
@@ -465,9 +465,9 @@ $version = 6;
 				<div class="b-right">
 					<p class="b-form-header">Напишите Екатерине – менеджеру турагентства</p>
 					<p class="b-form-subtitle">Юлия ответит вам в течение рабочего дня: <b>с&nbsp;10:00 до 18:00</b></p>
-					<textarea class="b-form-input" type="textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+					<textarea class="b-form-input ym-record-keys" type="textarea" id="question" name="question" placeholder="Ваш вопрос"></textarea>
+					<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange find meeting ajax">
 									<p class="button-bold">Получить ответ от Екатерины</p>
@@ -492,8 +492,8 @@ $version = 6;
 				<div class="b-right">
 					<p class="b-form-header">Перезвоните мне</p>
 					<p class="b-form-subtitle">Наш менеджер свяжется с вами в течение 2&nbsp;минут</b></p>
-					<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
-					<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+					<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 					<div class="b-office">	
 						<a href="#" class="b-button orange find meeting ajax">
 							<p class="button-bold">Перезвоните мне</p>
@@ -611,8 +611,8 @@ $version = 6;
 						<h2 class="b-header-h2"><b>Остался всего один шаг!</b></h2>
 						<h3 class="b-subtitle">Наши менеджеры рассчитают для вас <b>актуальную стоимость тура</b> и перезвонят вам в ближайшее время</h3>
 						<div class="quiz-answers">
-							<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
-							<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+							<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+							<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 							<a href="#" class="b-button orange ajax">
 								<p class="button-bold">получить расчёт</p>
 								<p class="button-thin">в ближайшее время</p>
@@ -641,12 +641,12 @@ $version = 6;
 					<div class="b-right">
 						<p class="b-form-header">Заполните простую форму</p>
 						<p class="b-form-subtitle">И если в будущем вы выберете наше турагентство мы предоставим вам <b>бесплатный трансфер</b> до аэропорта Толмачево</p>
-						<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
-						<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+						<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+						<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
 						<div class="b-office">	
 							<a href="#" class="b-button orange meeting ajax transfer-but">
-										<p class="button-bold">Получить трансфер</p>
-										<p class="button-thin">до Толмачево <b>бесплатно</b></p>
+								<p class="button-bold">Получить трансфер</p>
+								<p class="button-thin">до Толмачево <b>бесплатно</b></p>
 							</a>
 							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 							<p class="small">Это просто и ни к чему не обязывает</p>
