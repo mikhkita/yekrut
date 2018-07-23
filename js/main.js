@@ -29,6 +29,12 @@ $(document).ready(function(){
     $(window).resize(resize);
     resize();
 
+    if( isMobile ){
+        $(".b-1").css("height", myHeight);
+    }else{
+        $(".b-1").css("height", "auto");
+    }
+
     $.fn.placeholder = function() {
         if(typeof document.createElement("input").placeholder == 'undefined') {
             $('[placeholder]').focus(function() {
@@ -264,43 +270,45 @@ $(document).ready(function(){
             img.src = src;
         });
     }
-    $('#b-quiz').validate(
-      {
-        rules:
-        {
-            "when":{ 
-                required:true
-            }
-        },
-        messages:
-        {
-            "when": {
-                required:"Выберите один вариант"
-            }
-        },
-        errorPlacement: function(error, element) 
-        {
-            if ( element.is(":radio") ) 
-            {
-                error.addClass("visible-label");
-                error.appendTo('.b-error-placement');
-            }
-            else 
-            { // This is the default behavior 
-                error.insertAfter( element );
-            }
-         }
-          });
+    // $('#b-quiz').validate(
+    //   {
+    //     rules:
+    //     {
+    //         "when":{ 
+    //             required:true
+    //         },
+    //         "nights":{ 
+    //             required:true
+    //         }
+    //     },
+    //     messages:
+    //     {
+    //         "when": "Выберите один вариант",
+    //         "nights": "Выберите один вариант"
+    //     },
+    //     errorPlacement: function(error, element) 
+    //     {
+    //         if ( element.is(":radio") ) 
+    //         {
+    //             error.addClass("visible-label");
+    //             error.appendTo('.b-error-placement');
+    //         }
+    //         else 
+    //         {
+    //             error.insertAfter( element );
+    //         }
+    //      }
+    //       });
 
 
     $(".quiz-screen").hide();
     $(".scr-1").show();
     $(".quiz-but").click(function(){
-        var lol = ($(this).parent(".quiz-answers").find("input.error"));
-        alert(lol);
+        // var lol = ($(this).parents(".quiz-answers").find("input.error"));
+        // alert(lol);
 
         $("#b-quiz").valid();
-        if ($(this).parent(".quiz-answers").find("input.error").length != 0) {
+        if ($(this).parents(".quiz-answers").find("input.error").length != 0) {
             return false;  
         }
         else{ 
@@ -308,7 +316,10 @@ $(document).ready(function(){
             $(($(this)).attr("data-next")).show(); 
         }
     });
-
+    $(".b-button.submit").click(function(){
+        $(".quiz-screen").hide();
+        $(".scr-1").show();  
+    });
 
     // $("body").children().each(function() {
     //     $(this).html($(this).html().replace(/&#8232;/g," "));

@@ -73,12 +73,13 @@ function intersect($str, $arr){
 function intersectArray($keyWord, $arr){
 	foreach ($arr as $key => $item) {
 		if( $item->keys === NULL || intersect($keyWord, $item->keys) ){
-			if( !(is_array($item->exclude) && intersect($keyWord, $item->exclude)) ){
+			if( isset($item->exclude) && !(is_array($item->exclude) && intersect($keyWord, $item->exclude)) ){
 				return $item;
 			}
 		}
 	}
-	return $default;
+	return $item;
+	// return $default;
 }
 
 function getSource(){
@@ -86,6 +87,8 @@ function getSource(){
 
 	if( isset($_SERVER["HTTP_REFERER"]) && $_SERVER["HTTP_REFERER"] != "" ){
 		$refer = $_SERVER["HTTP_REFERER"];
+	}else{
+		$refer = NULL;
 	}
 	$source = "Неизвестен";
 	$keyWord = NULL;

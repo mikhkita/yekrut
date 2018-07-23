@@ -9,12 +9,14 @@ body{
 		width: auto;
 	}	
 		.b-1{
-			padding-top: 25px;
 			height: 100vh;
 			max-height: none;
 			min-height: 550px;
 			background-position: 50% 100%;
 		}	
+			.b-1 .b-block{
+				padding-top: 25px;
+			}
 			.b-logo-cont{
 				margin: 0;
 			}
@@ -45,6 +47,7 @@ body{
 				line-height: 36px;
 			}
 			.b-1 h1{
+				padding-right: 20px;
 				margin-bottom: 25px;
 			}
 			.b-bottom{
@@ -52,8 +55,8 @@ body{
 			}
 				.b-subtitle,
 				.b-subtitle b{
-					font-size: 16px;
-					line-height: 24px;
+					font-size: 18px;
+					line-height: 26px;
 				}
 				.b-subtitle{
 					padding-left: 27px;
@@ -637,6 +640,7 @@ input:-moz-placeholder {
     overflow: hidden;
     background-size: cover;
     height: auto;
+    background-image: url(../i/bg-popup-2-m.jpg);
 }
 
 
@@ -654,6 +658,7 @@ input:-moz-placeholder {
 #b-popup-3 .b-form-header, 
 #b-popup-4 .b-form-header{
 	min-width: 0;
+	max-width: 270px;
 }
 .pop-cont-2,
 .pop-cont-1{
@@ -665,7 +670,7 @@ input:-moz-placeholder {
 }
 
 .b-popup .b-subtitle{
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 24px;
 }
 
@@ -691,7 +696,7 @@ input:-moz-placeholder {
 	top: 31px
 }
 .b-popup .agree + label:after{
-	left: 5px;
+	left: 20px;
     bottom: 12px;
 }
 .icon-cross:before{
@@ -716,40 +721,7 @@ textarea{
 	min-width: 0;
 }
 
-@media screen and (max-width: 321px){
-	.b-logo-cont img{
-		width: 128px;
-	}
-	.phone{
-		font-size: 16px;
-	}
-	.b-1 h1,
-	.b-1 h1 b{
-		font-size: 24px;
-		line-height: 30px;
-	}
-	.b-header-h2{
-		font-size: 24px;
-		line-height: 32px;
-	}
-	.b-header-h3{
-		font-size: 22px;
-		line-height: 28px;
-	}
-	.b-header-h2-b-6-2{
-		font-size: 24px;
-		line-height: 32px;
-	}
 
-	.b-subtitle-b-6-2 {
-		font-size: 22px;
-		line-height: 28px;
-	}
-	.b-popup .b-header-h2{
-		font-size: 24px;
-		line-height: 32px;
-	}
-}
 
 
 
@@ -803,65 +775,79 @@ textarea{
 	background-image: url("../i/bg-quiz.svg");
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	overflow: hidden;
+	width: calc(100% - 48px);
 }
 .b-quiz{
 	background-image: none;
 	padding: 24px;
-	max-width: 320px;
-
+	max-width: 327px;
+	min-width: 320px;
 	margin: 0 auto;
+	width: 100%;
 }
 	.quiz-answers{
 		width: 100% !important;
+		padding-bottom: 0px;
 	}
 	#b-popup-quiz-1 .b-header-h2{
-		font-size: 20px;
-		line-height: 28px;
+		font-size: 22px;
+		line-height: 30px;
+		text-align:  left;
+		max-width: 260px;
+		margin-bottom: 16px;
 	}
 	.b-quiz .radio + label{
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 24px;
+		padding-left: 0px;
+		position:  relative;
+		padding-bottom: 0px;
+	}
+	.b-quiz .radio + label p{
+		font-size: 18px;
+		line-height: 24px;
+		padding-left: 0px;
 	}
 	.b-quiz .radio + label:before{
-		top: 11px;
-		width: 22px;
-    	height: 22px;
-    	left: 0px;
+		display:  inline-block;
+		position: static;
+		margin-right: 20px;
+		vertical-align:  middle;
 	}
 	.b-quiz .radio + label:after{
-		left: 6px;
-    	top: 17px;
-    	width: 14px;
-    	height: 14px;
+		left: 10px;
+		top: 22px;
+
 	}
 
 	.scr-2 .radio + label{
-		padding-left: 44px;
+
+		left: 11px;
+
+		display:  inline-block;
+	}
+	.scr-2 .quiz-answers{
+		text-align: left;
 	}
 
-	.scr-2 .radio + label:before{
-		top: 11px;
-		width: 22px;
-    	height: 22px;
-    	left: 13px;
-	}
+
 	.scr-2 .radio + label:after{
-		left: 19px;
+		left: 10px;
 	}
 
 	.scr-3 .quiz-answers{
 		text-align: left;
-		padding-left: 33.3%;
 	}
 
 	.scr-3 .radio + label{
-		padding-left: 0px;
+		padding-left: 14px;
 	}
 	.scr-3 .radio + label:before{
-		left: -36px;
+		left: -22px;
 	}
 	.scr-3 .radio + label:after{
-		left: -30px;
+		left: 24px;
 	}
 .b-quiz input{
 	width: 100%;
@@ -870,8 +856,8 @@ textarea{
 
 	}
 	.quiz-screen .agree + label:after{
-		left: -135px;
-		top: -33px;
+		left: -121px !important;
+		top: -33px !important;
 	}
 	
 	.quiz-screen label p a{
@@ -884,12 +870,147 @@ textarea{
 .quiz-screen input::-webkit-input-placeholder {
 		font-family: Gilroy-Regular;
 		font-size: 16px;
-		color: #585858;
+		color: #b7b7b7;
 		line-height: 28px;
 	}
 	.quiz-screen input:-moz-placeholder {
 		font-family: Gilroy-Regular;
 		font-size: 16px;
-		color: #585858;
+		color: #b7b7b7;
 		line-height: 28px;
 	}
+.b-error-placement{
+	font-size: 16px;
+	text-align: left;
+}
+#b-popup-quiz-1 .b-popup .b-subtitle{
+	text-align: left;
+}
+#b-popup-quiz-1 .b-button{
+	max-width:224px;
+}
+.b-thanks {
+    border-radius: 10px;
+    width: calc(100% - 48px);
+}
+.b-thanks .b-form-header {
+    font-size: 20px;
+    line-height: 26px;
+}
+#b-popup-quiz-1 h3{
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+.fancybox-close-small{
+	top: 11px;
+    right: 11px;
+}
+.b-center-but{
+	top: 0px;
+	margin-top: 40px;
+}
+#radio-2-1 + label:before,
+#radio-2-4 + label:before,
+#radio-2-6 + label:before,
+#radio-2-9 + label:before{
+	margin-left: 0px;
+}
+.scr-2 .radio + label:before{
+	margin-left: 32px;
+}
+.scr-2 .radio + label:after{
+	left: 42px;
+}
+#radio-2-1 + label:after,
+#radio-2-4 + label:after,
+#radio-2-6 + label:after,
+#radio-2-9 + label:after{
+	left: 10px;
+}
+.scr-2 .b-button{
+	margin-top: 44px;
+}
+#b-popup-quiz-1 .b-subtitle,#b-popup-quiz-1 .b-subtitle b{
+	font-size: 18px;
+}
+.b-quiz #radio-1 + label:before{
+	margin-top: 4px;
+	float: left;
+}
+.b-quiz #radio-1 + label:after{
+	left: 10px;
+    top: 26px;
+}
+.b-quiz #radio-1 + label p{
+	color: #282828;
+}
+#b-popup-quiz-1 h3:nth-child(3){
+    padding-top: 24px;
+}
+.scr-4 .quiz-answers{
+	padding-top: 16px;
+	padding-bottom: 0px;
+}
+.scr-4 .quiz-answers .b-button{
+	width: 100%;
+	max-width: none !important;
+}
+.scr-2 .b-header-h2{
+	margin-bottom: 0px;
+}
+#second-h3{
+	margin-top: 24px !important;
+}
+.scr-1 .b-answers-wrapper,
+.scr-3 .b-answers-wrapper{
+	left: -15px;
+}
+@media screen and (max-width: 321px){
+	.b-logo-cont img{
+		width: 128px;
+	}
+	.phone{
+		font-size: 16px;
+	}
+	.b-1 h1,
+	.b-1 h1 b{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.b-header-h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.b-header-h3{
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.b-header-h2-b-6-2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.b-subtitle-b-6-2 {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.b-popup .b-header-h2{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	#b-popup-quiz-1 {
+    	width: calc(100% - 10px);
+	}
+	.b-quiz #radio-1 + label p,
+	.b-quiz .radio + label {
+	    font-size: 17px;
+	}
+	#b-popup-quiz-1 .b-header-h2{
+		max-width: 250px;
+	}
+	.quiz-screen .agree + label:after {
+	    left: -117px !important;
+	    top: -34px !important;
+	}
+}
