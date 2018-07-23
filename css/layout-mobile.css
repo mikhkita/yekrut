@@ -717,14 +717,13 @@ input:-moz-placeholder {
 .transfer{
 	display: none;
 }
+
+.quiz-answers .small{
+	color: #282828;
+}
 textarea{
 	min-width: 0;
 }
-
-
-
-
-
 
 .b-overprice{
 		padding: 24px;
@@ -746,7 +745,6 @@ textarea{
 	}
 #circle-3{
 	width: 100%;
-
 }
 .b-2-1{
 	margin-bottom: 100px;
@@ -769,8 +767,6 @@ textarea{
 .b-2-2 .b-header-h2 {
     line-height: 36px;
 }
-
-
 #b-popup-quiz-1{
 	background-image: url("../i/bg-quiz.svg");
 	background-position: 50% 50%;
@@ -818,13 +814,9 @@ textarea{
 	.b-quiz .radio + label:after{
 		left: 10px;
 		top: 22px;
-
 	}
-
 	.scr-2 .radio + label{
-
 		left: 11px;
-
 		display:  inline-block;
 	}
 	.scr-2 .quiz-answers{
@@ -972,8 +964,10 @@ textarea{
 	left: -15px;
 }
 #b-popup-quiz-1 .fancybox-close-small{
-	/* top: 3px; */
 	right: 12px;
+}
+.scr-4 .small {
+    color: #282828;
 }
 @media screen and (max-width: 321px){
 	.b-logo-cont img{

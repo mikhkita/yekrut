@@ -318,7 +318,7 @@ $(document).ready(function(){
     });
     $(".b-button.submit").click(function(){
         $(".quiz-screen").hide();
-        $(".scr-1").show();  
+        $(".scr-1").show();
     });
     
     var startQuiz = false;

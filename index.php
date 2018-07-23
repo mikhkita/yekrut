@@ -609,7 +609,7 @@ $version = 5;
 					</div>
 					<div class="quiz-screen scr-4">
 						<h2 class="b-header-h2"><b>Остался всего один шаг!</b></h2>
-						<h3 class="b-subtitle">Оставьте ваши контакты и <b>получите расчёт стоимости </b> путешествия в Турцию по вашим запросам</h3>
+						<h3 class="b-subtitle">Наши менеджеры рассчитают для вас <b>актуальную стоимость тура</b> и перезвонят вам в ближайшее время</h3>
 						<div class="quiz-answers">
 							<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
 							<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
@@ -617,6 +617,7 @@ $version = 5;
 								<p class="button-bold">получить расчёт</p>
 								<p class="button-thin">в ближайшее время</p>
 							</a>
+							<p class="small">Это просто и ни к чему не обязывает</p>
 							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 							<input type="hidden" name="subject" value="Рассчет стоимости тура">
 							<input required checked id="agree-quiz" class="agree" type="checkbox" name="agreement">

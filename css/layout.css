@@ -2055,7 +2055,9 @@ input[type=submit] {
     -moz-appearance: none;
     appearance: none;
 }
-
+.scr-4 .small {
+    color: #282828;
+}
 @media screen and (max-width: 1020px){
 
 }
