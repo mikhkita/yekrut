@@ -75,11 +75,16 @@ $version = 8;
 					<h1><?=$title?></h1>
 					<p class="b-subtitle"><b>Узнайте стоимость</b> вашего путешествия,  ответив на несколько простых вопросов</p>
 					<div class="consult">
-						<a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
+						<a href="#b-popup-preloader" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
 							<p class="button-bold">Рассчитать стоимость</p>
 							<p class="button-thin">путешествия в Турцию</p>
 						</a>
 						<p class="small">это не займет много времени</p>
+						<!-- <a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
+							<p class="button-bold">Рассчитать стоимость</p>
+							<p class="button-thin">путешествия в Турцию</p>
+						</a>
+						<p class="small">это не займет много времени</p> -->
 						<!-- <a href="#b-popup-2" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
 							<p class="button-bold">Получить консультацию</p>
 							<p class="button-thin">бесплатно</p>
@@ -658,7 +663,12 @@ $version = 8;
 					</div>
 				</form>
 			</div>
-
+			<div style="display:none;">
+			<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+			<div class="b-popup" id="b-popup-preloader">
+				<img src="i/preloader.svg">
+				<div class="b-subtitle"><b>Пожалуйста, подождите.</b><br> Идёт отправка заявки</div>
+			</div>
 			<div class="b-thanks b-popup" id="b-popup-success">
 				<div class="b-right">
 					<p class="b-form-header">Отлично!</p>

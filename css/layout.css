@@ -2058,6 +2058,25 @@ input[type=submit] {
 .scr-4 .small {
     color: #282828;
 }
+
+
+/*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*//*PRELOADER*/
+#b-popup-preloader{
+	background: transparent;
+	box-shadow: none;
+	text-align: center;
+}
+#b-popup-preloader img{
+	display: inline-block;
+	margin-bottom: 40px;
+}
+#b-popup-preloader .b-subtitle{
+	text-align: center;
+}
+#b-popup-preloader .fancybox-close-small{
+	display: none;
+}
+
 @media screen and (max-width: 1020px){
 
 }
