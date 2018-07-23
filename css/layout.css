@@ -2047,7 +2047,9 @@ strong, b{
     left: 19px;
 }
 
-input[type=text] {   
+input[type=text], 
+input[type=textarea], 
+input[type=button] {   
     /* Remove First */
     -webkit-appearance: none;
     -moz-appearance: none;

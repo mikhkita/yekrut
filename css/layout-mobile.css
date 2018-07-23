@@ -640,6 +640,7 @@ input:-moz-placeholder {
     overflow: hidden;
     background-size: cover;
     height: auto;
+    background-image: url(../i/bg-popup-2-m.jpg);
 }
 
 
@@ -801,6 +802,7 @@ textarea{
 		line-height: 24px;
 		padding-left: 0px;
 		position:  relative;
+		padding-bottom: 0px;
 	}
 	.b-quiz .radio + label p{
 		font-size: 18px;
@@ -879,6 +881,7 @@ textarea{
 	}
 .b-error-placement{
 	font-size: 16px;
+	text-align: left;
 }
 #b-popup-quiz-1 .b-popup .b-subtitle{
 	text-align: left;
@@ -929,7 +932,7 @@ textarea{
 	margin-top: 44px;
 }
 #b-popup-quiz-1 .b-subtitle,#b-popup-quiz-1 .b-subtitle b{
-	font-size: 16px;
+	font-size: 18px;
 }
 .b-quiz #radio-1 + label:before{
 	margin-top: 4px;
@@ -941,6 +944,27 @@ textarea{
 }
 .b-quiz #radio-1 + label p{
 	color: #282828;
+}
+#b-popup-quiz-1 h3:nth-child(3){
+    padding-top: 24px;
+}
+.scr-4 .quiz-answers{
+	padding-top: 16px;
+	padding-bottom: 0px;
+}
+.scr-4 .quiz-answers .b-button{
+	width: 100%;
+	max-width: none !important;
+}
+.scr-2 .b-header-h2{
+	margin-bottom: 0px;
+}
+#second-h3{
+	margin-top: 24px !important;
+}
+.scr-1 .b-answers-wrapper,
+.scr-3 .b-answers-wrapper{
+	left: -15px;
 }
 @media screen and (max-width: 321px){
 	.b-logo-cont img{

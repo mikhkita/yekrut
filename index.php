@@ -53,6 +53,7 @@ $version = 4;
 	<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?157",t.onload=function(){VK.Retargeting.Init("VK-RTRG-264822-cLysz"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-264822-cLysz" style="position:fixed; left:-999px;" alt=""/></noscript>
 </head>
 <body>
+	<img src="i/bg-popup-2-m.jpg" style="display: none">
 	<img src="i/bg-popup-2.jpg" style="display: none">
 	<img src="i/transfer.png" style="display: none">
 	<div class="b b-1">
@@ -74,16 +75,16 @@ $version = 4;
 					<h1><?=$title?></h1>
 					<p class="b-subtitle"><b>Узнайте стоимость</b> вашего путешествия,  ответив на несколько простых вопросов</p>
 					<div class="consult">
-						<!-- <a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
+						<a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
 							<p class="button-bold">Рассчитать стоимость</p>
 							<p class="button-thin">путешествия в Турцию</p>
 						</a>
-						<p class="small">это не займет много времени</p> -->
-						<a href="#b-popup-2" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
+						<p class="small">это не займет много времени</p>
+						<!-- <a href="#b-popup-2" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
 							<p class="button-bold">Получить консультацию</p>
 							<p class="button-thin">бесплатно</p>
 						</a>
-						<p class="small">это просто и ни к чему не обязывает</p>
+						<p class="small">это просто и ни к чему не обязывает</p> -->
 					</div>
 				</div>
 			</div>
@@ -556,7 +557,7 @@ $version = 4;
 							<input name="adults" type="radio" class="radio" id="radio-2-5" value="5 взрослых">
 							<label for="radio-2-5">5</label>
 						</div>
-						<h3 class="b-subtitle"><b>Количество детей</b></h3>
+						<h3 class="b-subtitle" id="second-h3"><b>Количество детей</b></h3>
 						<div class="quiz-answers">
 							<input name="children" type="radio" class="radio" id="radio-2-6" checked value="без детей">
 							<label for="radio-2-6">0</label>

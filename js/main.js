@@ -316,10 +316,10 @@ $(document).ready(function(){
             $(($(this)).attr("data-next")).show(); 
         }
     });
-    // $(".b-button.submit").click(function(){
-    //     $(".quiz-screen").hide();
-    //     $(".scr-1").show();  
-    // });
+    $(".b-button.submit").click(function(){
+        $(".quiz-screen").hide();
+        $(".scr-1").show();  
+    });
 
     // $("body").children().each(function() {
     //     $(this).html($(this).html().replace(/&#8232;/g," "));
