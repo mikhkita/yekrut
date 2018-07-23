@@ -313,13 +313,25 @@ $(document).ready(function(){
         }
         else{ 
             $(".quiz-screen").hide();
-            $(($(this)).attr("data-next")).show(); 
+            $(($(this)).attr("data-next")).show();
         }
     });
     $(".b-button.submit").click(function(){
         $(".quiz-screen").hide();
         $(".scr-1").show();  
     });
+    
+    var startQuiz = false;
+    $("#b-quiz .radio").click(function(){
+        if (!startQuiz) {
+            startQuiz = true;
+            if(typeof yaCounter49375867 != "undefined" ){
+                console.log("send goal: " + "CALC_START");
+                yaCounter49375867.reachGoal("CALC_START");
+            }
+        }
+    });
+
 
     // $("body").children().each(function() {
     //     $(this).html($(this).html().replace(/&#8232;/g," "));

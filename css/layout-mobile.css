@@ -829,8 +829,13 @@ textarea{
 	}
 	.scr-2 .quiz-answers{
 		text-align: left;
+		left: -14px;
 	}
 
+	#radio-2-5 label{
+		position: relative;
+		left: 1px;
+	}
 
 	.scr-2 .radio + label:after{
 		left: 10px;
@@ -965,6 +970,10 @@ textarea{
 .scr-1 .b-answers-wrapper,
 .scr-3 .b-answers-wrapper{
 	left: -15px;
+}
+#b-popup-quiz-1 .fancybox-close-small{
+	/* top: 3px; */
+	right: 12px;
 }
 @media screen and (max-width: 321px){
 	.b-logo-cont img{

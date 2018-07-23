@@ -609,7 +609,7 @@ $version = 6;
 					</div>
 					<div class="quiz-screen scr-4">
 						<h2 class="b-header-h2"><b>Остался всего один шаг!</b></h2>
-						<h3 class="b-subtitle">Оставьте ваши контакты и получите <b>расчёт</b> стоимости  путешествия в Турцию по вашим запросам</h3>
+						<h3 class="b-subtitle">Оставьте ваши контакты и <b>получите расчёт стоимости </b> путешествия в Турцию по вашим запросам</h3>
 						<div class="quiz-answers">
 							<input class="b-form-input" type="text" id="name" name="name" required placeholder="Ваше имя*">
 							<input class="b-form-input" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">

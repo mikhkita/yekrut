@@ -2048,7 +2048,7 @@ strong, b{
 }
 
 input[type=text], 
-input[type=textarea], 
+textarea[type=textarea], 
 input[type=submit] {   
     /* Remove First */
     -webkit-appearance: none;
