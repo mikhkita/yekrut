@@ -605,9 +605,9 @@ input:-moz-placeholder {
 	.explanation .b-dif-text{
 		float: none;
 		margin-top: auto;
-		width: 64%;
-	    display: inline-block;
-    	vertical-align: middle;
+		width: calc(100% - 110px);
+		display: inline-block;
+		vertical-align: middle;
 	}
 .payoff{
 	margin-top: 30px !important;
