@@ -1816,7 +1816,6 @@ strong, b{
   z-index: -1;
   opacity: 0;
   margin: 10px 0 0 7px;
-  display: none;
 }
     .scr-2 .radio + label {
     	width: auto;
