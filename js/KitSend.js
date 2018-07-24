@@ -75,8 +75,29 @@ $(document).ready(function(){
 	        }
 		});
 		if( $(this).find("input[name=phone]").length ){
-			$(this).find("input[name=phone]").mask(tePhone,{placeholder:" "});
-		};
+			$(this).find("input[name=phone]").each(function(){
+				var phoneMask = new IMask($(this)[0], {
+		        	mask: '+{7} (000) 000-00-00',
+		        	prepare: function(value, masked){
+				    	if( value == 8 && masked._value.length == 0 ){
+				    		return "+7 (";
+				    	}
+
+				    	if( value == 8 && masked._value == "+7 (" ){
+				    		return "";
+				    	}
+
+				    	tmp = value.match(/[\d\+]*/g);
+				    	if( tmp && tmp.length ){
+				    		value = tmp.join("");
+				    	}else{
+				    		value = "";
+				    	}
+				    	return value;
+				    }
+		        });
+			});
+		}
 
 	});
 
@@ -182,6 +203,9 @@ $(document).ready(function(){
 				yaCounter49375867.reachGoal($this.attr("data-goal"));
 			}
 
+			$.fancybox.close();
+			$(".b-preloader-link").click();
+
   			$.ajax({
 			  	type: $(this).attr("method"),
 			  	url: $(this).attr("action"),
@@ -211,7 +235,7 @@ $(document).ready(function(){
 				}
 			});
   		}else{
-  			$(this).find("input.error,select.error,textarea.error").eq(0).focus();
+  			$(this).find("input[type='text'].error,select.error,textarea.error").eq(0).focus();
   		}
   		return false;
   	});
