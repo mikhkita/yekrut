@@ -10,7 +10,7 @@ $group = $_SESSION["group"];
 
 require_once("controller-1.php");
 
-$version = 8;
+$version = 10;
 
 ?><!DOCTYPE html>
 <html>
@@ -66,7 +66,7 @@ $version = 8;
 					<p>г. Томск, пр. Кирова, 58 ст. 26,<br> офис 21, 2 этаж</p>
 				</div>
 				<div class="b-phone">
-					<a href="tel:73822909303" class="phone">+7 (3822) 909-303</a>
+					<a href="tel:+73822226146" class="phone">+7 (3822) 226-146</a>
 					<a class="recall fancy goal-click" data-goal="CALLME_OPEN" id="recall" href="#b-popup-5">перезвоните мне</a>
 				</div>
 			</div>
@@ -75,21 +75,11 @@ $version = 8;
 					<h1><?=$title?></h1>
 					<p class="b-subtitle"><b>Узнайте стоимость</b> вашего путешествия,  ответив на несколько простых вопросов</p>
 					<div class="consult">
-						<!-- <a href="#b-popup-preloader" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
-							<p class="button-bold">Рассчитать стоимость</p>
-							<p class="button-thin">путешествия в Турцию</p>
-						</a>
-						<p class="small">это не займет много времени</p> -->
 						<a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
 							<p class="button-bold">Рассчитать стоимость</p>
 							<p class="button-thin">путешествия в Турцию</p>
 						</a>
 						<p class="small">это не займет много времени</p>
-						<!-- <a href="#b-popup-2" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
-							<p class="button-bold">Получить консультацию</p>
-							<p class="button-thin">бесплатно</p>
-						</a>
-						<p class="small">это просто и ни к чему не обязывает</p> -->
 					</div>
 				</div>
 			</div>
@@ -280,8 +270,8 @@ $version = 8;
 			</div>
 		</div>
 		<a href="#b-popup-2" class="b-button orange relax fancy goal-click" data-goal="WANTSAME_OPEN">
-				<p class="button-bold">Хочу так же отдохнуть</p>
-				<p class="button-thin">подберите мне тур</p>
+			<p class="button-bold">Хочу так же отдохнуть</p>
+			<p class="button-thin">подберите мне тур</p>
 		</a>
 	</div>
 	<div class="b b-5">
@@ -335,8 +325,6 @@ $version = 8;
 				<p class="b-header-h2-b-6">Запишитесь на встречу в нашем офисе</p>
 				<p class="b-header-h2-b-6-2"></p>
 				<p class="b-subtitle-b-6">и мы бесплатно пришлем за вами автомобиль с личным водителем</p>
-				<!-- <p id="typed-show"></p>
-				<p id="typed-show-2"></p> -->
 				<p class="b-subtitle-b-6-2"></p>
 			</div>
 			<div class="b-car fadeLeft anim delay2000" data-cont=".b-6" data-offset="-50px"></div>
@@ -361,9 +349,7 @@ $version = 8;
 				</form>	
 			</div>
 			<div class="b-footer clearfix">
-				<a href="#" class="b-logo-cont">
-					<img src="i/logo-black.svg">
-				</a>
+				<a href="#" class="b-logo-cont"><img src="i/logo-black.svg"></a>
 				<div class="b-f-contacts">
 					<ul>
 						<li>г. Томск, пр. Кирова, 58 ст. 26,<br> офис 21, 2 этаж</li>
@@ -371,15 +357,15 @@ $version = 8;
 						<li><a href="https://kru-god.ru/politics/" target="_blank">Политика по работе с персональными данными</a></li>
 					</ul>
 				</div>
-				<a class="b-redder">
-					Разработка сайта: <b>redder.pro</b>
-				</a>
+				<a class="b-redder">Разработка сайта: <b>redder.pro</b></a>
 			</div>
 		</div>
 	</div>
 
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+		<a href="#b-popup-preloader" class="b-preloader-link fancy"></a>
+		<a href="#b-popup-6" class="fancy pop6" style="display: none"></a>
 		<div class="b-popup" id="b-popup-1">
 			<form action="kitsend.php" method="POST" data-goal="MEETING" id="b-form-1">
 				<div class="b-left" id="typed-strings">
@@ -408,7 +394,6 @@ $version = 8;
 			</form>
 		</div>
 
-		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-2">
 			<form action="kitsend.php" method="POST" data-goal="WANTSAME" id="b-form-2">
 				<div class="b-left">
@@ -437,7 +422,6 @@ $version = 8;
 			</form>
 		</div>
 
-		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup b-orange-popup" id="b-popup-3">
 			<form action="kitsend.php" method="POST" data-goal="JULIA" id="b-form-3">			
 				<div class="b-right">
@@ -464,7 +448,6 @@ $version = 8;
 			</form>
 		</div>
 
-		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup b-orange-popup" id="b-popup-4">
 			<form action="kitsend.php" method="POST" data-goal="KATE" id="b-form-4">			
 				<div class="b-right">
@@ -491,7 +474,6 @@ $version = 8;
 			</form>
 		</div>
 
-		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup b-orange-popup" id="b-popup-5">
 			<form action="kitsend.php" method="POST" data-goal="CALLME" id="b-form-5">			
 				<div class="b-right">
@@ -633,65 +615,64 @@ $version = 8;
 			</form>
 		</div>
 
-		<div style="display:none;">
-			<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
-			<div class="b-popup" id="b-popup-6">
-				<form action="kitsend.php" method="POST" data-goal="TRANSFER" id="b-form-6">
-					<div class="b-left" id="typed-strings">
-						<h2 class="b-header-h2">Не уходите <b>с&nbsp;пустыми&nbsp;руками</b></h2>
-						<h3 class="b-subtitle"><b>До 30 июля</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;</b>вылета.</h3>
-						<div class="transfer"></div>
-					</div>
-					
-					<div class="b-right">
-						<p class="b-form-header">Заполните простую форму</p>
-						<p class="b-form-subtitle">И если в будущем вы выберете наше турагентство мы предоставим вам <b>бесплатный трансфер</b> до аэропорта Толмачево</p>
-						<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
-						<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
-						<div class="b-office">	
-							<a href="#" class="b-button orange meeting ajax transfer-but">
-								<p class="button-bold">Получить трансфер</p>
-								<p class="button-thin">до Толмачево <b>бесплатно</b></p>
-							</a>
-							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
-							<p class="small">Это просто и ни к чему не обязывает</p>
-						</div>
-						<input type="hidden" name="subject" value="Форма с трансфером в аэропорт">
-						<input type="submit" style="display: none;">
-						<input required checked id="agree-6" class="agree" type="checkbox" name="agreement">
-						<label for="agree-6"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации></a></p></label>
-					</div>
-				</form>
-			</div>
-			<div style="display:none;">
-			<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
-			<div class="b-popup" id="b-popup-preloader">
-				<img src="i/preloader.svg">
-				<div class="b-subtitle"><b>Пожалуйста, подождите.</b><br> Идёт отправка заявки</div>
-			</div>
-			<div class="b-thanks b-popup" id="b-popup-success">
-				<div class="b-right">
-					<p class="b-form-header">Отлично!</p>
-					<p class="b-form-subtitle">Мы <b>уже получили</b> вашу заявку и перезвоним вам в течение 2 минут</p>
-					<input type="submit" class="b-button orange find submit meeting" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
+		<div class="b-popup" id="b-popup-6">
+			<form action="kitsend.php" method="POST" data-goal="TRANSFER" id="b-form-6">
+				<div class="b-left" id="typed-strings">
+					<h2 class="b-header-h2">Не уходите <b>с&nbsp;пустыми&nbsp;руками</b></h2>
+					<h3 class="b-subtitle"><b>До 30 июля</b> мы дарим всем своим клиентам приятный подарок: <b>бесплатный трансфер</b> до&nbsp;Толмачево&nbsp;и&nbsp;обратно, <b>независимо&nbsp;от&nbsp;даты&nbsp;</b>вылета.</h3>
+					<div class="transfer"></div>
 				</div>
-			</div>
-			<div class="b-thanks b-popup" id="b-popup-error">
+				
 				<div class="b-right">
-					<p class="b-form-header">Ошибка!</p>
-					<p class="b-form-subtitle">При отправке заявки произошла ошибка. Вы можете позвонить нам по номеру: <b>+7 (3822) 909-303</b></p>
-					<input type="submit" class="b-button orange find submit meeting" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
+					<p class="b-form-header">Заполните простую форму</p>
+					<p class="b-form-subtitle">И если в будущем вы выберете наше турагентство мы предоставим вам <b>бесплатный трансфер</b> до аэропорта Толмачево</p>
+					<input class="b-form-input ym-record-keys" type="text" id="name" name="name" required placeholder="Ваше имя*">
+					<input class="b-form-input ym-record-keys" type="text" id="tel" name="phone" required placeholder="Ваш телефон*">
+					<div class="b-office">	
+						<a href="#" class="b-button orange meeting ajax transfer-but">
+							<p class="button-bold">Получить трансфер</p>
+							<p class="button-thin">до Толмачево <b>бесплатно</b></p>
+						</a>
+						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+						<p class="small">Это просто и ни к чему не обязывает</p>
+					</div>
+					<input type="hidden" name="subject" value="Форма с трансфером в аэропорт">
+					<input type="submit" style="display: none;">
+					<input required checked id="agree-6" class="agree" type="checkbox" name="agreement">
+					<label for="agree-6"><p class="b-condition">Я принимаю <a href="https://kru-god.ru/politics/" target="_blank">условия передачи информации></a></p></label>
 				</div>
-			</div>
+			</form>
+		</div>
 
-	<a href="#b-popup-6" class="fancy pop6" style="display: none">
-	<!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
+		<div class="b-popup" id="b-popup-preloader">
+			<img src="i/preloader.svg">
+			<div class="b-subtitle"><b>Пожалуйста, подождите.</b><br> Идёт отправка заявки</div>
+		</div>
+
+		<div class="b-thanks b-popup" id="b-popup-success">
+			<div class="b-right">
+				<p class="b-form-header">Отлично!</p>
+				<p class="b-form-subtitle">Мы <b>уже получили</b> вашу заявку и перезвоним вам в течение 2 минут</p>
+				<input type="submit" class="b-button orange find submit meeting" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
+			</div>
+		</div>
+
+		<div class="b-thanks b-popup" id="b-popup-error">
+			<div class="b-right">
+				<p class="b-form-header">Ошибка!</p>
+				<p class="b-form-subtitle">При отправке заявки произошла ошибка. Вы можете позвонить нам по номеру: <b>+7 (3822) 909-303</b></p>
+				<input type="submit" class="b-button orange find submit meeting" onclick="$.fancybox.close(); return false;" value="Закрыть окно">
+			</div>
+		</div>
+	</div>
+
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/mask.js"></script>
 	<script type="text/javascript" src="js/particles.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
