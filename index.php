@@ -10,7 +10,7 @@ $group = $_SESSION["group"];
 
 require_once("controller-1.php");
 
-$version = 9;
+$version = 10;
 
 ?><!DOCTYPE html>
 <html>
@@ -66,7 +66,7 @@ $version = 9;
 					<p>г. Томск, пр. Кирова, 58 ст. 26,<br> офис 21, 2 этаж</p>
 				</div>
 				<div class="b-phone">
-					<label for="recall" class="phone">+7 (3822) 226-146</label>
+					<a href="tel:+73822226146" class="phone">+7 (3822) 226-146</a>
 					<a class="recall fancy goal-click" data-goal="CALLME_OPEN" id="recall" href="#b-popup-5">перезвоните мне</a>
 				</div>
 			</div>
@@ -80,11 +80,6 @@ $version = 9;
 							<p class="button-thin">путешествия в Турцию</p>
 						</a>
 						<p class="small">это не займет много времени</p>
-						<!-- <a href="#b-popup-2" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
-							<p class="button-bold">Получить консультацию</p>
-							<p class="button-thin">бесплатно</p>
-						</a>
-						<p class="small">это просто и ни к чему не обязывает</p> -->
 					</div>
 				</div>
 			</div>
@@ -513,8 +508,8 @@ $version = 9;
 								<input name="when" type="radio" class="radio" id="radio-1" value="Чемоданы собраны, хоть завтра">
 								<label for="radio-1"><p>Чемоданы собраны, хоть&nbsp;завтра</p></label>
 
-								<input name="when" type="radio" class="radio" id="radio-2" value="В течении месяца">
-								<label for="radio-2">В течении месяца</label>
+								<input name="when" type="radio" class="radio" id="radio-2" value="В течение месяца">
+								<label for="radio-2">В течение месяца</label>
 
 								<input name="when" type="radio" class="radio" id="radio-3" value="Через 2-3 месяца">
 								<label for="radio-3">Через 2-3 месяца</label>

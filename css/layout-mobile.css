@@ -776,12 +776,12 @@ textarea{
 	width: calc(100% - 48px);
 }
 .b-quiz{
-	background-image: none;
-	padding: 24px;
-	max-width: 327px;
-	min-width: 320px;
-	margin: 0 auto;
-	width: 100%;
+    background-image: none;
+    padding: 24px;
+    max-width: 400px;
+    min-width: 260px;
+    margin: 0 auto;
+    width: 100%;
 }
 	.quiz-answers{
 		width: 100% !important;
@@ -797,9 +797,9 @@ textarea{
 	.b-quiz .radio + label{
 		font-size: 18px;
 		line-height: 24px;
-		padding-left: 0px;
+		padding-left: 55px;
 		position:  relative;
-		padding-bottom: 0px;
+		padding-bottom: 12px;
 	}
 	.b-quiz .radio + label p{
 		font-size: 18px;
@@ -808,13 +808,8 @@ textarea{
 	}
 	.b-quiz .radio + label:before{
 		display:  inline-block;
-		position: static;
-		margin-right: 20px;
-		vertical-align:  middle;
-	}
-	.b-quiz .radio + label:after{
-		left: 10px;
-		top: 22px;
+		left: 0px;
+		top: calc(50% - 20px);
 	}
 	.scr-2 .radio + label{
 		left: 11px;
@@ -832,30 +827,31 @@ textarea{
 
 	.scr-2 .radio + label:after{
 		left: 10px;
+		top: calc(50% - 10px);
 	}
-
+	.scr-2 .b-quiz .radio + label,{
+		padding-left: 87px;
+	}
+	.scr-2 .b-quiz .radio + label:nth-child(1){
+		padding-left: 55px;
+	}
 	.scr-3 .quiz-answers{
 		text-align: left;
 	}
 
-	.scr-3 .radio + label{
-		padding-left: 14px;
-	}
-	.scr-3 .radio + label:before{
-		left: -22px;
-	}
-	.scr-3 .radio + label:after{
-		left: 24px;
-	}
 .b-quiz input{
 	width: 100%;
 }
 	.quiz-screen .b-condition{
 
 	}
-	.quiz-screen .agree + label:after{
-		left: -121px !important;
-		top: -33px !important;
+	.b-condition:after{
+	    bottom: 9px;
+    	left: 2px;
+	}
+	.b-quiz .b-condition:after{
+		background-image: url(../i/check-b.svg);
+		bottom: 9px;
 	}
 	
 	.quiz-screen label p a{
@@ -906,25 +902,7 @@ textarea{
 }
 .b-center-but{
 	top: 0px;
-	margin-top: 40px;
-}
-#radio-2-1 + label:before,
-#radio-2-4 + label:before,
-#radio-2-6 + label:before,
-#radio-2-9 + label:before{
-	margin-left: 0px;
-}
-.scr-2 .radio + label:before{
-	margin-left: 32px;
-}
-.scr-2 .radio + label:after{
-	left: 42px;
-}
-#radio-2-1 + label:after,
-#radio-2-4 + label:after,
-#radio-2-6 + label:after,
-#radio-2-9 + label:after{
-	left: 10px;
+	margin-top: 28px;
 }
 .scr-2 .b-button{
 	margin-top: 44px;
@@ -933,12 +911,8 @@ textarea{
 	font-size: 18px;
 }
 .b-quiz #radio-1 + label:before{
-	margin-top: 4px;
-	float: left;
-}
-.b-quiz #radio-1 + label:after{
-	left: 10px;
-    top: 26px;
+	/* margin-top: 4px; */
+	/* float: left; */
 }
 .b-quiz #radio-1 + label p{
 	color: #282828;
@@ -960,10 +934,7 @@ textarea{
 #second-h3{
 	margin-top: 24px !important;
 }
-.scr-1 .b-answers-wrapper,
-.scr-3 .b-answers-wrapper{
-	left: -15px;
-}
+
 #b-popup-quiz-1 .fancybox-close-small{
 	right: 12px;
 }
@@ -977,6 +948,37 @@ textarea{
 }
 .lb-widget-welcome-panel__balloon-wrapper{
 	display: none !important;
+}
+.quiz-answers label:after{
+    top: calc(50% - 10px);
+    left: 10px;
+}
+.scr-3 .radio + label:after{
+	top: calc(50% - 10px);
+    left: 10px;
+}
+.scr-3 .b-answers-wrapper{
+	left: auto;
+}
+.scr-2 .radio + label{
+	width: 90px;
+    height: 48px;
+    left: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: inline-block;
+}
+.scr-2 .radio + label:after{
+    top: calc(50% - 10px);
+}
+@media screen and (max-width: 375px){
+	.scr-2 .radio + label {
+    	width: 84px;
+    	height: 46px;
+    }
+    #b-popup-quiz-1 .b-header-h2{
+    	max-width: 250px;
+    }
 }
 @media screen and (max-width: 321px){
 	.b-logo-cont img{
