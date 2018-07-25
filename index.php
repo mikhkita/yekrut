@@ -73,7 +73,7 @@ $version = 10;
 			<div class="b-bottom">	
 				<div class="b-h1-wrap">
 					<h1><?=$title?></h1>
-					<p class="b-subtitle"><b>Узнайте стоимость</b> вашего путешествия,  ответив на несколько простых вопросов</p>
+					<p class="b-subtitle"><b>Узнайте стоимость</b> вашего путешествия, ответив на несколько простых вопросов</p>
 					<div class="consult">
 						<a href="#b-popup-quiz-1" class="b-button orange left fancy goal-click" data-goal="CALC_OPEN" data-next="scr-1">
 							<p class="button-bold">Рассчитать стоимость</p>
